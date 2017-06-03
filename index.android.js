@@ -13,7 +13,7 @@ import {
 } from 'react-native';
 
 import Tabs from "react-native-tabs";
-import { ORDER, NAMES_MAP } from "./const/sections";
+import { ORDER, NAMES_MAP, VIEWS } from "./const/sections";
 
 export default class MinidokaAndroid extends Component {
 
@@ -25,6 +25,7 @@ export default class MinidokaAndroid extends Component {
     };
 
     this.handlePageSelect = this.handlePageSelect.bind(this);
+    this.renderCurrentView = this.renderCurrentView.bind(this);
   }
 
   renderTabs() {
@@ -35,6 +36,16 @@ export default class MinidokaAndroid extends Component {
 
   handlePageSelect({props}) {
     this.setState({ page: props.name });
+  }
+
+  renderCurrentView() {
+    const view = VIEWS[this.state.page];
+
+    if (typeof view === "string") {
+      return <Text>{ view }</Text>
+    }
+
+    return view;
   }
 
   render() {
@@ -49,7 +60,7 @@ export default class MinidokaAndroid extends Component {
           onSelect={ this.handlePageSelect } >
           { this.renderTabs() }
         </Tabs>
-        <Text>{ this.state.page }</Text>
+        { this.renderCurrentView() }
       </View>
     );
   }
