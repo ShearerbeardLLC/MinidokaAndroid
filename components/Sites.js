@@ -26,8 +26,8 @@ class Sites extends Component {
     this.handlePress = this.handlePress.bind(this);
   }
 
-  handlePress({props}) {
-    Actions.tabbar.sitesTab.sites.site({name: props.name});
+  handlePress(txt) {
+    Actions.site({name: txt});
   }
 
   render() {
@@ -35,7 +35,7 @@ class Sites extends Component {
       <ListView contentContainerStyle={ styles.container }
         dataSource={ this.state.dataSource }
         renderRow={ txt =>
-          <Text onPress={ this.handlePress }>{ txt }</Text>
+          <Text key={ txt } onPress={ () => this.handlePress(txt) }>{ txt }</Text>
         }
       />
     );

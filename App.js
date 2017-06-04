@@ -24,7 +24,8 @@ export default class App extends Component {
               <Scene key="map" title="Map" component={ Map } />
             </Scene>
             <Scene key="sitesTab" title="Sites" icon={ TabIcon }>
-              <Scene key="sites" title="Sites" component={ Sites } />
+              <Scene key="sites" title="Sites" component={ Sites } initial={ true } />
+              <Scene key="site" title="Site" component={ Site } />
             </Scene>
             <Scene key="tourTab" title="Tour" icon={ TabIcon }>
               <Scene key="tour" title="Tour" component={ Tour } />
