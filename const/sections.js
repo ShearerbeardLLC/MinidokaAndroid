@@ -1,6 +1,6 @@
 import React from 'react';
 
-import Sites from "../components/Sites";
+import SitesStack from "../components/SitesStack";
 
 const HOME = "HOME";
 const MAP = "MAP";
@@ -21,7 +21,7 @@ const NAMES_MAP = {
 const VIEWS = {
   [HOME]: "Home",
   [MAP]: "Map",
-  [SITES]: <Sites />,
+  [SITES]: <SitesStack />,
   [TOUR]: "Tour",
   [MORE]: "More"
 };

@@ -1,11 +1,13 @@
 import React, { Component } from 'react';
 import {
-  StyleSheet,
   Text,
   View,
   ListView
 } from 'react-native';
 
+import styles from "../styles/Container";
+
+import { Router, Scene, Actions } from "react-native-router-flux";
 
 class Sites extends Component {
   constructor(...args) {
@@ -20,13 +22,21 @@ class Sites extends Component {
         "Block 23"
       ])
     };
+
+    this.handlePress = this.handlePress.bind(this);
+  }
+
+  handlePress({props}) {
+    Actions.tabbar.sitesTab.sites.site({name: props.name});
   }
 
   render() {
     return (
-      <ListView
+      <ListView contentContainerStyle={ styles.container }
         dataSource={ this.state.dataSource }
-        renderRow={ txt => <Text>{ txt }</Text> }
+        renderRow={ txt =>
+          <Text onPress={ this.handlePress }>{ txt }</Text>
+        }
       />
     );
   }
