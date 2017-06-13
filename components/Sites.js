@@ -5,6 +5,7 @@ import {
   ListView
 } from 'react-native';
 
+import sitesData from "../const/sites.json";
 import styles from "../styles/Container";
 
 import { Router, Scene, Actions } from "react-native-router-flux";
@@ -17,10 +18,9 @@ class Sites extends Component {
     });
 
     this.state = {
-      dataSource: dataSource.cloneWithRows([
-        "Administration",
-        "Block 23"
-      ])
+			dataSource: dataSource.cloneWithRows(
+				sitesData.map(({name}) => name)
+			)
     };
 
     this.handlePress = this.handlePress.bind(this);
