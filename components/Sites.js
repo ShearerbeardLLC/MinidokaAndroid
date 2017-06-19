@@ -14,28 +14,26 @@ class Sites extends Component {
   constructor(...args) {
     super(...args);
     const dataSource = new ListView.DataSource({
-      rowHasChanged: (a, b) => a !== b
+      rowHasChanged: (a, b) => a.name !== b.name
     });
 
     this.state = {
-			dataSource: dataSource.cloneWithRows(
-				sitesData.map(({name}) => name)
-			)
+			dataSource: dataSource.cloneWithRows(sitesData)
     };
 
-    this.handlePress = this.handlePress.bind(this);
+    /* this.handlePress = this.handlePress.bind(this);*/
   }
 
-  handlePress(txt) {
-    Actions.site({name: txt});
+  handlePress(site) {
+    Actions.site({...site});
   }
 
   render() {
     return (
       <ListView contentContainerStyle={ styles.container }
         dataSource={ this.state.dataSource }
-        renderRow={ txt =>
-          <Text key={ txt } onPress={ () => this.handlePress(txt) }>{ txt }</Text>
+        renderRow={ site =>
+          <Text key={ site.prefix } onPress={ () => this.handlePress(site) }>{ site.name }</Text>
         }
       />
     );

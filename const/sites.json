@@ -1,4 +1,766 @@
 [
-		{"name": "Administration"},
-		{"name": "Block 23"}
+  {
+    "name": "Behind Barbed Wire",
+    "prefix": "behind-barbed-wire",
+    "detail": "Barbed wire perimeter fence.",
+    "subDetail": "The barbed wire fence was a humiliating physical reminder of confinement for 13,078 Nikkei who lived at Minidoka during the war.",
+    "coordinates": [
+      {
+        "latitude": 42.67684,
+        "longitude": -114.24652
+      }
+    ],
+    "text": [
+      {
+        "name": "Behind Barbed Wire",
+        "file": "behind-barbed-wire-1"
+      },
+      {
+        "name": "Preservation of Minidoka",
+        "file": "behind-barbed-wire-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Historic reconstruction of barbed wire perimeter fence. 2015. "
+      },
+      {
+        "caption": "The fence along the North Side Canal remained until camp closure."
+      },
+      {
+        "caption": "Barbed wire fence and guard tower. November 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 104"
+      }
+    ]
+  },
+  {
+    "name": "Barracks as Classrooms",
+    "prefix": "barracks-as-classrooms",
+    "detail": "Junior high and high school block.",
+    "subDetail": "Minidoka's youth traveled to Block 23 to attend junior high and high school. The layout was the same as residential blocks, and barracks buildings served as classrooms.  ",
+    "coordinates": [
+      {
+        "latitude": 42.68075,
+        "longitude": -114.24073
+      }
+    ],
+    "text": [
+      {
+        "name": "Barracks as Classrooms",
+        "file": "barracks-as-classrooms-1"
+      },
+      {
+        "name": "School Activities",
+        "file": "barracks-as-classrooms-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Hunt High School students outside of a barracks classroom. ",
+        "credit": "Contributed by Densho, Courtesy of the Bigelow Family Collection"
+      },
+      {
+        "caption": "Dedication of the Stafford Elementary School flag pole. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Girls study in Hunt High School classroom. Mural painted by students.1944.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Adult education class in carpentry. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Students in barracks classroom. November 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 76"
+      }
+    ]
+  },
+  {
+    "name": "Mess Hall",
+    "prefix": "mess-hall",
+    "detail": "Historic mess hall building.",
+    "subDetail": "Visit this historic mess hall and experience how even meals demonstrate the structured nature of camp life.",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24115
+      }
+    ],
+    "text": [
+      {
+        "name": "Mess Hall",
+        "file": "mess-hall-1"
+      },
+      {
+        "name": "Social Dining",
+        "file": "mess-hall-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Historic mess hall in Block 22. 2015. "
+      },
+      {
+        "caption": "Incarceree chef preparing lunch in a Minidoka mess hall. 1942.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "A meal receipt received by a visitor to Minidoka. ",
+        "credit": "Contributed by Densho, Courtesy of the Yamada Family Collection"
+      },
+      {
+        "caption": "Incarcerees in line for a meal in a Minidoka mess hall.  ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Mess hall interior. August 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 64"
+      }
+    ]
+  },
+  {
+    "name": "Residential Barracks",
+    "prefix": "residential-barracks",
+    "detail": "Historic residential barracks building.",
+    "subDetail": "Explore this historic Minidoka barrack building and learn about typical living conditions for incarcerated Nikkei.\n",
+    "coordinates": [
+      {
+        "latitude": 42.67977,
+        "longitude": -114.24072
+      }
+    ],
+    "text": [
+      {
+        "name": "Residential Barracks",
+        "file": "residential-barracks-1"
+      },
+      {
+        "name": "Life at Minidoka",
+        "file": "residential-barracks-2"
+      },
+      {
+        "name": "Making a Home",
+        "file": "residential-barracks-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Historic residential barracks in Block 22. 2015. "
+      },
+      {
+        "caption": "Looking down a row of barracks. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "A typical unfurnished barracks at Minidoka.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "The barracks of Mrs. Eizo Nishi, showing furniture made from scrap lumber. ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Renovated exterior of barracks at Minidoka. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Laundry and Lavatory Building",
+    "prefix": "laundry-lavatory-building",
+    "detail": "Site of historic laundry-lavatory building.",
+    "subDetail": "Learn about the laundry, shower, and restroom facilities in each residential block.",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24131
+      }
+    ],
+    "text": [
+      {
+        "name": "Laundry and Lavatory Building",
+        "file": "laundry-lavatory-building-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Laundry and lavatory building. August 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 35"
+      },
+      {
+        "caption": "Typical laundry room in laundry and lavatory building. August 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 61"
+      },
+      {
+        "caption": "Wash room in laundry and lavatory building. August 1942. ",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 62"
+      }
+    ]
+  },
+  {
+    "name": "Block 22 Overlook",
+    "prefix": "block-22-overlook",
+    "detail": "Overlook of Block 22.",
+    "subDetail": "Visit Block 22 to explore a typical residential block layout complete with historic structures. Block 22 served as a community services center at Minidoka and held offices and the cooperative store.",
+    "coordinates": [
+      {
+        "latitude": 42.67934,
+        "longitude": -114.24148
+      }
+    ],
+    "text": [
+      {
+        "name": "Block 22",
+        "file": "block-22-1"
+      },
+      {
+        "name": "Community at Minidoka",
+        "file": "block-22-2"
+      },
+      {
+        "name": "Religion at Minidoka",
+        "file": "block-22-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Overlooking Block 22. 2015. "
+      },
+      {
+        "caption": "First Communion class of Catholic Church at Minidoka.1943.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Inside the Minidoka Consumers Cooperative store. ",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Workers in the Minidoka Irrigator newspaper office. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Block 22 office map. Six of the barracks remained residential.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      }
+    ]
+  },
+  {
+    "name": "Outdoor Amphitheater",
+    "prefix": "outdoor-amphitheater",
+    "detail": "Outdoor amphitheater and baseball field.",
+    "subDetail": "Participation in sports and community gatherings was a memorable and positive aspect of the Minidoka experience for incarcerees.",
+    "coordinates": [
+      {
+        "latitude": 42.67948,
+        "longitude": -114.24228
+      }
+    ],
+    "text": [
+      {
+        "name": "Outdoor Amphitheater ",
+        "file": "outdoor-amphitheater-1"
+      },
+      {
+        "name": "Baseball",
+        "file": "outdoor-amphitheater-2"
+      },
+      {
+        "name": "Sports",
+        "file": "outdoor-amphitheater-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "site of former amphitheater and newly reconstructed baseball field. 2016.",
+        "credit": "Courtesy of Ryan Kozu."
+      },
+      {
+        "caption": "Richard Sakurai and Shingo Inouye in front of scoreboard at Minidoka.",
+        "credit": "Courtesy of National Park Service, Sakurai Collection."
+      },
+      {
+        "caption": "Group funeral for fallen soldiers, held in amphitheater.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Area A basketball champs.1944.",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      },
+      {
+        "caption": "Winners of a cross country run pictured with WRA P.E. instructors. ",
+        "credit": "Courtesy of the National Archives and Records Administration."
+      }
+    ]
+  },
+  {
+    "name": "Root Cellar",
+    "prefix": "root-cellar",
+    "detail": "Historic root cellar.",
+    "subDetail": "Learn about the agricultural legacy of incarcerated Nikkei as you peer into this 1940s era root cellar.",
+    "coordinates": [
+      {
+        "latitude": 42.67878,
+        "longitude": -114.24175
+      }
+    ],
+    "text": [
+      {
+        "name": "A Sustainable Community",
+        "file": "root-cellar-1"
+      },
+      {
+        "name": "A Collective Effort",
+        "file": "root-cellar-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Entrance of historic root cellar. 2015."
+      },
+      {
+        "caption": "Incarcerees harvesting corn at Minidoka. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Stafford Elementary School students clearing sagebrush to plant vegetable crops. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Japanese Americans harvesting potatoes at Minidoka.",
+        "credit": "Contributed by Densho, Courtesy of the Bigelow Family Collection"
+      },
+      {
+        "caption": "Minidoka's hog and poultry farm.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Tire / Motor Repair Shop and Warehouse Area",
+    "prefix": "tire-motor-repair-shop-and-warehouse",
+    "detail": "Historic warehouse area and tire shop.",
+    "subDetail": "Visit the largest remaining historic structure at Minidoka and learn more about camp operations. ",
+    "coordinates": [
+      {
+        "latitude": 42.6791,
+        "longitude": -114.24375
+      }
+    ],
+    "text": [
+      {
+        "name": "Tire / Motor Repair Shop and Warehouse Area",
+        "file": "shop-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Half of a historic warehouse that held a tire repair shop. 2015."
+      },
+      {
+        "caption": "Motor pool area. Notice the warehouses in the background.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Incarcerees repairing a car in a warehouse. ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Minidoka motor pool area.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Sewage Plant",
+    "prefix": "sewage-plant",
+    "detail": "Former sewage treatment plant site.",
+    "subDetail": "Learn about some of the necessary infrastructure for a desert area to support a population boom.",
+    "coordinates": [
+      {
+        "latitude": 42.68083,
+        "longitude": -114.24593
+      }
+    ],
+    "text": [
+      {
+        "name": "Sewage Plant",
+        "file": "sewage-plant-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Site of former sewage treatment center. 2015."
+      },
+      {
+        "caption": "Orignal WRA caption: Hunt, Idaho. Minidoka sewage treatment plant.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Minidoka student essay excerpt: \"As the silhouette of summer slowly desends (sp) upon Minidoka, the fragrant smell of garlic blooms and the sewage plant drifts about with the playful breezes.\" 1943.",
+        "credit": "Contributed by Densho, Courtesy of Helen Amerman Manning Collection"
+      }
+    ]
+  },
+  {
+    "name": "Water Tower #2",
+    "prefix": "water-tower-two",
+    "detail": "Site of former water tower.",
+    "subDetail": "The large foundations of this water tower were recently uncovered for visitors to see. Learn about water usage at Minidoka.  ",
+    "coordinates": [
+      {
+        "latitude": 42.68061,
+        "longitude": -114.24686
+      }
+    ],
+    "text": [
+      {
+        "name": "Water Tower #2",
+        "file": "water-tower-two-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "concrete footings of Water Tower #2. 2015."
+      },
+      {
+        "caption": "Historic photograph of one of the camp water towers. August 1942. ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Original WRA caption: Brush fire midsection of camp. 1945.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Herrmann House ",
+    "prefix": "herrmann-house ",
+    "detail": "Post-war farm house.",
+    "subDetail": "Stop by this 1950s era home to learn about post-war land use and development of the former incarceration site.",
+    "coordinates": [
+      {
+        "latitude": 42.6805,
+        "longitude": -114.24574
+      }
+    ],
+    "text": [
+      {
+        "name": "Homesteading",
+        "file": "herrmann-house-1"
+      },
+      {
+        "name": "Farm-in-a-Day",
+        "file": "herrmann-house-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Herrmann house. 2015."
+      },
+      {
+        "caption": "portion of historic barracks; Herrmann family milking barn. 2015."
+      },
+      {
+        "caption": "Program from Farm-in-a-Day event.",
+        "credit": "Minidoka NHS Museum Collection"
+      },
+      {
+        "caption": "John and Elfreida Herrmann. April 17, 1952. ",
+        "credit": "Jerome County Historical Society Collections."
+      },
+      {
+        "caption": "Local organizations provided refreshments. April 17, 1952.",
+        "credit": "Jerome County Historical Society Collections."
+      },
+      {
+        "caption": "Fire Station no. 1 during Farm-in-a-Day. April 17, 1952. ",
+        "credit": "Jerome County Historical Society Collections."
+      }
+    ]
+  },
+  {
+    "name": "Fire Station",
+    "prefix": "fire-station",
+    "detail": "Historic fire station. ",
+    "subDetail": "Visit this historic fire station and learn about life as an incarceree firefighter. ",
+    "coordinates": [
+      {
+        "latitude": 42.68067,
+        "longitude": -114.24607
+      }
+    ],
+    "text": [
+      {
+        "name": "Fire Station as Home",
+        "file": "fire-station-1"
+      },
+      {
+        "name": "In the Field",
+        "file": "fire-station-2"
+      },
+      {
+        "name": "Fire Station #2",
+        "file": "fire-station-3"
+      },
+      {
+        "name": "Female Firefighters",
+        "file": "fire-station-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Fire Station No. 1. 2015."
+      },
+      {
+        "caption": "Fire Station No. 1. 2015."
+      },
+      {
+        "caption": "Fire crew in front of Fire Station No. 1. 1944.",
+        "credit": "Contributed by Densho, courtesy of the Mamiya Family Collection"
+      },
+      {
+        "caption": "Original WRA caption: The fire crew of station #1 swings into action. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Unknown women in front of Fire Station No. 2. November 1942.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Administrative Area",
+    "prefix": "administrative-area",
+    "detail": "Administrative area of Minidoka. ",
+    "subDetail": "Visit the site of the administration area and learn about life as a WRA employee at Minidoka.",
+    "coordinates": [
+      {
+        "latitude": 42.67847,
+        "longitude": -114.2499
+      }
+    ],
+    "text": [
+      {
+        "name": "Administrative Area",
+        "file": "administrative-area-1"
+      },
+      {
+        "name": "Staff Experience",
+        "file": "administrative-area-2"
+      },
+      {
+        "name": "Attitudes Towards Nikkei",
+        "file": "administrative-area-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Administrative area. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "WRA staff housing.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Tura Nakamura, block manager of block 42-44 presents ceremonial Tai fish to Project Director, H.L. Stafford and Philip Schafer, assistant project director. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "H.L. Stafford, project director of Minidoka War Relocation Center. 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Honor Roll",
+    "prefix": "honor-roll",
+    "detail": "Reconstruction military Honor Roll. ",
+    "subDetail": "Gain an understanding of the various displays of patriotism and experience the irony of military service during incarceration when you visit this reconstructed Honor Roll. ",
+    "coordinates": [
+      {
+        "latitude": 42.67825,
+        "longitude": -114.25061
+      }
+    ],
+    "text": [
+      {
+        "name": "Honor Roll",
+        "file": "honor-roll-1"
+      },
+      {
+        "name": "Loyalty Questionnaire",
+        "file": "honor-roll-2"
+      },
+      {
+        "name": "Military Service",
+        "file": "honor-roll-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Reconstructed honor roll. 2015.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Historic photograph of the original honor roll.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Kaun, Ko, and Satoru Onodera, brothers incarcerated at Minidoka, volunteer for the Army while the entire family looks on.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "These four brothers, Kenny, Chester, Ted, and Howard Sakura, all volunteered for service in the 442nd regimental combat team of the United States Army while incarcerated at Minidoka. ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Buddhist funeral for a fallen soldier in a Minidoka recreation hall ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "North Side Canal",
+    "prefix": "north side canal",
+    "detail": "Bureau of Reclamation irrigation canal.",
+    "subDetail": "Learn about the role of water at Minidoka and its unlikely source.",
+    "coordinates": [
+      {
+        "latitude": 42.67773,
+        "longitude": -114.2512
+      }
+    ],
+    "text": [
+      {
+        "name": "North Side Canal",
+        "file": "north-side-canal-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Hunt Bridge and the North Side Canal. 2015."
+      },
+      {
+        "caption": "Original WRA caption: A view of the Twin Falls North Side Canal which borders this War Relocation Authority center on the south. 1942.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Original WRA caption: Establishing irrigation controls, land reclamation. June 1944.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "name": "Hospital",
+    "prefix": "hospital",
+    "detail": "Former hospital site.",
+    "subDetail": "Learn about historic hospital operations at Minidoka in an area that now serves as farmland.",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25135
+      }
+    ],
+    "text": [
+      {
+        "name": "Hospital",
+        "file": "hospital-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Minidoka War Relocation Center hospital nursery. December 1942.",
+        "credit": "Courtesy of the National Archives and Records Administration "
+      },
+      {
+        "caption": "Minidoka War Relocation Center dentist, Doctor T. Nakamura. December 1942.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Minidoka Irrigator article praises hospital operations, September 1943.",
+        "credit": "Contributed by Densho, Courtesy of Cherry Kinoshita"
+      },
+      {
+        "caption": "Nikkei hospital staff. High school students often worked part time as nurses' aides. June 1943.",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      },
+      {
+        "caption": "Patients at Minidoka War Relocation Center hospital. November 1942.",
+        "credit": "Courtesy of Oregon Nikkei Endowment, ONLC 112"
+      }
+    ]
+  },
+  {
+    "name": "Military Police Area",
+    "prefix": "military-police-area",
+    "detail": "Historic entrance area and guard station.",
+    "subDetail": "Immerse yourself in a visit to Minidoka War Relocation Center at the historic camp entrance under the shadow of a guard tower. ",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25103
+      }
+    ],
+    "text": [
+      {
+        "name": "Military Police Area",
+        "file": "military-police-area-1"
+      },
+      {
+        "name": "At the Gate ",
+        "file": "military-police-area-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Ruins of Military Police entrance station. 2015."
+      },
+      {
+        "caption": "Ruins of Military Police visitor reception area. 2015."
+      },
+      {
+        "caption": "Camp entrance area. Entrance station at left, reception area at right.",
+        "credit": "Courtesy of NPS, Koyama Collection"
+      },
+      {
+        "caption": "Unidentified member of Military Police poses by entrance station.",
+        "credit": "Courtesy of NPS, Koyama Collection "
+      },
+      {
+        "caption": "Camp entrance area with buses. ",
+        "credit": "Courtesy of the National Archives and Records Administration"
+      }
+    ]
+  },
+  {
+    "prefix": "guard-tower",
+    "name": "Guard Tower",
+    "detail": "Historic guard tower reconstruction.\n",
+    "subDetail": "Stop at the historic camp entrance to see a reconstructed guard tower and get a sense of confinement that incarcerees were faced with.",
+    "coordinates": [
+      {
+        "latitude": 42.67793,
+        "longitude": -114.2515
+      }
+    ],
+    "text": [
+      {
+        "name": "Sentries in the Sage",
+        "file": "guard-tower-1"
+      },
+      {
+        "name": "Symbols of confinement",
+        "file": "guard-tower-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Entrance to Minidoka. 1944.",
+        "credit": "Contributed by Densho, courtesy of the Mitsuoka Family Collection\n"
+      }
+    ]
+  }
 ]
