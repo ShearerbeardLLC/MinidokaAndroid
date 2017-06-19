@@ -21,7 +21,7 @@ class Sites extends Component {
 			dataSource: dataSource.cloneWithRows(sitesData)
     };
 
-    /* this.handlePress = this.handlePress.bind(this);*/
+    this.handlePress = this.handlePress.bind(this);
   }
 
   handlePress(site) {
@@ -33,7 +33,10 @@ class Sites extends Component {
       <ListView contentContainerStyle={ styles.container }
         dataSource={ this.state.dataSource }
         renderRow={ site =>
-          <Text key={ site.prefix } onPress={ () => this.handlePress(site) }>{ site.name }</Text>
+					<View key={ site.prefix }>
+						<Text onPress={ () => this.handlePress(site) }>{ site.name }</Text>
+						<Text onPress={ () => this.handlePress(site) }>{ site.detail }</Text>
+					</View>
         }
       />
     );
