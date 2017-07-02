@@ -32,7 +32,8 @@ export default class Map extends Component {
 		super(...args);
 
 		this.state = {
-			region: DEFAULT_LOCATION
+			region: DEFAULT_LOCATION,
+			stuff: "Start"
 		};
 
 		this.onRegionChange = this.onRegionChange.bind(this);
@@ -44,6 +45,10 @@ export default class Map extends Component {
 		});
 	}
 
+	onPress(key, i) {
+		console.warn('On Press', key, i);
+	}
+
 	render() {
 		return (
 			<View style={ styles.container }>
@@ -52,17 +57,20 @@ export default class Map extends Component {
 					region={ this.state.region }
 					onRegionChange={ this.onRegionChange }>
 				{ sitesData
-					.map(({prefix, name, detail, coordinates}) =>
+					.map(({prefix, name, detail, coordinates}, i) =>
 						<MapView.Marker
+							id={ prefix }
 							key={ prefix }
 							title={ name }
 							description={ detail }
+							onPress={ () => this.onPress.bind(this)(prefix, i) }
 							coordinate={{
 								latitude: coordinates[0].latitude,
 								longitude: coordinates[0].longitude
 						}} />)
 					}
 				</MapView>
+				<Text>{ this.state.stuff }</Text>
 			</View>
 		);
 	}
