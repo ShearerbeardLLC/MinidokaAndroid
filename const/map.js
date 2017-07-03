@@ -1,41 +1,20 @@
 import sitesData from "./sites.json";
 
-const DELTA_Y_FACTOR = 1.5;
+import { Dimensions } from "react-native";
 
-function regionContainingPoints(points) {
-	var minX, maxX, minY, maxY;
+const { width, height } = Dimensions.get("window");
 
-	// init first point
-	((point) => {
-		minX = point.latitude;
-		maxX = point.latitude;
-		minY = point.longitude;
-		maxY = point.longitude;
-	})(points[0]);
+const ASPECT_RATIO = width / height;
 
-	// calculate rect
-	points.map((point) => {
-		minX = Math.min(minX, point.latitude);
-		maxX = Math.max(maxX, point.latitude);
-		minY = Math.min(minY, point.longitude);
-		maxY = Math.max(maxY, point.longitude);
-	});
+const LATITUDE_DELTA = 0.0922;
+const LONGITUDE_DELTA = LATITUDE_DELTA * ASPECT_RATIO;
 
-	var midX = (minX + maxX) / 2;
-	var midY = (minY + maxY) / 2;
-
-	var deltaX = (maxX - minX);
-	var deltaY = (maxY - minY);
-
-	return {
-		latitude: midX, longitude: midY,
-		latitudeDelta: deltaX, longitudeDelta: deltaY * DELTA_Y_FACTOR,
-	};
-}
-
-const DEFAULT_LOCATION = regionContainingPoints(
-	sitesData.map(({coordinates}) => coordinates[0])
-);
+const DEFAULT_LOCATION = {
+	latitude: 42.6777,
+	longitude: -114.25,
+	latitudeDelta: LATITUDE_DELTA,
+	longitudeDelta: LONGITUDE_DELTA
+};
 
 export {
 	DEFAULT_LOCATION

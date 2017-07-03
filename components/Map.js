@@ -15,6 +15,9 @@ import {
 import {
 	DEFAULT_LOCATION
 } from "../const/map";
+
+import { getCurrent, watch, unWatch } from "../util/navigation";
+
 import sitesData from "../const/sites.json";
 
 import { Actions } from "react-native-router-flux";
@@ -35,18 +38,37 @@ const styles = StyleSheet.create({
   },
 });
 
+const REGION_EDGE_PADDING = 100;
+
 export default class Map extends Component {
 	constructor(...args) {
 		super(...args);
 
 		this.state = {
-			region: DEFAULT_LOCATION
+			region: DEFAULT_LOCATION,
+			hasLocation: false,
+			trackingLocation: false
 		};
 
 		this.onPress = this.onPress.bind(this);
 		this.onCalloutPress = this.onCalloutPress.bind(this);
 		this.onRegionChange = this.onRegionChange.bind(this);
-		this.onResetRegion = this.onResetRegion.bind(this);
+		this.onFitToRegion = this.onFitToRegion.bind(this);
+		this.onTrackLocation = this.onTrackLocation.bind(this);
+		this.toggleTrackingLocation = this.toggleTrackingLocation.bind(this);
+
+		this.handleLocation = this.handleLocation.bind(this);
+		this.handleLocationError = this.handleLocationError.bind(this);
+	}
+
+	componentDidMount() {
+		getCurrent(this.handleLocation, this.handleLocationError);
+		this.watchId = watch(this.handleLocation, this.handleLocationError);
+		setTimeout(this.onFitToRegion, 1000);
+	}
+
+	siteToCords({coordinates}) {
+		return coordinates[0];
 	}
 
 	onPress(i) {
@@ -62,10 +84,57 @@ export default class Map extends Component {
 		this.setState({ region });
 	}
 
-	onResetRegion() {
+	handleLocation({latitude, longitude}) {
+		if (this.state.trackingLocation === true) {
+			console.warn("Handle Tracking => latitude, longitude", latitude, longitude);
+			this.setState({
+				region: Object.assign(this.state.region, {
+					latitude,
+					longitude
+				}),
+				hasLocation: true,
+				trackingError: null,
+			});
+		} else {
+			console.warn("Don't Handle Tracking => latitude, longitude", latitude, longitude);
+		}
+	}
+
+	handleLocationError(error) {
+		if (this.state.trackingLocation === true) {
+			this.setState({
+				hasLocation: false,
+				trackingError: error.message
+			});
+		}
+	}
+
+	toggleTrackingLocation() {
 		this.setState({
-			region: DEFAULT_LOCATION
+			trackingLocation: !this.state.trackingLocation,
+			hasLocation: this.state.hasLocation ? false : this.state.hasLocation
 		});
+	}
+
+	onFitToRegion() {
+		this.map.fitToCoordinates(sitesData.map(this.siteToCords), {
+			edgePadding: {
+				top: REGION_EDGE_PADDING,
+				right: REGION_EDGE_PADDING,
+				bottom: REGION_EDGE_PADDING,
+				left: REGION_EDGE_PADDING
+			},
+			animated: true,
+    });
+
+		this.setState({
+			hasLocation: false,
+			trackingLocation: false
+		});
+	}
+
+	onTrackLocation() {
+		this.setState({trackingLocation: true});
 	}
 
 	render() {
@@ -73,6 +142,7 @@ export default class Map extends Component {
 			<View style={ styles.container }>
 				<MapView
 					style={ styles.map }
+					ref={ref => { this.map = ref; }}
 					initialRegion={ this.state.region }
 					onRegionChange={ this.onRegionChange }>
 				{ sitesData
@@ -96,10 +166,10 @@ export default class Map extends Component {
 				}
 				</MapView>
 				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
-          <ActionButton.Item buttonColor='#3498db' title="Reset" onPress={() => {}}>
+          <ActionButton.Item buttonColor='#3498db' title="Reset" onPress={ this.onFitToRegion }>
             <Icon name="md-refresh" style={styles.actionButtonIcon} />
           </ActionButton.Item>
-          <ActionButton.Item buttonColor='#1abc9c' title="Toggle Location" onPress={() => {}}>
+          <ActionButton.Item buttonColor='#1abc9c' title="Toggle Location" onPress={ this.toggleTrackingLocation }>
             <Icon name="md-navigate" style={styles.actionButtonIcon} />
           </ActionButton.Item>
         </ActionButton>
