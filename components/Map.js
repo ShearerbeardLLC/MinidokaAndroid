@@ -1,15 +1,18 @@
 
 import React, { Component } from "react";
-import { View, Dimensions, StyleSheet} from 'react-native';
+import { Text, View, Dimensions, StyleSheet} from 'react-native';
 
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
 import { Actions } from "react-native-router-flux";
-import MapView from 'react-native-maps';
+import MapView from "react-native-maps";
 
 import { DEFAULT_LOCATION } from "../const/map";
 import { getCurrent, watch, unWatch } from "../util/navigation";
+import MapPinMarker from '../components/MapPinMarker';
 import sitesData from "../const/sites.json";
+
+import { siteToCoords } from "../util/site";
 
 const REGION_EDGE_PADDING = 100;
 const EDGE_PADDING = {
@@ -39,6 +42,12 @@ const styles = StyleSheet.create({
 		fontSize: 40,
 		height: 44,
 		color: 'blue'
+	},
+	numberMaker: {
+		...StyleSheet.absoluteFillObject,
+		textAlign: 'center',
+		color: 'white',
+		fontWeight: '900'
 	}
 });
 
@@ -77,14 +86,10 @@ export default class Map extends Component {
 		setTimeout(this.onFitToRegion, 1000);
 	}
 
-	siteToCords({coordinates}) {
-		return coordinates[0];
-	}
-
 	getSiteCords(location) {
-		let coords = sitesData.map(this.siteToCords);
+		let coords = sitesData.map(siteToCoords);
 
-		if(location) {
+		if (location) {
 			coords.push(location)
 		}
 
@@ -104,18 +109,15 @@ export default class Map extends Component {
 		this.setState({region});
 	}
 
-	handleLocation({latitude, longitude}, override = false) {
+	handleLocation({latitude, longitude}) {
 		this.setState({
 			currentLatitude: latitude,
 			currentLongitude: longitude,
 			hasLocation: true
 		});
 
-		if (override || this.state.trackingLocation === true) {
-			this.map.fitToCoordinates(this.getSiteCords({latitude,longitude}), {
-				edgePadding: EDGE_PADDING,
-				animated: true,
-			});
+		if (this.state.trackingLocation === true) {
+			this.map.animateToCoordinate({latitude, longitude});
 		}
 	}
 
@@ -128,13 +130,16 @@ export default class Map extends Component {
 
 	toggleTrackingLocation() {
 
-		if(this.state.trackingLocation === true) {
-			this.onFitToRegion();
-		} else if (this.state.hasLocation) {
-			this.handleLocation({
+		if (this.state.trackingLocation === false && this.state.hasLocation) {
+			const location = {
 				latitude: this.state.currentLatitude,
 				longitude: this.state.currentLongitude
-			}, true);
+			};
+
+			this.onFitToRegion(location);
+			setTimeout(() => this.map.animateToCoordinate(location), 200);
+		}	else {
+			this.onFitToRegion();
 		}
 
 		this.setState({
@@ -143,15 +148,17 @@ export default class Map extends Component {
 
 	}
 
-	onFitToRegion() {
-		this.map.fitToCoordinates(this.getSiteCords(), {
+	onFitToRegion(location) {
+		this.map.fitToCoordinates( location ? this.getSiteCords(location) : this.getSiteCords(), {
 			edgePadding: EDGE_PADDING,
 			animated: true,
 		});
 
-		this.setState({
-			trackingLocation: false
-		});
+		if (!location) {
+			this.setState({
+				trackingLocation: false
+			});
+		}
 	}
 
 	onTrackLocation() {
@@ -160,19 +167,13 @@ export default class Map extends Component {
 		});
 	}
 
-	renderSitePin(site) {
-		const {prefix, name, detail} = site;
-		const { latitude, longitude } = this.siteToCords(site);
-
+	renderSitePin(site, i) {
 		return (
-			<MapView.Marker
-				id={ prefix }
-				key={ prefix }
-				title={ name }
-				description={ detail }
+			<MapPinMarker
+				key={ site.prefix }
+				site={ site }
 				onPress={ () => this.onPress(i) }
 				onCalloutPress={ () => this.onCalloutPress(site) }
-				coordinate={{latitude, longitude}}
 			/>
 		);
 	}
