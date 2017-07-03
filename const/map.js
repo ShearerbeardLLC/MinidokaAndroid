@@ -1,5 +1,7 @@
 import sitesData from "./sites.json";
 
+const DELTA_Y_FACTOR = 1.5;
+
 function regionContainingPoints(points) {
 	var minX, maxX, minY, maxY;
 
@@ -21,14 +23,13 @@ function regionContainingPoints(points) {
 
 	var midX = (minX + maxX) / 2;
 	var midY = (minY + maxY) / 2;
-	var midPoint = [midX, midY];
 
 	var deltaX = (maxX - minX);
 	var deltaY = (maxY - minY);
 
 	return {
 		latitude: midX, longitude: midY,
-		latitudeDelta: deltaX, longitudeDelta: deltaY * 1.5,
+		latitudeDelta: deltaX, longitudeDelta: deltaY * DELTA_Y_FACTOR,
 	};
 }
 

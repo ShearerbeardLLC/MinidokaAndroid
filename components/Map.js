@@ -7,7 +7,7 @@ import {
 	View
 } from 'react-native';
 import {
-	StyleSheet
+	StyleSheet,
 } from 'react-native';
 import {
 	DEFAULT_LOCATION
@@ -17,8 +17,6 @@ import sitesData from "../const/sites.json";
 const styles = StyleSheet.create({
 	container: {
 		...StyleSheet.absoluteFillObject,
-		height: 400,
-		width: 400,
 		justifyContent: 'flex-end',
 		alignItems: 'center',
 	},
@@ -35,11 +33,13 @@ export default class Map extends Component {
 			region: DEFAULT_LOCATION
 		};
 
+		this.onPress = this.onPress.bind(this);
 		this.onRegionChange = this.onRegionChange.bind(this);
+		this.onResetRegion = this.onResetRegion.bind(this);
 	}
 
 	onPress(key, i) {
-		console.warn('On Press', key, i);
+		console.warn('On Press => ' + i);
 	}
 
 	onRegionChange(region) {
@@ -66,7 +66,7 @@ export default class Map extends Component {
 							key={ prefix }
 							title={ name }
 							description={ detail }
-							onPress={ () => this.onPress.bind(this)(prefix, i) }
+							onPress={ () => this.onPress(prefix, i) }
 							coordinate={{
 								latitude: coordinates[0].latitude,
 								longitude: coordinates[0].longitude
