@@ -1,37 +1,25 @@
+
+import React, { Component } from "react";
+import { View, Dimensions, StyleSheet} from 'react-native';
+
 import ActionButton from 'react-native-action-button';
 import Icon from 'react-native-vector-icons/Ionicons';
-
-import React, {
-	Component
-} from "react";
+import { Actions } from "react-native-router-flux";
 import MapView from 'react-native-maps';
-import {
-	Text,
-	View,
-	Dimensions,
-	StyleSheet,
-} from 'react-native';
 
-import {
-	DEFAULT_LOCATION
-} from "../const/map";
-
-import {
-	getCurrent,
-	watch,
-	unWatch
-} from "../util/navigation";
-
+import { DEFAULT_LOCATION } from "../const/map";
+import { getCurrent, watch, unWatch } from "../util/navigation";
 import sitesData from "../const/sites.json";
 
-import {
-	Actions
-} from "react-native-router-flux";
+const REGION_EDGE_PADDING = 100;
+const EDGE_PADDING = {
+	top: REGION_EDGE_PADDING,
+	right: REGION_EDGE_PADDING,
+	bottom: REGION_EDGE_PADDING,
+	left: REGION_EDGE_PADDING
+};
 
-const {
-	width,
-	height
-} = Dimensions.get("window");
+const { width, height } = Dimensions.get("window");
 
 const styles = StyleSheet.create({
 	container: {
@@ -47,9 +35,13 @@ const styles = StyleSheet.create({
 		height: 22,
 		color: 'white',
 	},
+	locationIcon: {
+		fontSize: 40,
+		height: 44,
+		color: 'blue'
+	}
 });
 
-const REGION_EDGE_PADDING = 100;
 
 export default class Map extends Component {
 	constructor(...args) {
@@ -62,6 +54,8 @@ export default class Map extends Component {
 			trackingLocation: false
 		};
 
+		this.getSiteCords = this.getSiteCords.bind(this);
+
 		this.onPress = this.onPress.bind(this);
 		this.onCalloutPress = this.onCalloutPress.bind(this);
 		this.onRegionChange = this.onRegionChange.bind(this);
@@ -71,6 +65,10 @@ export default class Map extends Component {
 
 		this.handleLocation = this.handleLocation.bind(this);
 		this.handleLocationError = this.handleLocationError.bind(this);
+
+		this.renderLocationMarker = this.renderLocationMarker.bind(this);
+		this.renderSites = this.renderSites.bind(this);
+		this.renderSitePin = this.renderSitePin.bind(this);
 	}
 
 	componentDidMount() {
@@ -79,10 +77,18 @@ export default class Map extends Component {
 		setTimeout(this.onFitToRegion, 1000);
 	}
 
-	siteToCords({
-		coordinates
-	}) {
+	siteToCords({coordinates}) {
 		return coordinates[0];
+	}
+
+	getSiteCords(location) {
+		let coords = sitesData.map(this.siteToCords);
+
+		if(location) {
+			coords.push(location)
+		}
+
+		return coords;
 	}
 
 	onPress(i) {
@@ -91,17 +97,14 @@ export default class Map extends Component {
 
 	onCalloutPress(site) {
 		console.warn('On Callout Press => ' + site.prefix);
-		Actions.mapSite({ ...site
-		});
+		Actions.mapSite({ ...site });
 	}
 
 	onRegionChange(region) {
-		this.setState({
-			region
-		});
+		this.setState({region});
 	}
 
-	handleLocation({latitude, longitude}, override) {
+	handleLocation({latitude, longitude}, override = false) {
 		this.setState({
 			currentLatitude: latitude,
 			currentLongitude: longitude,
@@ -109,13 +112,8 @@ export default class Map extends Component {
 		});
 
 		if (override || this.state.trackingLocation === true) {
-			this.map.fitToCoordinates([{latitude,longitude}].concat(sitesData.map(this.siteToCords)), {
-				edgePadding: {
-					top: REGION_EDGE_PADDING,
-					right: REGION_EDGE_PADDING,
-					bottom: REGION_EDGE_PADDING,
-					left: REGION_EDGE_PADDING
-				},
+			this.map.fitToCoordinates(this.getSiteCords({latitude,longitude}), {
+				edgePadding: EDGE_PADDING,
 				animated: true,
 			});
 		}
@@ -146,18 +144,12 @@ export default class Map extends Component {
 	}
 
 	onFitToRegion() {
-		this.map.fitToCoordinates(sitesData.map(this.siteToCords), {
-			edgePadding: {
-				top: REGION_EDGE_PADDING,
-				right: REGION_EDGE_PADDING,
-				bottom: REGION_EDGE_PADDING,
-				left: REGION_EDGE_PADDING
-			},
+		this.map.fitToCoordinates(this.getSiteCords(), {
+			edgePadding: EDGE_PADDING,
 			animated: true,
 		});
 
 		this.setState({
-			hasLocation: false,
 			trackingLocation: false
 		});
 	}
@@ -168,6 +160,47 @@ export default class Map extends Component {
 		});
 	}
 
+	renderSitePin(site) {
+		const {prefix, name, detail} = site;
+		const { latitude, longitude } = this.siteToCords(site);
+
+		return (
+			<MapView.Marker
+				id={ prefix }
+				key={ prefix }
+				title={ name }
+				description={ detail }
+				onPress={ () => this.onPress(i) }
+				onCalloutPress={ () => this.onCalloutPress(site) }
+				coordinate={{latitude, longitude}}
+			/>
+		);
+	}
+
+	renderLocationMarker() {
+		const coordinate = {
+			latitude: this.state.currentLatitude,
+			longitude: this.state.currentLongitude
+		};
+
+		return (
+			<MapView.Marker id="me" key="me" coordinate={coordinate}>
+				<Icon name="md-locate" style={styles.locationIcon} />
+			</MapView.Marker>
+		);
+	}
+
+	renderSites() {
+		const { trackingLocation, hasLocation } = this.state;
+		const sites = sitesData.map(this.renderSitePin);
+
+		if (trackingLocation === true && hasLocation === true) {
+			sites.push(this.renderLocationMarker());
+		}
+
+		return sites;
+	}
+
 	render() {
 		return (
 			<View style={ styles.container }>
@@ -176,25 +209,7 @@ export default class Map extends Component {
 					ref={ref => { this.map = ref; }}
 					initialRegion={ DEFAULT_LOCATION }
 					onRegionChange={ this.onRegionChange }>
-				{ sitesData
-					.map((site, i) => {
-						const {prefix, name, detail, coordinates} = site;
-
-						return (
-							<MapView.Marker
-								id={ prefix }
-								key={ prefix }
-								title={ name }
-								description={ detail }
-								onPress={ () => this.onPress(i) }
-								onCalloutPress={ () => this.onCalloutPress(site) }
-								coordinate={{
-									latitude: coordinates[0].latitude,
-									longitude: coordinates[0].longitude
-							}} />
-						);
-					})
-				}
+					{ this.renderSites() }
 				</MapView>
 				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
 					<ActionButton.Item buttonColor='#3498db' title="Reset" onPress={ this.onFitToRegion }>
