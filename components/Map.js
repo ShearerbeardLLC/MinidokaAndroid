@@ -1,3 +1,6 @@
+import ActionButton from 'react-native-action-button';
+import Icon from 'react-native-vector-icons/Ionicons';
+
 import React, {
 	Component
 } from "react";
@@ -14,6 +17,8 @@ import {
 } from "../const/map";
 import sitesData from "../const/sites.json";
 
+import { Actions } from "react-native-router-flux";
+
 const styles = StyleSheet.create({
 	container: {
 		...StyleSheet.absoluteFillObject,
@@ -23,6 +28,11 @@ const styles = StyleSheet.create({
 	map: {
 		...StyleSheet.absoluteFillObject,
 	},
+	actionButtonIcon: {
+		fontSize: 20,
+		height: 22,
+		color: 'white',
+  },
 });
 
 export default class Map extends Component {
@@ -34,12 +44,18 @@ export default class Map extends Component {
 		};
 
 		this.onPress = this.onPress.bind(this);
+		this.onCalloutPress = this.onCalloutPress.bind(this);
 		this.onRegionChange = this.onRegionChange.bind(this);
 		this.onResetRegion = this.onResetRegion.bind(this);
 	}
 
-	onPress(key, i) {
+	onPress(i) {
 		console.warn('On Press => ' + i);
+	}
+
+	onCalloutPress(site) {
+		console.warn('On Callout Press => ' + site.prefix);
+		Actions.mapSite({...site});
 	}
 
 	onRegionChange(region) {
@@ -60,19 +76,33 @@ export default class Map extends Component {
 					initialRegion={ this.state.region }
 					onRegionChange={ this.onRegionChange }>
 				{ sitesData
-					.map(({prefix, name, detail, coordinates}, i) =>
-						<MapView.Marker
-							id={ prefix }
-							key={ prefix }
-							title={ name }
-							description={ detail }
-							onPress={ () => this.onPress(prefix, i) }
-							coordinate={{
-								latitude: coordinates[0].latitude,
-								longitude: coordinates[0].longitude
-						}} />)
-					}
+					.map((site, i) => {
+						const {prefix, name, detail, coordinates} = site;
+
+						return (
+							<MapView.Marker
+								id={ prefix }
+								key={ prefix }
+								title={ name }
+								description={ detail }
+								onPress={ () => this.onPress(i) }
+								onCalloutPress={ () => this.onCalloutPress(site) }
+								coordinate={{
+									latitude: coordinates[0].latitude,
+									longitude: coordinates[0].longitude
+							}} />
+						);
+					})
+				}
 				</MapView>
+				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
+          <ActionButton.Item buttonColor='#3498db' title="Reset" onPress={() => {}}>
+            <Icon name="md-refresh" style={styles.actionButtonIcon} />
+          </ActionButton.Item>
+          <ActionButton.Item buttonColor='#1abc9c' title="Toggle Location" onPress={() => {}}>
+            <Icon name="md-navigate" style={styles.actionButtonIcon} />
+          </ActionButton.Item>
+        </ActionButton>
 			</View>
 		);
 	}

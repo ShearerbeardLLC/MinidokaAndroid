@@ -21,7 +21,11 @@ export default class App extends Component {
               <Scene key="home" title="Home" component={ Home } />
             </Scene>
             <Scene key="mapTab" title="Map" icon={ TabIcon }>
-              <Scene key="map" title="Map" component={ Map } />
+              <Scene key="map" title="Map" component={ Map } initial={ true } />
+							<Scene
+								key="mapSite"
+								getTitle={({name}) => name}
+								component={ Site } />
             </Scene>
             <Scene key="sitesTab" title="Sites" icon={ TabIcon }>
               <Scene key="sites" title="Sites" component={ Sites } initial={ true } />
