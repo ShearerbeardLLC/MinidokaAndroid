@@ -7,20 +7,31 @@ import React, {
 import MapView from 'react-native-maps';
 import {
 	Text,
-	View
-} from 'react-native';
-import {
+	View,
+	Dimensions,
 	StyleSheet,
 } from 'react-native';
+
 import {
 	DEFAULT_LOCATION
 } from "../const/map";
 
-import { getCurrent, watch, unWatch } from "../util/navigation";
+import {
+	getCurrent,
+	watch,
+	unWatch
+} from "../util/navigation";
 
 import sitesData from "../const/sites.json";
 
-import { Actions } from "react-native-router-flux";
+import {
+	Actions
+} from "react-native-router-flux";
+
+const {
+	width,
+	height
+} = Dimensions.get("window");
 
 const styles = StyleSheet.create({
 	container: {
@@ -35,7 +46,7 @@ const styles = StyleSheet.create({
 		fontSize: 20,
 		height: 22,
 		color: 'white',
-  },
+	},
 });
 
 const REGION_EDGE_PADDING = 100;
@@ -45,7 +56,8 @@ export default class Map extends Component {
 		super(...args);
 
 		this.state = {
-			region: DEFAULT_LOCATION,
+			currentLatitude: null,
+			currentLongitude: null,
 			hasLocation: false,
 			trackingLocation: false
 		};
@@ -67,7 +79,9 @@ export default class Map extends Component {
 		setTimeout(this.onFitToRegion, 1000);
 	}
 
-	siteToCords({coordinates}) {
+	siteToCords({
+		coordinates
+	}) {
 		return coordinates[0];
 	}
 
@@ -77,43 +91,58 @@ export default class Map extends Component {
 
 	onCalloutPress(site) {
 		console.warn('On Callout Press => ' + site.prefix);
-		Actions.mapSite({...site});
+		Actions.mapSite({ ...site
+		});
 	}
 
 	onRegionChange(region) {
-		this.setState({ region });
+		this.setState({
+			region
+		});
 	}
 
-	handleLocation({latitude, longitude}) {
-		if (this.state.trackingLocation === true) {
-			console.warn("Handle Tracking => latitude, longitude", latitude, longitude);
-			this.setState({
-				region: Object.assign(this.state.region, {
-					latitude,
-					longitude
-				}),
-				hasLocation: true,
-				trackingError: null,
+	handleLocation({latitude, longitude}, override) {
+		this.setState({
+			currentLatitude: latitude,
+			currentLongitude: longitude,
+			hasLocation: true
+		});
+
+		if (override || this.state.trackingLocation === true) {
+			this.map.fitToCoordinates([{latitude,longitude}].concat(sitesData.map(this.siteToCords)), {
+				edgePadding: {
+					top: REGION_EDGE_PADDING,
+					right: REGION_EDGE_PADDING,
+					bottom: REGION_EDGE_PADDING,
+					left: REGION_EDGE_PADDING
+				},
+				animated: true,
 			});
-		} else {
-			console.warn("Don't Handle Tracking => latitude, longitude", latitude, longitude);
 		}
 	}
 
 	handleLocationError(error) {
-		if (this.state.trackingLocation === true) {
-			this.setState({
-				hasLocation: false,
-				trackingError: error.message
-			});
-		}
+		this.setState({
+			hasLocation: false,
+			trackingError: error.message
+		});
 	}
 
 	toggleTrackingLocation() {
+
+		if(this.state.trackingLocation === true) {
+			this.onFitToRegion();
+		} else if (this.state.hasLocation) {
+			this.handleLocation({
+				latitude: this.state.currentLatitude,
+				longitude: this.state.currentLongitude
+			}, true);
+		}
+
 		this.setState({
 			trackingLocation: !this.state.trackingLocation,
-			hasLocation: this.state.hasLocation ? false : this.state.hasLocation
 		});
+
 	}
 
 	onFitToRegion() {
@@ -125,7 +154,7 @@ export default class Map extends Component {
 				left: REGION_EDGE_PADDING
 			},
 			animated: true,
-    });
+		});
 
 		this.setState({
 			hasLocation: false,
@@ -134,7 +163,9 @@ export default class Map extends Component {
 	}
 
 	onTrackLocation() {
-		this.setState({trackingLocation: true});
+		this.setState({
+			trackingLocation: true
+		});
 	}
 
 	render() {
@@ -143,7 +174,7 @@ export default class Map extends Component {
 				<MapView
 					style={ styles.map }
 					ref={ref => { this.map = ref; }}
-					initialRegion={ this.state.region }
+					initialRegion={ DEFAULT_LOCATION }
 					onRegionChange={ this.onRegionChange }>
 				{ sitesData
 					.map((site, i) => {
@@ -166,13 +197,13 @@ export default class Map extends Component {
 				}
 				</MapView>
 				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
-          <ActionButton.Item buttonColor='#3498db' title="Reset" onPress={ this.onFitToRegion }>
-            <Icon name="md-refresh" style={styles.actionButtonIcon} />
-          </ActionButton.Item>
-          <ActionButton.Item buttonColor='#1abc9c' title="Toggle Location" onPress={ this.toggleTrackingLocation }>
-            <Icon name="md-navigate" style={styles.actionButtonIcon} />
-          </ActionButton.Item>
-        </ActionButton>
+					<ActionButton.Item buttonColor='#3498db' title="Reset" onPress={ this.onFitToRegion }>
+						<Icon name="md-refresh" style={styles.actionButtonIcon} />
+					</ActionButton.Item>
+					<ActionButton.Item buttonColor='#1abc9c' title={ this.state.trackingLocation ? "Disable Location" : "Enable Location" } onPress={ this.toggleTrackingLocation }>
+						<Icon name="md-navigate" style={styles.actionButtonIcon} />
+					</ActionButton.Item>
+				</ActionButton>
 			</View>
 		);
 	}
