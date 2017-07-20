@@ -10,6 +10,7 @@ import MapView from "react-native-maps";
 import { DEFAULT_LOCATION } from "../const/map";
 import { getCurrent, watch, unWatch } from "../util/navigation";
 import MapPinMarker from '../components/MapPinMarker';
+import MapLocationMarker from "../components/MapLocationMarker"
 import sitesData from "../const/sites.json";
 
 import { siteToCoords } from "../util/site";
@@ -38,11 +39,6 @@ const styles = StyleSheet.create({
 		height: 22,
 		color: 'white',
 	},
-	locationIcon: {
-		fontSize: 40,
-		height: 44,
-		color: 'blue'
-	},
 	numberMaker: {
 		...StyleSheet.absoluteFillObject,
 		textAlign: 'center',
@@ -65,9 +61,7 @@ export default class Map extends Component {
 
 		this.getSiteCords = this.getSiteCords.bind(this);
 
-		this.onPress = this.onPress.bind(this);
 		this.onCalloutPress = this.onCalloutPress.bind(this);
-		this.onRegionChange = this.onRegionChange.bind(this);
 		this.onFitToRegion = this.onFitToRegion.bind(this);
 		this.onTrackLocation = this.onTrackLocation.bind(this);
 		this.toggleTrackingLocation = this.toggleTrackingLocation.bind(this);
@@ -96,17 +90,9 @@ export default class Map extends Component {
 		return coords;
 	}
 
-	onPress(i) {
-		console.warn('On Press => ' + i);
-	}
 
 	onCalloutPress(site) {
-		console.warn('On Callout Press => ' + site.prefix);
 		Actions.mapSite({ ...site });
-	}
-
-	onRegionChange(region) {
-		this.setState({region});
 	}
 
 	handleLocation({latitude, longitude}) {
@@ -172,7 +158,6 @@ export default class Map extends Component {
 			<MapPinMarker
 				key={ site.prefix }
 				site={ site }
-				onPress={ () => this.onPress(i) }
 				onCalloutPress={ () => this.onCalloutPress(site) }
 			/>
 		);
@@ -184,11 +169,7 @@ export default class Map extends Component {
 			longitude: this.state.currentLongitude
 		};
 
-		return (
-			<MapView.Marker id="me" key="me" coordinate={coordinate}>
-				<Icon name="md-locate" style={styles.locationIcon} />
-			</MapView.Marker>
-		);
+    return <MapLocationMarker key="me" coordinate={coordinate} />;
 	}
 
 	renderSites() {
@@ -208,8 +189,7 @@ export default class Map extends Component {
 				<MapView
 					style={ styles.map }
 					ref={ref => { this.map = ref; }}
-					initialRegion={ DEFAULT_LOCATION }
-					onRegionChange={ this.onRegionChange }>
+					initialRegion={ DEFAULT_LOCATION }>
 					{ this.renderSites() }
 				</MapView>
 				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
