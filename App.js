@@ -1,4 +1,3 @@
-
 import React, { Component } from "react";
 import { Router, Scene, Actions } from "react-native-router-flux";
 
