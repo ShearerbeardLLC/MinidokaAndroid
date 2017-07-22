@@ -1,0 +1,903 @@
+[
+  {
+    "name": "軍事警察区域",
+    "prefix": "military-police-area",
+    "detail": "歴史的な入口の監視塔。",
+    "subDetail": "監視塔が見下ろす歴史的なキャンプの入り口で、ミニドカ戦争移住センターの当時の生活に想いを馳せて見ましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25103
+      }
+    ],
+    "text": [
+      {
+        "name": "軍事警察区域",
+        "file": "military-police-area-1"
+      },
+      {
+        "name": "門にて",
+        "file": "military-police-area-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "軍警察の入り口の跡。2015年。"
+      },
+      {
+        "caption": "軍事警察訪問者受付の跡。2015年。"
+      },
+      {
+        "caption": "キャンプ入り口付近。左側にあるのが入り口、右側にあるのが受付。",
+        "credit": "NPS、コヤマコレクションのご厚意による"
+      },
+      {
+        "caption": "入り口でポーズをとるある軍警察官。",
+        "credit": "NPS、コヤマコレクションのご厚意による"
+      },
+      {
+        "caption": "キャンプの入り口の低木。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "軍事警察区域",
+        "transcript": "ja_military-police-area-transcript-1",
+        "credit": "Densho Digital Archive \nBainbridge Island Japanese American Community Collection "
+      }
+    ]
+  },
+  {
+    "name": "監視塔",
+    "prefix": "guard-tower",
+    "detail": "歴史的な監視塔の再建。",
+    "subDetail": "キャンプの入り口で立ち止まって、再建された監視塔を見て、非抑留者が直面した閉塞感を想像してみましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67793,
+        "longitude": -114.2515
+      }
+    ],
+    "text": [
+      {
+        "name": "セージの歩哨",
+        "file": "guard-tower-1"
+      },
+      {
+        "name": "監禁のシンボル",
+        "file": "guard-tower-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "再建された入り口監視塔。2015年。"
+      },
+      {
+        "caption": "ミニドカへの入り口。1944年。",
+        "credit": "ミツオカ家コレクションのご厚意により、Denshoが寄贈"
+      }
+    ]
+  },
+  {
+    "name": "ノースサイド運河",
+    "prefix": "north side canal",
+    "detail": "開拓局灌漑用運河",
+    "subDetail": "ミニドカでの水の役割と、その思いもしないような水源について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67773,
+        "longitude": -114.2512
+      }
+    ],
+    "text": [
+      {
+        "name": "ノースサイド運河",
+        "file": "north-side-canal-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "\nハント橋とノースサイド運河。2015年。"
+      },
+      {
+        "caption": "元のWRAキャプション: 南に戦争移住局センターと接する、ツインフォールズとノースサイド運河の眺め。1942年",
+        "credit": "ハント橋とノースサイド運河。2015年。"
+      },
+      {
+        "caption": "元のWRAキャプション: 灌漑管理と土地開拓の確立。1944年6月。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ]
+  },
+  {
+    "name": "病院",
+    "prefix": "hospital",
+    "detail": "元の病院のあった場所。",
+    "subDetail": "現在農場となっている場所にあった、ミニドカの歴史的な病院の運営について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25135
+      }
+    ],
+    "text": [
+      {
+        "name": "病院",
+        "file": "hospital-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "ミニドカ戦争移住センター病院の保育園。1942年12月。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカ戦争移転センター歯科医、ナカムラ医師。1942年12月。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "1943年9月に掲載されたMinidoka Irrigatorの記事では、病院の運営について賞賛する記事を掲載しています。",
+        "credit": "Courtesy of Cherry Kinoshitaのご厚意により、Denshoが寄贈"
+      },
+      {
+        "caption": "日系人の病院スタッフ。高校生がしばしば看護師補佐としてアルバイトをしました。1943年6月",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカ戦争移住センター病院の患者。1942年11月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 112のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー マベル ショウジ ボグス",
+        "transcript": "ja_hospital-transcript-1",
+        "credit": "Densho Digital Archive\nOregon Nikkei Endowment Collection"
+      }
+    ]
+  },
+  {
+    "name": "戦没者記念碑",
+    "prefix": "honor-roll",
+    "detail": "軍事記念碑の再建",
+    "subDetail": "再建された軍事記念碑を訪ねたら、様々な愛国心の表現と、収容所にいる間の兵役の皮肉について理解しましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67825,
+        "longitude": -114.25061
+      }
+    ],
+    "text": [
+      {
+        "name": "戦没者記念碑",
+        "file": "honor-roll-1"
+      },
+      {
+        "name": "忠誠心の質問状",
+        "file": "honor-roll-2"
+      },
+      {
+        "name": "兵役",
+        "file": "honor-roll-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "再建された記念碑。2015年。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "元の記念碑の歴史的な写真。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "オノデラ カウン、コウ、サトルの兄弟は、ミニドカに収容されていたが、家族全員が見守る中、陸軍に志願しました。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ケニー、チェスター、テッド、そしてハワード サクラのこの4人兄弟は、ミニドカ収容中、全員米国陸軍の442連隊戦闘団に志願しました。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミネドか収容所ホールで行われた戦没者の仏式葬儀 ",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー トシ ヤスタケ",
+        "transcript": "honor-roll-transcript-1",
+        "credit": "Densho Digital Archive"
+      },
+      {
+        "name": "インタビュー ツゴウ「イケ」イケダ",
+        "transcript": "honor-roll-transcript-2",
+        "credit": "Densho Digital Archive"
+      }
+    ]
+  },
+  {
+    "name": "管理区域",
+    "prefix": "administrative-area",
+    "detail": "ミニドカの管理",
+    "subDetail": "管理区域のサイトを訪ねて、ミニドカのWRA従業員としての生活を学んでください。",
+    "coordinates": [
+      {
+        "latitude": 42.67847,
+        "longitude": -114.2499
+      }
+    ],
+    "text": [
+      {
+        "name": "管理区域",
+        "file": "administrative-area-1"
+      },
+      {
+        "name": "スタッフの体験",
+        "file": "administrative-area-2"
+      },
+      {
+        "name": "日系人に対する態度",
+        "file": "administrative-area-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "管理区域 1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "WRAスタッフの住居。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "42-44ブロックのマネージャーであるツラ ナカムラ氏が、儀式用の鯛をプロジェクトディレクターH.L. Stafford氏とアシスタントプロジェクトディレクターのPhilip Schafer氏に手渡しています。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカ戦争移住センター、プロジェクトディレクター、H.L. Stafford 1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ]
+  },
+  {
+    "name": "消防署",
+    "prefix": "fire-station-one",
+    "detail": "歴史的な消防署。",
+    "subDetail": "この歴史的な消防署を訪れて、非抑留者消防士としての生活について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.68067,
+        "longitude": -114.24607
+      }
+    ],
+    "text": [
+      {
+        "name": "家としての消防署",
+        "file": "fire-station-1"
+      },
+      {
+        "name": "現場で",
+        "file": "fire-station-2"
+      },
+      {
+        "name": "第二消防署",
+        "file": "fire-station-3"
+      },
+      {
+        "name": "女性消防士",
+        "file": "fire-station-4"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "第一消防署。2015年。"
+      },
+      {
+        "caption": "第一消防署。2015年。"
+      },
+      {
+        "caption": "消防署員、第一消防署前で。1944年。",
+        "credit": "マミヤ家コレクションのご厚意により、Denshoが寄贈"
+      },
+      {
+        "caption": "元のWRAのキャプション: 活動中の第一消防署の署員。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "第二消防署の前の女性（氏名不明） 1942年11月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 93のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ショウスケ ササキ",
+        "transcript": "ja_fire-station-transcript-1",
+        "credit": "Densho Digital Archive"
+      }
+    ]
+  },
+  {
+    "name": "ヘルマンハウス",
+    "prefix": "herrmann-house ",
+    "detail": "戦後の農家。",
+    "subDetail": "1950年代の家を訪ねて、戦後の土地の利用と収容所であった土地の開発について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.6805,
+        "longitude": -114.24574
+      }
+    ],
+    "text": [
+      {
+        "name": "開墾",
+        "file": "herrmann-house-1"
+      },
+      {
+        "name": "Farm-in-a-Day",
+        "file": "herrmann-house-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "ヘルマンハウス 2015年。"
+      },
+      {
+        "caption": "歴史的なバラックの一部。Herrmann家の搾乳場。2015年。"
+      },
+      {
+        "caption": "Farm-in-a-Dayイベントのプログラム。",
+        "credit": "ミニドカNHSミュージアムコレクション"
+      },
+      {
+        "caption": "ジョンとエルフレイダ ヘルマン 1952年4月17日。",
+        "credit": "Jerome County Historical Society Collections."
+      },
+      {
+        "caption": "地元の団体が飲み物を提供しているところ。1952年4月17日。",
+        "credit": "Jerome County Historical Society Collections."
+      },
+      {
+        "caption": "Farm-in-a-Dayでの第1消防署 1952年4月17日。",
+        "credit": "Jerome County Historical Society Collections."
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー アキコ クロセ",
+        "caption": "ja_herrmann-house-transcript-1",
+        "credit": "Densho Digital Archive "
+      }
+    ]
+  },
+  {
+    "name": "第二給水塔",
+    "prefix": "water-tower-two",
+    "detail": "給水塔があった場所。",
+    "subDetail": "この給水塔の大きな土台は、訪問者が見ることができるよう最近掘り出されました。ミニドカでの水の利用について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.68061,
+        "longitude": -114.24686
+      }
+    ],
+    "text": [
+      {
+        "name": "第二給水塔",
+        "file": "water-tower-two-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "第二給水塔のコンクリートの足場。2015年。"
+      },
+      {
+        "caption": "キャンプの給水塔の一つの歴史的写真 1942年8月。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "オリジナルのWRAキャプション：キャンプの中央部の低木の火事。1945年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ]
+  },
+  {
+    "name": "下水道処理場",
+    "prefix": "sewage-plant",
+    "detail": "旧下水処理場。",
+    "subDetail": "増え続ける人口を支えるための、砂漠地域の必要なインフラについて学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.68083,
+        "longitude": -114.24593
+      }
+    ],
+    "text": [
+      {
+        "name": "下水道処理場",
+        "file": "sewage-plant-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "元下水処理センターの場所。2015年。"
+      },
+      {
+        "caption": "元のWRAのキャプション: アイダホ州、ハント ミニドカ下水処理場",
+        "credit": "国立公文書記録管理局のご厚意による "
+      },
+      {
+        "caption": "ミニドカの学生のエッセーより抜粋「ミネドカに夏のシルエットがゆっくりと訪れると、ニンニクの花の香りと下水場の匂いが、いたずらな風に乗って漂ってきます」 1943年",
+        "credit": "Helen Amerman Manningコレクションのご厚意により、Denshoが寄贈"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ビクター イケダ",
+        "transcript": "ja_sewage-plant-transcript-1",
+        "credit": "元下水処理Densho Digital Archive \nマンザナー国立史跡コレクション センターの場所。2015年。"
+      }
+    ]
+  },
+  {
+    "name": "ガソリンスタンド",
+    "prefix": "gas-station",
+    "detail": "ガソリンスタンド",
+    "subDetail": "ミニドカは小さな町のように機能しました。こちらで、ミニドカのガソリンステーションのコンクリートの跡地をご覧ください。",
+    "coordinates": [
+      {
+        "latitude": 42.67986,
+        "longitude": -114.2448
+      }
+    ],
+    "text": [
+      {
+        "name": "ガソリンスタンド",
+        "file": "gas-station-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "歴史的なガソリンスタンドの名残。2015年。"
+      }
+    ]
+  },
+  {
+    "name": "タイヤ/自動車修理工場と倉庫エリア",
+    "prefix": "tire-motor-repair-shop-and-warehouse",
+    "detail": "歴史的な倉庫エリアとタイヤショップ。",
+    "subDetail": "ミニドカの最大の残存する歴史的建造物を訪れ、キャンプの運営についてもっと学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.6791,
+        "longitude": -114.24375
+      }
+    ],
+    "text": [
+      {
+        "name": "タイヤ/自動車修理工場と倉庫エリア",
+        "file": "shop-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "タイヤ修理工場があった歴史的な倉庫の半分。2015年。"
+      },
+      {
+        "caption": "駐車場のエリア。背後に倉庫が見えます。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "非抑留者が、倉庫で車を修理しているところ。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカ駐車場エリア。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ]
+  },
+  {
+    "name": "屋外の円形劇場",
+    "prefix": "outdoor-amphitheater",
+    "detail": "屋外の円形劇場と野球場。",
+    "subDetail": "スポーツやコミュニティーの集まりに参加することは、非抑留者にとってミニドカの思い出深い、そして前向きな側面でした。",
+    "coordinates": [
+      {
+        "latitude": 42.67948,
+        "longitude": -114.24228
+      }
+    ],
+    "text": [
+      {
+        "name": "屋外の円形劇場",
+        "file": "outdoor-amphitheater-1"
+      },
+      {
+        "name": "野球",
+        "file": "outdoor-amphitheater-2"
+      },
+      {
+        "name": "スポーツ",
+        "file": "outdoor-amphitheater-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "元の野外劇場と新しく再建された野球場の場所。2016年",
+        "credit": "ライアン コウズ氏のご厚意による"
+      },
+      {
+        "caption": "ミニドカの、スコアボード前でリチャード サクライ氏、シン イノウエ氏。",
+        "credit": "国立公園局、サクライコレクションのご厚意による。"
+      },
+      {
+        "caption": "\n野外劇場で開催された、戦没兵士の集団葬儀。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "A地区のバスケットボールのチャンピオン。1944年。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "クロスカントリーの勝者とWRA 体育講師。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ジョージ ナカタ",
+        "transcript": "ja_outdoor-amphitheater-transcript-1",
+        "credit": "Densho Digital Archive\nOregon Nikkei Endowment Collection"
+      }
+    ]
+  },
+  {
+    "name": "22ブロックの概要",
+    "prefix": "block-22-overlook",
+    "detail": "22ブロックの概要",
+    "subDetail": "22ブロックを訪れて、歴史的な構造を備えた、典型的な住宅ブロックのレイアウトを見てみましょう。22ブロックは、ミニドカでコミュニティーサービスセンターとして使用され、事務所や協同組合の小売店などがありました。",
+    "coordinates": [
+      {
+        "latitude": 42.67934,
+        "longitude": -114.24148
+      }
+    ],
+    "text": [
+      {
+        "name": "22ブロック",
+        "file": "block-22-1"
+      },
+      {
+        "name": "ミニドカのコミュニティ",
+        "file": "block-22-2"
+      },
+      {
+        "name": "ミニドカでの宗教",
+        "file": "block-22-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "22ブロックを見渡した風景。2015年。"
+      },
+      {
+        "caption": "ミニドカのカトリック教会の最初の聖体拝領クラス。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカ消費者協同組合店内。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "Minidoka Irrigator新聞事務所で働く人たち。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "22ブロック事務所の地図。バラックの6つは住宅として使われていました。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー フランク ヤマサキ",
+        "transcript": "ja_block-22-overlook-transcript-1",
+        "credit": "Densho Digital Archive"
+      },
+      {
+        "name": "インタビュー ヒサ マツダイラ",
+        "transcript": "ja_block-22-overlook-transcript-2",
+        "credit": "Densho Digital Archive \nBainbridge Island Japanese American Community Collection "
+      }
+    ]
+  },
+  {
+    "name": "住宅用バラック",
+    "prefix": "residential-barracks",
+    "detail": "歴史的な住宅用バラック建物",
+    "subDetail": "この歴史的なミニドカのバラック建物を探索して、抑留された日系人の典型的な生活状態について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67977,
+        "longitude": -114.24072
+      }
+    ],
+    "text": [
+      {
+        "name": "住宅用バラック",
+        "file": "residential-barracks-1"
+      },
+      {
+        "name": "ミニドカでの生活",
+        "file": "residential-barracks-2"
+      },
+      {
+        "name": "家を作る",
+        "file": "residential-barracks-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "22ブロックの歴史的住宅用バラック。2015年。"
+      },
+      {
+        "caption": "立ち並ぶバラックを見下ろして。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカの何も家具のない典型的なバラック。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "エイゾウ ニシさんのバラック。木材の切れ端で作った家具を見せています。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカの外装を改装したバラック 1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ジョージ ナカタ",
+        "transcript": "ja_residential-barracks-transcript-1",
+        "credit": "Densho Digital Archive\nOregon Nikkei Endowment Collection"
+      },
+      {
+        "name": "インタビュー シゲオ セセ ウノ ",
+        "transcript": "ja_residential-barracks-transcript-2",
+        "credit": "Densho Digital Archive "
+      }
+    ]
+  },
+  {
+    "name": "食堂",
+    "prefix": "mess-hall",
+    "detail": "歴史的な食堂の建物。",
+    "subDetail": "この歴史的な食堂を訪れて、どのように食事さえもキャンプ生活の秩序だった性質を示していたか体験しましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24115
+      }
+    ],
+    "text": [
+      {
+        "name": "食堂",
+        "file": "mess-hall-1"
+      },
+      {
+        "name": "ソーシャルダイニング",
+        "file": "mess-hall-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "22ブロックの歴史的な食堂。2015年。"
+      },
+      {
+        "caption": "非抑留者の調理人が、ミニドカの食堂で昼食の準備をしているところ。1942年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ミニドカへの訪問者が受け取った食事の領収書。",
+        "credit": "ヤマダ家コレクションのご厚意により、Denshoが寄贈"
+      },
+      {
+        "caption": "ミニドカの食堂で、食事の列に並んでいる非抑留者。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "食堂のインテリア。1942年8月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 64のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ルーシー キリハラ",
+        "transcript": "ja_mess-hall-transcript-1",
+        "credit": "Densho Digital Archive \nTwin Cities JACL Collection "
+      }
+    ]
+  },
+  {
+    "name": "洗濯場と洗面所の建物",
+    "prefix": "laundry-lavatory-building",
+    "detail": "歴史的な洗濯場-洗面所建物のサイト",
+    "subDetail": "各住居ブロックの洗濯、シャワー、そして洗面所施設について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24131
+      }
+    ],
+    "text": [
+      {
+        "name": "洗濯場と洗面所の建物",
+        "file": "laundry-lavatory-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "洗濯場と洗面所の建物 1942年8月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 35のご厚意による"
+      },
+      {
+        "caption": "洗濯室の典型的な洗濯場と洗面所。1942年8月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 61のご厚意による"
+      },
+      {
+        "caption": "洗濯場と洗面所の建物にあった、洗面所。1942年8月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 62のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー マーシー ヒナツ",
+        "transcript": "ja_laundry-lavatory-transcript-1",
+        "credit": "Densho Digital Archive\nマンザナー国定史跡コレクション"
+      }
+    ]
+  },
+  {
+    "name": "教室としてバラック",
+    "prefix": "barracks-as-classrooms",
+    "detail": "中学、高校ブロック。",
+    "subDetail": "ミニドカの若者は、23ブロックにある中学校と高校に通いました。レイアウトは住宅ブロックと同じで、バラックは教室の役割をしていました。",
+    "coordinates": [
+      {
+        "latitude": 42.68075,
+        "longitude": -114.24073
+      }
+    ],
+    "text": [
+      {
+        "name": "教室としてバラック",
+        "file": "barracks-as-classrooms-1"
+      },
+      {
+        "name": "学校の活動",
+        "file": "barracks-as-classrooms-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "ハント高校の生徒たち。バラックの教室の外で。",
+        "credit": "Bigelow家コレクションのご厚意により、Denshoが寄贈"
+      },
+      {
+        "caption": "スタッフォード小学校の旗竿の除幕式。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "ハント高校の教室で勉強をする女子生徒。学生によって描かれた壁画。1944年。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "大工の成人教育のクラス。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "バラック教室の生徒たち。1942年11月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 76のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー アヤ ウエニシ",
+        "transcript": "ja_barracks-as-classrooms-transcript-1",
+        "credit": "Densho Digital Archive "
+      },
+      {
+        "name": "インタビュー メイ K. ササキ ",
+        "transcript": "ja_barracks-as-classrooms-transcript-2",
+        "credit": "Densho Digital Archive "
+      }
+    ]
+  },
+  {
+    "name": "地下貯蔵庫",
+    "prefix": "root-cellar",
+    "detail": "歴史的な地下貯蔵庫。",
+    "subDetail": "1940年代の地下貯蔵庫を覗いて、収容された日系人の農業における遺産について学びましょう。",
+    "coordinates": [
+      {
+        "latitude": 42.67878,
+        "longitude": -114.24175
+      }
+    ],
+    "text": [
+      {
+        "name": "持続可能なコミュニティー",
+        "file": "root-cellar-1"
+      },
+      {
+        "name": "共同の努力",
+        "file": "root-cellar-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "歴史的な地下貯蔵庫の入口。2015年。"
+      },
+      {
+        "caption": "非抑留者がミニドカでトウモロコシを収穫しているところ。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "スタッフォード小学校の児童が、野菜を植えるためにヤマヨモギを抜いているところ。1943年",
+        "credit": "国立公文書記録管理局のご厚意による"
+      },
+      {
+        "caption": "日系アメリカ人がミニドカでジャガイモを収穫しているところ。",
+        "credit": "Bigelow家コレクションのご厚意により、Denshoが寄贈"
+      },
+      {
+        "caption": "ミニドカの豚や家禽農場。",
+        "credit": "国立公文書記録管理局のご厚意による"
+      }
+    ],
+    "videos": [
+      {
+        "name": "インタビュー ビクター イケダ",
+        "transcript": "ja_root-cellar-transcript-1",
+        "credit": "Densho Digital Archive \nマンザナー国立史跡コレクション "
+      }
+    ]
+  },
+  {
+    "name": "有刺鉄線の後ろで",
+    "prefix": "behind-barbed-wire",
+    "detail": "有刺鉄線の周囲フェンス。",
+    "subDetail": "有刺鉄線のフェンスは、戦争中にミニドカで生活した13,078人の日系人にとって、屈辱的な、物理的な監禁状態を思い出させるものです。",
+    "coordinates": [
+      {
+        "latitude": 42.67684,
+        "longitude": -114.24652
+      }
+    ],
+    "text": [
+      {
+        "name": "有刺鉄線の後ろで",
+        "file": "behind-barbed-wire-1"
+      },
+      {
+        "name": "ミニドカの維持",
+        "file": "behind-barbed-wire-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "有刺鉄線の周囲フェンスの歴史的再建。2015年。"
+      },
+      {
+        "caption": "ノースサイド運河に沿って、収容所の閉鎖まで残ったフェンス。"
+      },
+      {
+        "caption": "有刺鉄線のフェンスと監視塔。1942年11月。",
+        "credit": "Oregon Nikkei Endowment、ONLC 104のご厚意による"
+      }
+    ]
+  }
+]

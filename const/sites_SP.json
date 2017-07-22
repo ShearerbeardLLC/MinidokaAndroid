@@ -1,0 +1,909 @@
+[
+  {
+    "name": "Área de la Policía Militar",
+    "prefix": "military-police-area",
+    "detail": "Histórica área de la entrada y estación de guardia.",
+    "subDetail": "Sumérjase en una visita al Centro de Reubicación de Guerra de Minidoka en la histórica entrada del campamento bajo la sombra de una torre de vigía. ",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25103
+      }
+    ],
+    "text": [
+      {
+        "name": "Área de la Policía Militar",
+        "file": "sp_military-police-area-1"
+      },
+      {
+        "name": "En la puerta",
+        "file": "sp_military-police-area-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Ruinas de la estación de la entrada de la policía militar. 2015."
+      },
+      {
+        "caption": "Ruinas de la zona de recepción de visitantes de la Policía Militar. 2015."
+      },
+      {
+        "caption": "Área de entrada del campamento. Estación de entrada a la izquierda, área de recepción a la derecha.  ",
+        "credit": "Cortesía de NPS, Colección Koyama"
+      },
+      {
+        "caption": "Miembro no identificado de la Policía Militar posa en la estación de la entrada.",
+        "credit": "Cortesía de NPS, Colección Koyama"
+      },
+      {
+        "caption": "Área de entrada del campamento con autobuses.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ],
+    "video": [
+      {
+        "name": "Entrevista a Brooks Andrews",
+        "transcript": "sp_military-police-area-transcript-1",
+        "credit": "Archivo Digital de Densho \nColección de la Comunidad Japonesa Norteamericana de Bainbridge Island"
+      }
+    ]
+  },
+  {
+    "name": "Torre de Vigía",
+    "prefix": "guard-tower",
+    "detail": "Reconstrucción de la histórica torre de vigía.",
+    "subDetail": "Deténgase en la histórica entrada del campamento para ver una torre de vigía reconstruida y vivir la sensación de aislamiento a la que se enfrentaron los prisioneros. ",
+    "coordinates": [
+      {
+        "latitude": 42.67793,
+        "longitude": -114.2515
+      }
+    ],
+    "text": [
+      {
+        "name": "Centinelas en la salvia",
+        "file": "sp_guard-tower-1"
+      },
+      {
+        "name": "Símbolos de confinamiento",
+        "file": "sp_guard-tower-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Reconstructed entrance guard tower. 2015."
+      },
+      {
+        "caption": "Entrance to Minidoka. 1944.",
+        "credit": "Contributed by Densho, courtesy of the Mitsuoka Family Collection."
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a George Nakata",
+        "transcript": "sp_guard-tower-transcript-1",
+        "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei\nEntrevista a George Nakata"
+      }
+    ]
+  },
+  {
+    "name": "Canal del Lado Norte",
+    "prefix": "north side canal",
+    "detail": "Canal de riego de la Oficina de Reclamación.",
+    "subDetail": "Obtenga información sobre el papel del agua en Minidoka y su fuente poco probable.",
+    "coordinates": [
+      {
+        "latitude": 42.67773,
+        "longitude": -114.2512
+      }
+    ],
+    "text": [
+      {
+        "name": "Canal del Lado Norte",
+        "file": "sp_north-side-canal-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Hunt Bridge y el Canal del Lado Norte. 2015."
+      },
+      {
+        "caption": "Título original de la WRA: Una vista del Canal del Lado Norte de Twin Falls que limita con este centro de la Autoridad de Reubicación de Guerra en el sur. 1942.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Título original de la WRA: Establecimiento de controles de riego, recuperación de tierras. Junio 1944.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ]
+  },
+  {
+    "name": "Hospital",
+    "prefix": "hospital",
+    "detail": "Antiguo sitio del hospital.",
+    "subDetail": "Conozca más acerca de las operaciones del hospital histórico en Minidoka en un área que actualmente funciona como unas tierras de cultivo.",
+    "coordinates": [
+      {
+        "latitude": 42.67794,
+        "longitude": -114.25135
+      }
+    ],
+    "text": [
+      {
+        "name": "Hospital",
+        "file": "hospital-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Guardería del hospital del Centro de Reubicación de Guerra de Minidoka. Diciembre de 1942.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos "
+      },
+      {
+        "caption": "Dentista del Centro de Reubicación de Guerra de Minidoka, Doctor T. Nakamura. Diciembre de 1942.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Artículo del Minidoka Irrigator que elogia las operaciones del hospital, septiembre de 1943.",
+        "credit": "Contribución de Densho, Cortesía de Cherry Kinoshita"
+      },
+      {
+        "caption": "Personal Nikkei del hospital. Los estudiantes de secundaria a menudo trabajaban a tiempo parcial como ayudantes de enfermería. Junio ​​de 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Pacientes en el hospital del Centro de Reubicación de Guerra de Minidoka. Noviembre de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 112"
+      }
+    ],
+    "video": [
+      {
+        "name": "Entrevista a Mabel Shoji Boggs",
+        "transcript": "sp_hospital-transcript-1",
+        "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
+      }
+    ]
+  },
+  {
+    "prefix": "honor-roll",
+    "name": "Cuadro de Honor",
+    "detail": "Reconstrucción del Cuadro de Honor militar. ",
+    "subDetail": "Obtenga una comprensión de las diversas muestras de patriotismo y experimente la ironía del servicio militar durante el encarcelamiento cuando visite este Cuadro de Honor reconstruido. ",
+    "coordinates": [
+      {
+        "latitude": 42.67825,
+        "longitude": -114.25061
+      }
+    ],
+    "text": [
+      {
+        "name": "Cuadro de Honor",
+        "file": "sp_honor-roll-1"
+      },
+      {
+        "name": "Cuestionario de lealtad",
+        "file": "sp_honor-roll-2"
+      },
+      {
+        "name": "Servicio militar",
+        "file": "honor-roll-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Cuadro de Honor reconstruido. 2015."
+      },
+      {
+        "caption": "Fotografía histórica del cuadro de honor original.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Kaun, Ko, y Satoru Onodera, hermanos encarcelados en Minidoka, se ofrecen como voluntarios para el Ejército mientras toda la familia los observa.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Estos cuatro hermanos, Kenny, Chester, Ted y Howard Sakura, se ofrecieron voluntariamente para el servicio en el 442º Regimiento de Infantería del Ejército de los Estados Unidos mientras estuvieron encarcelados en Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Funeral budista para un soldado caído en una sala de recreación de Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Tosh Yasutake ",
+        "transcript": "sp_honor-roll-transcript-1",
+        "credit": "Archivo Digital de Densho"
+      },
+      {
+        "name": "Entrevista I a Tsuguo \"Ike\" Ikeda ",
+        "transcript": "sp_honor-roll-transcript-2",
+        "credit": "Archivo Digital de Densho"
+      }
+    ]
+  },
+  {
+    "name": "Área administrativa",
+    "prefix": "administrative-area",
+    "detail": "Área administrativa de Minidoka.",
+    "subDetail": "Visite el sitio del área administrativa y conozca cómo era la vida de un empleado de la WRA en Minidoka.",
+    "coordinates": [
+      {
+        "latitude": 42.67847,
+        "longitude": -114.2499
+      }
+    ],
+    "text": [
+      {
+        "name": "Área Administrativa",
+        "file": "sp_administrative-area-1"
+      },
+      {
+        "name": "Experiencia del personal",
+        "file": "sp_administrative-area-2"
+      },
+      {
+        "name": "Actitudes hacia los nikkei",
+        "file": "sp_administrative-area-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Área administrativa. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Viviendas del personal de la WRA.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Tura Nakamura, jefe de bloques del bloque 42-44 presenta el pez ceremonial Tai al Director del Proyecto, H.L. Stafford y a Philip Schafer, director asistente del proyecto. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "H.L. Stafford, director del proyecto del Centro de Reubicación de Guerra de Minidoka. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ]
+  },
+  {
+    "name": "Estación de bomberos",
+    "prefix": "fire-station",
+    "detail": "Histórica estación de bomberos.",
+    "subDetail": "Visite esta histórica estación de bomberos y conozca cómo era la vida de un bombero prisionero.",
+    "coordinates": [
+      {
+        "latitude": 42.68067,
+        "longitude": -114.24607
+      }
+    ],
+    "text": [
+      {
+        "name": "La estación de bomberos como un hogar",
+        "file": "sp_fire-station-1"
+      },
+      {
+        "name": "En el campo",
+        "file": "sp_fire-station-2"
+      },
+      {
+        "name": "Estación de Bomberos #2",
+        "file": "sp_fire-station-3"
+      },
+      {
+        "name": "Bomberas",
+        "file": "sp_fire-station-4"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Estación de Bomberos No. 1. 2015."
+      },
+      {
+        "caption": "Estación de Bomberos No. 1. 2015."
+      },
+      {
+        "caption": "Equipo de bomberos delante de la Estación de Bomberos No. 1. 1944.",
+        "credit": "Contribución de Densho, cortesía de la Colección de la familia Mamiy"
+      },
+      {
+        "caption": "Título original de la WRA: El equipo de bomberos de la estación #1 entra en acción. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Mujeres desconocidas frente a la Estación de Bomberos No. 2. Noviembre de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 93"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Shosuke Sasaki ",
+        "transcript": "sp_fire-station-transcript-1",
+        "credit": "Archivo Digital de Densho"
+      }
+    ]
+  },
+  {
+    "name": "Casa Herrmann ",
+    "prefix": "herrmann-house ",
+    "detail": "Casa de campo de la postguerra.",
+    "subDetail": "Visite esta casa de la década de los años 50 para aprender sobre el uso de la tierra de la postguerra y el desarrollo del sitio de encarcelamiento original.",
+    "coordinates": [
+      {
+        "latitude": 42.6805,
+        "longitude": -114.24574
+      }
+    ],
+    "text": [
+      {
+        "name": "Tierras para cultivar",
+        "file": "sp_herrmann-house-1"
+      },
+      {
+        "name": "Un día en la granja",
+        "file": "sp_herrmann-house-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Casa Herrmann. 2015."
+      },
+      {
+        "caption": "porción de cuarteles históricos; granero de ordeño de la familia Herrmann. 2015."
+      },
+      {
+        "caption": "Programa del evento Un Día en la Granja",
+        "credit": "Colección del Museo NHS de Minidoka"
+      },
+      {
+        "caption": "John y Elfreida Herrmann. 17 de abril de 1952.",
+        "credit": "Colecciones de la Sociedad Histórica del Condado de Jerome."
+      },
+      {
+        "caption": "Organizaciones locales proveyeron refrescos. 17 de abril de 1952.",
+        "credit": "Colecciones de la Sociedad Histórica del Condado de Jerome."
+      },
+      {
+        "caption": "Estación de Bomberos No. 1 durante Un Día en la Granja. 17 de abril de 1952.",
+        "credit": "Colecciones de la Sociedad Histórica del Condado de Jerome."
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista I a Akiko Kurose",
+        "transcript": "sp_herrmann-house-transcript-1",
+        "credit": "Archivo Digital de Densho"
+      }
+    ]
+  },
+  {
+    "name": "Torre de Agua #2",
+    "prefix": "water-tower-two",
+    "detail": "Sitio de la antigua torre de agua.",
+    "subDetail": "Recientemente fueron descubiertos los grandes cimientos de esta torre de agua para que los visitantes puedan verlos. Conozca más sobre el uso del agua en Minidoka.  ",
+    "coordinates": [
+      {
+        "latitude": 42.68061,
+        "longitude": -114.24686
+      }
+    ],
+    "text": [
+      {
+        "name": "Torre de Agua #2",
+        "file": "sp_water-tower-two-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Zapatas de hormigón de la Torre de Agua #2. 2015."
+      },
+      {
+        "caption": "Fotografía histórica de una de las torres de agua del campamento. Agosto de 1942.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Título original de la WRA: Incendio forestal de la sección en medio del campamento. 1945.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ]
+  },
+  {
+    "name": "Planta de Aguas Residuales",
+    "prefix": "sewage-plant",
+    "detail": "Antiguo centro de tratamiento de aguas residuales.",
+    "subDetail": "Conozca más detalles sobre algunas de las infraestructuras necesarias para un área desértica para apoyar un auge de la población.",
+    "coordinates": [
+      {
+        "latitude": 42.68083,
+        "longitude": -114.24593
+      }
+    ],
+    "text": [
+      {
+        "name": "Planta de Aguas Residuales",
+        "file": "sp_sewage-plant-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Sitio del antiguo centro de tratamiento de aguas residuales. 2015."
+      },
+      {
+        "caption": "Título orignal de la WRA: Hunt, Idaho. Planta de tratamiento de aguas residuales de Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Extracto del ensayo de un estudiante en Minidoka: \"A medida que la silueta del verano lentamente desciende (sp) sobre Minidoka, el olor fragante de las flores de ajo y de la planta de aguas residuales fluye con la brisa juguetona\". 1943.",
+        "credit": "Contribución de Densho, Cortesía de la Colección de Helen Amerman Manning"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Victor Ikeda",
+        "transcript": "sp_sewage-plant-transcript-1",
+        "credit": "Archivo Digital de Densho \nColección del Sitio Histórico Nacional de Manzanar"
+      }
+    ]
+  },
+  {
+    "name": "Gasolinera",
+    "prefix": "gas-station",
+    "detail": "Sitio de la gasolinera.",
+    "subDetail": "Minidoka funcionaba como una pequeña ciudad. Vea aquí los restos de hormigón de la gasolinera de Minidoka.",
+    "coordinates": [
+      {
+        "latitude": 42.67986,
+        "longitude": -114.2448
+      }
+    ],
+    "text": [
+      {
+        "name": "Gasolinera",
+        "file": "sp_gas-station-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Restos de la histórica gasolinera. 2015."
+      }
+    ]
+  },
+  {
+    "name": "Tienda de reparación de neumáticos y motores y área del almacén",
+    "prefix": "tire-motor-repair-shop-and-warehouse",
+    "detail": "Zona histórica del almacén y de la tienda de neumáticos.",
+    "subDetail": "Visite la estructura histórica más grande que aún se conserva en Minidoka y aprenda más sobre las operaciones del campamento. ",
+    "coordinates": [
+      {
+        "latitude": 42.6791,
+        "longitude": -114.24375
+      }
+    ],
+    "text": [
+      {
+        "name": "Tienda de reparación de neumáticos y motores y área del almacén",
+        "file": "sp_shop-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "La mitad de un almacén histórico donde funcionaba una tienda de reparación de neumáticos. 2015."
+      },
+      {
+        "caption": "Área de la flota de vehículos. Observe los almacenes en el fondo.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Prisioneros reparando un vehículo en un almacén.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Zona de la flota de vehículos de Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      }
+    ]
+  },
+  {
+    "name": "Anfiteatro al aire libre",
+    "prefix": "outdoor-amphitheater",
+    "detail": "Anfiteatro al aire libre y campo de béisbol.",
+    "subDetail": "La participación en los deportes y en las reuniones de la comunidad fue un aspecto positivo y memorable de la experiencia de Minidoka para los prisioneros.",
+    "coordinates": [
+      {
+        "latitude": 42.67948,
+        "longitude": -114.24228
+      }
+    ],
+    "text": [
+      {
+        "name": "Anfiteatro al aire libre",
+        "file": "sp_outdoor-amphitheater-1"
+      },
+      {
+        "name": "Béisbol",
+        "file": "sp_outdoor-amphitheater-2"
+      },
+      {
+        "name": "Deportes",
+        "file": "sp_outdoor-amphitheater-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Sitio del antiguo anfiteatro y campo de béisbol recién reconstruido. 2016.",
+        "credit": "Cortesía de Ryan Kozu."
+      },
+      {
+        "caption": "Richard Sakurai y Shingo Inouye delante del marcador en Minidoka.",
+        "credit": "Cortesía del Servicio de Parques Nacionales, Colección Sakurai."
+      },
+      {
+        "caption": "Funeral grupal por los soldados caídos, celebrado en el anfiteatro.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Campeones de baloncesto del Área A.1944.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Ganadores de una carrera de campo a traviesa retratados junto a los instructores P.E. de la WRA. ",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos."
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a George Nakata",
+        "transcript": "sp_outdoor-amphitheater-transcript-1",
+        "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
+      }
+    ]
+  },
+  {
+    "name": "Vistazo al Bloque 22",
+    "prefix": "block-22-overlook",
+    "detail": " Un vistazo al Bloque 22.",
+    "subDetail": "Visite el Bloque 22 para explorar el diseño completo de un bloque residencial típico con estructuras históricas. El Bloque 22 servía como un centro de servicios comunitarios en Minidoka y tenía oficinas y la tienda cooperativa.",
+    "coordinates": [
+      {
+        "latitude": 42.67934,
+        "longitude": -114.24148
+      }
+    ],
+    "text": [
+      {
+        "name": "Bloque 22",
+        "file": "sp_block-22-1"
+      },
+      {
+        "name": "La comunidad en Minidoka",
+        "file": "sp_block-22-2"
+      },
+      {
+        "name": "La religión en Minidoka",
+        "file": "sp_block-22-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Vistas del Bloque 22. 2015."
+      },
+      {
+        "caption": "Clase de Primera Comunión de la Iglesia Católica en Minidoka.1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documento"
+      },
+      {
+        "caption": "Dentro de la tienda de la Cooperativa de Consumidores de Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Trabajadores en la oficina de prensa de Minidoka Irrigator. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Mapa de oficina del Bloque 22. Seis de los cuarteles permanecieron como zonas residenciales.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista I a Frank Yamasaki",
+        "transcript": "sp_block-22-overlook-transcript-1",
+        "credit": "Archivo Digital de Densho"
+      },
+      {
+        "name": "Entrevista a Hisa Matsudaira",
+        "transcript": "sp_block-22-overlook-transcript-2",
+        "credit": "Archivo Digital de Densho\nColección de la Comunidad Japonesa Norteamericana de Bainbridge Island"
+      }
+    ]
+  },
+  {
+    "name": "Cuarteles residenciales",
+    "prefix": "residential-barracks",
+    "detail": "Edificio histórico de los cuarteles residenciales.",
+    "subDetail": "Explore este histórico edificio de cuartel de Minidoka y conozca las condiciones de vida típicas de los Nikkei encarcelados.",
+    "coordinates": [
+      {
+        "latitude": 42.67977,
+        "longitude": -114.24072
+      }
+    ],
+    "text": [
+      {
+        "name": "Cuarteles residenciales",
+        "file": "sp_residential-barracks-1"
+      },
+      {
+        "name": "La vida en Minidoka",
+        "file": "sp_residential-barracks-2"
+      },
+      {
+        "name": "Hacer una casa",
+        "file": "sp_residential-barracks-3"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Históricos cuarteles residenciales en el Bloque 22. 2015. "
+      },
+      {
+        "caption": "Mirando por una hilera de cuarteles. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Cuarteles típicos sin amueblar en Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "El cuartel de la Sra. Eizo Nishi, mostrando muebles hechos con restos de madera. ",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Exterior renovado de los cuarteles en Minidoka. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a George Nakata",
+        "transcript": "sp_residential-barracks-transcript-1",
+        "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
+      },
+      {
+        "name": "Entrevista a Shigeko Sese Uno",
+        "transcript": "sp_residential-barracks-transcript-2",
+        "credit": "Archivo Digital de Densho"
+      }
+    ]
+  },
+  {
+    "name": "Comedor",
+    "prefix": "mess-hall",
+    "detail": "Histórico edificio del comedor.",
+    "subDetail": "Visite este histórico comedor y experimente incluso cómo las comidas demostraban la naturaleza estructurada de la vida del campamento.",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24115
+      }
+    ],
+    "text": [
+      {
+        "name": "Comedor",
+        "file": "sp_mess-hall-1"
+      },
+      {
+        "name": "Comidas sociales",
+        "file": "sp_mess-hall-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Salón del comedor histórico en el Bloque 22. 2015."
+      },
+      {
+        "caption": "Chef prisionero preparando el almuerzo en un comedor de Minidoka. 1942.",
+        "credit": "Cortesía de la Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Recibo de una comida recibido por un visitante en Minidoka. ",
+        "credit": "Contribución de Densho, Cortesía de la Colección de la familia Yamada."
+      },
+      {
+        "caption": "Prisioneros en fila para una comida en un comedor de Minidoka.",
+        "credit": "Cortesía de la Archivos Nacionales y Administración de Documentos."
+      },
+      {
+        "caption": "Interior del comedor. Agosto de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 64"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Lucy Kirihara",
+        "transcript": "mess-hall-transcript-1",
+        "credit": "Archivo Digital de Densho \nColección Twin Cities JACL"
+      }
+    ]
+  },
+  {
+    "name": "Edificio de Lavandería y Lavabo",
+    "prefix": "laundry-lavatory-building",
+    "detail": "Sitio del histórico edificio de lavandería-lavabo.",
+    "subDetail": "Conozca las instalaciones de lavandería, ducha y baño en cada bloque residencial.",
+    "coordinates": [
+      {
+        "latitude": 42.68003,
+        "longitude": -114.24131
+      }
+    ],
+    "text": [
+      {
+        "name": "Edificio de Lavandería y Lavabo",
+        "file": "sp_laundry-lavatory-1"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Edificio de lavandería y lavabo. Agosto de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 35"
+      },
+      {
+        "caption": "Cuarto de lavandería típico en el edificio de lavandería y lavabo. Agosto de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 61"
+      },
+      {
+        "caption": "Sala de lavado en el edificio de lavandería y lavabo. Agosto de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 62"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Massie Hinatsu",
+        "transcript": "sp_laundry-lavatory-transcript-1",
+        "credit": "Archivo Digital de Densho\nColección del Sitio Histórico Nacional de Manzanar"
+      }
+    ]
+  },
+  {
+    "name": "Cuarteles como aulas",
+    "prefix": "barracks-as-classrooms",
+    "detail": "Bloque de escuela básica y de escuela secundaria.",
+    "subDetail": "Los jóvenes de Minidoka viajaban al Bloque 23 para asistir a la escuela básica y a la escuela secundaria. El diseño era el mismo que el de los bloques residenciales, y los edificios de los cuarteles funcionaban como aulas.  ",
+    "coordinates": [
+      {
+        "latitude": 42.68075,
+        "longitude": -114.24073
+      }
+    ],
+    "text": [
+      {
+        "name": "Cuarteles como aulas",
+        "file": "sp_barracks-as-classrooms-1"
+      },
+      {
+        "name": "Actividades escolares",
+        "file": "sp_barracks-as-classrooms-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Estudiantes de la Escuela Secundaria Hunt fuera de un aula de los cuarteles.",
+        "credit": "Contribución de Densho, Cortesía de la colección de la familia Bigelow"
+      },
+      {
+        "caption": "Dedicación del poste de bandera de la Escuela Básica Stafford. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Niñas estudiando en el aula de la Escuela Secundaria Hunt. Mural pintado por estudiantes.1944.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Clase educativa para adultos en carpintería. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Estudiantes en un aula de los cuarteles. Noviembre de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 76"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Aya Uenishi Medrud",
+        "transcript": "sp_barracks-as-classrooms-transcript-1",
+        "credit": "Archivo Daigital de Densho"
+      },
+      {
+        "name": "Entrevista a May K. Sasaki ",
+        "transcript": "barracks-as-classrooms-transcript-2",
+        "credit": "Archivo Digital de Densho "
+      }
+    ]
+  },
+  {
+    "name": "Silo subterráneo",
+    "prefix": "root-cellar",
+    "detail": "Silo subterráneo histórico.",
+    "subDetail": "Aprenda sobre el legado agrícola de los prisioneros Nikkei mientras observa este silo subterráneo de los años 40. ",
+    "coordinates": [
+      {
+        "latitude": 42.67878,
+        "longitude": -114.24175
+      }
+    ],
+    "text": [
+      {
+        "name": "Una comunidad sostenible",
+        "file": "sp_root-cellar-1"
+      },
+      {
+        "name": "Un esfuerzo colectivo",
+        "file": "sp_root-cellar-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Entrada del silo subterráneo histórico. 2015."
+      },
+      {
+        "caption": "Prisioneros cosechando maíz en Minidoka. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Estudiantes de la Escuela Primaria Stafford limpian la artemisa para plantar hortalizas. 1943.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      },
+      {
+        "caption": "Japoneses norteamericanos cosechando papas en Minidoka.",
+        "credit": "Contribución de Densho, Cortesía de la colección de la familia Bigelow"
+      },
+      {
+        "caption": "Granja de cerdos y aves de corral de Minidoka.",
+        "credit": "Cortesía de los Archivos Nacionales y Administración de Documentos"
+      }
+    ],
+    "videos": [
+      {
+        "name": "Entrevista a Victor Ikeda",
+        "transcript": "sp_root-cellar-transcript-1",
+        "credit": "Archivo Digital de Densho \nColección del Sitio Histórico Nacional de Manzanar "
+      }
+    ]
+  },
+  {
+    "name": "Detrás del alambre de púas",
+    "prefix": "behind-barbed-wire",
+    "detail": "Cerca perimetral de alambre de púas.",
+    "subDetail": "La cerca de alambre de púas fue un humillante recordatorio físico del confinamiento de 13.078 Nikkei que vivieron en Minidoka durante la guerra.",
+    "coordinates": [
+      {
+        "latitude": 42.67684,
+        "longitude": -114.24652
+      }
+    ],
+    "text": [
+      {
+        "name": "Detrás del alambre de púas",
+        "file": "sp_behind-barbed-wire-1"
+      },
+      {
+        "name": "Preservación de Minidoka",
+        "file": "sp_behind-barbed-wire-2"
+      }
+    ],
+    "photos": [
+      {
+        "caption": "Reconstrucción histórica de la cerca perimetral de alambre de púas. 2015."
+      },
+      {
+        "caption": "La valla a lo largo del Lado Norte del Canal permaneció hasta el cierre del campamento."
+      },
+      {
+        "caption": "La cerca de alambre de púas y la torre de vigía. Noviembre de 1942.",
+        "credit": "Cortesía de la Fundación Oregon Nikkei, ONLC 104"
+      }
+    ]
+  }
+]
