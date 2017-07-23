@@ -1,5 +1,5 @@
 import photosLoader from "./photos";
-import textLoader form "./text";
+import textLoader from "./text";
 
 function siteToCoords({coordinates}) {
 	return coordinates[0];
