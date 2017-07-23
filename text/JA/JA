@@ -1,0 +1,14 @@
+
+var fs = require('fs');
+var path = require('path');
+
+var normalizedPath = require("path").join(__dirname);
+var data = fs.readdirSync(normalizedPath).map(function(file) {
+  return [file.replace(".txt", ""), fs.readFileSync(path.join(__dirname, file), 'utf8')];
+})
+.reduce(function(coll, file) {
+  coll[file[0]] = file[1];
+  return coll;
+});
+
+console.info(data);

@@ -1,4 +1,5 @@
 import photosLoader from "./photos";
+import textLoader form "./text";
 
 function siteToCoords({coordinates}) {
 	return coordinates[0];
@@ -16,9 +17,10 @@ function siteToPhotos({prefix, photos}) {
 }
 
 function siteToText({text}) {
-  return text.map(({name, file}) => {
-
-  });
+  return text.map(({name, file}) => ({
+    title: name,
+    text: textLoader[file]
+  }));
 }
 
 export { siteToPhotos, siteToCoords };
