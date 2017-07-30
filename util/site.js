@@ -17,10 +17,10 @@ function siteToPhotos({prefix, photos}) {
 }
 
 function siteToText({text}) {
-  return text.map(({name, file}) => ({
+  return text.map(({name, file}) => Object.assign({}, {
     title: name,
     text: textLoader[file]
   }));
 }
 
-export { siteToPhotos, siteToCoords };
+export { siteToPhotos, siteToCoords, siteToText };
