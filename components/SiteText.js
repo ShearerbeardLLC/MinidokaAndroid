@@ -18,7 +18,6 @@ const styles = StyleSheet.create({
     flex: 1,
     marginTop: 20,
     alignSelf: 'stretch',
-    backgroundColor: 'blue'
   },
   rowContainer: {
     flex: 1,
