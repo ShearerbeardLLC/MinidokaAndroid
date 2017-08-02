@@ -8,7 +8,7 @@ import {
 import sitesData from "../const/sites.json";
 import styles from "../styles/Container";
 
-import { Router, Scene, Actions } from "react-native-router-flux";
+import { Actions } from "react-native-router-flux";
 
 class Sites extends Component {
   constructor(...args) {

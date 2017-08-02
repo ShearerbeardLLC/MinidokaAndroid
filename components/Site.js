@@ -7,13 +7,14 @@ import {
 
 import styles from "../styles/Container";
 import SitePhotos from './SitePhotos';
+import SiteText from './SiteText';
 
 const viewStyles = StyleSheet.create({
   column: {
     flexDirection: 'column',
     justifyContent: 'flex-start',
     alignItems: 'flex-start'
-  }
+  },
 });
 
 const siteContainerStyles = StyleSheet.flatten([
@@ -28,6 +29,7 @@ export default class Site extends Component {
     return (
       <View style={ siteContainerStyles } >
         <SitePhotos {...this.props} />
+        <SiteText {...this.props} />
       </View>
     );
   }
