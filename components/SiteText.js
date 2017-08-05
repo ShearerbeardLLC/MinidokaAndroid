@@ -16,8 +16,6 @@ import text from "../util/text";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 20,
-    alignSelf: 'stretch',
   },
   rowContainer: {
     flex: 1,
@@ -25,11 +23,11 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  text: {
+  rowText: {
     marginLeft: 12,
     fontSize: 16,
   },
-  photo: {
+  rowPhoto: {
     height: 40,
     width: 40,
     borderRadius: 20,
@@ -63,20 +61,21 @@ export default class SiteText extends Component {
       <View style={ styles.rowContainer }>
         <Image
           source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
-          style={styles.photo}
+          style={ styles.rowPhoto }
         />
-        <Text style={ styles.text }>{name}</Text>
+        <Text style={ styles.rowText }>{name}</Text>
       </View>
     );
   }
 
   render() {
     return (
-      <ListView
-        style={ styles.container }
-        dataSource={ this.state.dataSource }
-        renderRow={ this.renderRow }
-      />
+      <View style={ styles.container }>
+        <ListView
+          dataSource={ this.state.dataSource }
+          renderRow={ this.renderRow }
+        />
+      </View>
     );
   }
 }

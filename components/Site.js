@@ -5,29 +5,22 @@ import {
   Dimensions
 } from "react-native";
 
-import styles from "../styles/Container";
 import SitePhotos from './SitePhotos';
 import SiteText from './SiteText';
 
-const viewStyles = StyleSheet.create({
+const styles = StyleSheet.create({
   column: {
+    flex: 1,
     flexDirection: 'column',
-    justifyContent: 'flex-start',
-    alignItems: 'flex-start'
   },
 });
-
-const siteContainerStyles = StyleSheet.flatten([
-  styles.container,
-  viewStyles.column
-]);
 
 export default class Site extends Component {
 
   render() {
 		const { name, subDetail, photos, text } = this.props;
     return (
-      <View style={ siteContainerStyles } >
+      <View style={ styles.column } >
         <SitePhotos {...this.props} />
         <SiteText {...this.props} />
       </View>

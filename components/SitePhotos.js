@@ -23,7 +23,7 @@ export default class SitePhotos extends Component {
   setSize({width}) {
     return {
       width,
-      height: width * 0.75
+      height: width * 0.75,
     };
   }
 
