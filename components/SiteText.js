@@ -9,7 +9,6 @@ import {
 } from "react-native";
 
 import { Actions } from "react-native-router-flux";
-import mainStyles from "../styles/Container";
 import { siteToPhotos } from "../util/site";
 import text from "../util/text";
 
