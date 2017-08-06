@@ -5,12 +5,12 @@ import {
   Image,
   View,
   ListView,
-  StyleSheet
+  StyleSheet,
+  TouchableHighlight
 } from "react-native";
 
 import { Actions } from "react-native-router-flux";
-import { siteToPhotos } from "../util/site";
-import text from "../util/text";
+import { siteToText } from "../util/site";
 
 const styles = StyleSheet.create({
   container: {
@@ -26,12 +26,15 @@ const styles = StyleSheet.create({
     marginLeft: 12,
     fontSize: 16,
   },
-  rowPhoto: {
-    height: 40,
-    width: 40,
-    borderRadius: 20,
-  }
+  separator: {
+    flex: 1,
+    height: StyleSheet.hairlineWidth,
+    backgroundColor: '#8E8E8E',
+  },
 });
+
+function handlePress(textRow) {
+}
 
 export default class SiteText extends Component {
   constructor(...args) {
@@ -48,23 +51,25 @@ export default class SiteText extends Component {
     });
 
     this.setState({
-      dataSource: dataSource.cloneWithRows(this.props.text)
+      dataSource: dataSource.cloneWithRows(siteToText(this.props))
     });
   }
 
-  handlePress({name, file}) {
+  renderRow(textRow) {
+    return (
+      <TouchableHighlight
+        key={ textRow.name }
+        onPress={ () => handlePress(textRow) }
+      >
+        <View style={ styles.rowContainer }>
+          <Text style={ styles.rowText }>{ textRow.title }</Text>
+        </View>
+      </TouchableHighlight>
+    );
   }
 
-  renderRow({name}) {
-    return (
-      <View style={ styles.rowContainer }>
-        <Image
-          source={{uri: 'https://facebook.github.io/react/img/logo_og.png'}}
-          style={ styles.rowPhoto }
-        />
-        <Text style={ styles.rowText }>{name}</Text>
-      </View>
-    );
+  renderSeperator(sectionId, rowId) {
+    return <View key={rowId} style={styles.separator} />;
   }
 
   render() {
@@ -73,6 +78,7 @@ export default class SiteText extends Component {
         <ListView
           dataSource={ this.state.dataSource }
           renderRow={ this.renderRow }
+          renderSeparator={ this.renderSeperator }
         />
       </View>
     );
