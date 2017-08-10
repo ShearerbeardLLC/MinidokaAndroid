@@ -33,10 +33,7 @@ export default class App extends Component {
 								key="site"
 								getTitle={({name}) => name}
 								component={ Site } />
-              <Scene key="siteTextDetail"
-                getTitle={({name}) => name}
-                component={ SiteTextDetail }
-              />
+              <Scene key="siteTextDetail" component={ SiteTextDetail } />
             </Scene>
             <Scene key="tourTab" title="Tour" icon={ TabIcon }>
               <Scene key="tour" title="Tour" component={ Tour } />

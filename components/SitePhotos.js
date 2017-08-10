@@ -16,17 +16,16 @@ const styles = StyleSheet.create({
   floating: {
     position: 'absolute',
     bottom: 0,
-    zIndex: 1000,
     left: 0,
+    zIndex: 1000,
+    padding: 8,
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    /* height: 50,*/
     width: width,
     flexDirection: 'column',
     justifyContent: 'center'
   },
   floatingText: {
-    color: 'white',
-    marginLeft: 8
+    color: 'white'
   }
 });
 

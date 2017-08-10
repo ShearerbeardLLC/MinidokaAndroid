@@ -16,6 +16,9 @@ const styles = StyleSheet.create({
   container: {
     flex: 1,
   },
+  detailContainer: {
+    margin: 8
+  },
   rowContainer: {
     flex: 1,
     padding: 12,
@@ -33,7 +36,8 @@ const styles = StyleSheet.create({
   },
 });
 
-function handlePress(textRow) {
+function handlePress(name, {title, text}) {
+  Actions.siteTextDetail({name, title, text});
 }
 
 export default class SiteText extends Component {
@@ -43,6 +47,8 @@ export default class SiteText extends Component {
     this.state = {
       dataSource: null
     };
+
+    this.renderRow = this.renderRow.bind(this);
   }
 
   componentWillMount() {
@@ -59,7 +65,7 @@ export default class SiteText extends Component {
     return (
       <TouchableHighlight
         key={ textRow.name }
-        onPress={ () => handlePress(textRow) }
+        onPress={ () => handlePress(this.props.name, textRow) }
       >
         <View style={ styles.rowContainer }>
           <Text style={ styles.rowText }>{ textRow.title }</Text>
@@ -75,6 +81,9 @@ export default class SiteText extends Component {
   render() {
     return (
       <View style={ styles.container }>
+        <Text style={ styles.detailContainer }>
+          { this.props.subDetail }
+        </Text>
         <ListView
           dataSource={ this.state.dataSource }
           renderRow={ this.renderRow }
