@@ -19,7 +19,7 @@ const styles = StyleSheet.create({
     zIndex: 1000,
     left: 0,
     backgroundColor: 'rgba(0, 0, 0, 0.6)',
-    height: 50,
+    /* height: 50,*/
     width: width,
     flexDirection: 'column',
     justifyContent: 'center'
@@ -35,9 +35,16 @@ export default class SitePhotos extends Component {
   constructor(...args) {
     super(...args);
 
+    const photos = siteToPhotos(this.props);
+    const { caption, credit } = photos[0];
+    const size = this.setSize({width});
+
     this.state ={
-      size: this.setSize({width})
+      size, photos, caption, credit
     };
+
+    this.renderImages = this.renderImages.bind(this);
+    this._onPageChange = this._onPageChange.bind(this);
   }
 
   setSize({width}) {
@@ -53,11 +60,12 @@ export default class SitePhotos extends Component {
   }
 
   _onPageChange(i) {
+    const { caption, credit } = this.state.photos[i];
+    this.setState({caption, credit});
   }
 
   renderImages() {
-    const photos = siteToPhotos(this.props);
-    return photos.map(({previewUrl}, i) =>
+    return this.state.photos.map(({previewUrl}, i) =>
       <Image style={this.state.size} key={i} source={ previewUrl } />)
   }
 
@@ -65,8 +73,12 @@ export default class SitePhotos extends Component {
     return (
       <View style={this.state.size}>
         <View style={styles.floating}>
-          <Text style={styles.floatingText}>Test</Text>
-          <Text style={styles.floatingText}>Test</Text>
+          <Text style={styles.floatingText}>
+            Caption: {this.state.caption }
+          </Text>
+          <Text style={styles.floatingText}>
+            {this.state.credit }
+          </Text>
         </View>
         <Carousel
           delay={2000}
