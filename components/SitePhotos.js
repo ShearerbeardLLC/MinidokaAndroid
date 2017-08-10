@@ -1,14 +1,34 @@
 
 import React, { Component } from "react";
 import {
+  View,
+  Text,
   Image,
-  Dimensions
+  Dimensions,
+  StyleSheet
 } from "react-native";
 import Carousel from 'react-native-looped-carousel';
 
 import { siteToPhotos } from "../util/site";
 
 const { width } = Dimensions.get('window');
+const styles = StyleSheet.create({
+  floating: {
+    position: 'absolute',
+    bottom: 0,
+    zIndex: 1000,
+    left: 0,
+    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    height: 50,
+    width: width,
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  floatingText: {
+    color: 'white',
+    marginLeft: 8
+  }
+});
 
 export default class SitePhotos extends Component {
 
@@ -43,16 +63,22 @@ export default class SitePhotos extends Component {
 
   render() {
     return (
-      <Carousel
-        delay={2000}
-        style={this.state.size}
-        autoplay
-        pageInfo
-        onLayout={ this._onLayoutDidChange }
-        onAnimateNextPage={ this._onPageChange }
-      >
-        { this.renderImages() }
-      </Carousel>
+      <View style={this.state.size}>
+        <View style={styles.floating}>
+          <Text style={styles.floatingText}>Test</Text>
+          <Text style={styles.floatingText}>Test</Text>
+        </View>
+        <Carousel
+          delay={2000}
+          style={this.state.size}
+          autoplay
+          pageInfo
+          onLayout={ this._onLayoutDidChange }
+          onAnimateNextPage={ this._onPageChange }
+        >
+          { this.renderImages() }
+        </Carousel>
+      </View>
     );
   }
 }

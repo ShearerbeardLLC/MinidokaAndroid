@@ -1,6 +1,7 @@
 import React, { Component } from "react";
 import {
   StyleSheet,
+  Dimensions,
   View,
 } from "react-native";
 
@@ -8,6 +9,7 @@ import SitePhotos from './SitePhotos';
 import SiteText from './SiteText';
 import SiteBottomBar from './SiteBottomBar';
 
+const { width } = Dimensions.get('window')
 const styles = StyleSheet.create({
   column: {
     flex: 1,
