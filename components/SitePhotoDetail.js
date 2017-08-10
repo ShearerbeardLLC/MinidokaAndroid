@@ -10,15 +10,16 @@ const styles = StyleSheet.create({
   container: {
     ...StyleSheet.absoluteFillObject,
     flex: 1,
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    backgroundColor: 'rgba(0, 0, 0, 0.8)'
   },
-  photo: {
-    flex: 1
-  }
 });
 
 const SitePhotoDetail = ({fullUrl}) =>
   <View style={ styles.container }>
-    <Image style={ styles.photo } source={fullUrl} />
+    <Image source={fullUrl} />
   </View>;
 
 export default SitePhotoDetail;
