@@ -7,6 +7,7 @@ import Map from "./components/Map";
 import Sites from "./components/Sites";
 import Site from "./components/Site";
 import SiteTextDetail from "./components/SiteTextDetail";
+import SitePhotoDetail from "./components/SitePhotoDetail";
 import More from "./components/More";
 
 import TabIcon from "./components/TabIcon";
@@ -34,6 +35,7 @@ export default class App extends Component {
 								getTitle={({name}) => name}
 								component={ Site } />
               <Scene key="siteTextDetail" component={ SiteTextDetail } />
+              <Scene key="sitePhotoDetail" component={ SitePhotoDetail } />
             </Scene>
             <Scene key="tourTab" title="Tour" icon={ TabIcon }>
               <Scene key="tour" title="Tour" component={ Tour } />

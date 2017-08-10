@@ -5,9 +5,11 @@ import {
   Text,
   Image,
   Dimensions,
-  StyleSheet
+  StyleSheet,
+  TouchableHighlight
 } from "react-native";
 import Carousel from 'react-native-looped-carousel';
+import { Actions } from "react-native-router-flux";
 
 import { siteToPhotos } from "../util/site";
 
@@ -44,6 +46,7 @@ export default class SitePhotos extends Component {
 
     this.renderImages = this.renderImages.bind(this);
     this._onPageChange = this._onPageChange.bind(this);
+    this._onClickImage = this._onClickImage.bind(this);
   }
 
   setSize({width}) {
@@ -63,9 +66,15 @@ export default class SitePhotos extends Component {
     this.setState({caption, credit});
   }
 
+  _onClickImage(fullUrl) {
+    Actions.sitePhotoDetail({fullUrl})
+  }
+
   renderImages() {
-    return this.state.photos.map(({previewUrl}, i) =>
-      <Image style={this.state.size} key={i} source={ previewUrl } />)
+    return this.state.photos.map(({previewUrl, fullUrl}, i) =>
+      <TouchableHighlight key={i} onPress={ () => this._onClickImage(fullUrl) }>
+       <Image  style={this.state.size} source={ previewUrl } />
+      </TouchableHighlight>)
   }
 
   render() {
