@@ -14,7 +14,6 @@ export default class Home extends Component {
     return (
       <View style={ styles.container }>
         <Text style={ styles.subContainer }>Home</Text>
-        <Text>{ text["administrative-area-1"] }</Text>
       </View>
     );
   }

@@ -7,7 +7,7 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    height: 50,
+    height: 40,
     backgroundColor: 'blue',
     alignSelf: 'stretch'
   }

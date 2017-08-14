@@ -16,7 +16,9 @@ import SitesRow from "../components/SitesRow";
 const sitesStyles = StyleSheet.create({
   list: {
     flex: 1,
-    flexDirection: "column"
+    flexDirection: "column",
+    marginBottom: 50,
+    marginTop: 50
   }
 });
 
