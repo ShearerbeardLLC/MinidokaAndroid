@@ -2,13 +2,23 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
-  ListView
+  ListView,
+  StyleSheet
 } from 'react-native';
 
 import sitesData from "../const/sites.json";
 import styles from "../styles/Container";
 
 import { Actions } from "react-native-router-flux";
+
+import SitesRow from "../components/SitesRow";
+
+const sitesStyles = StyleSheet.create({
+  list: {
+    flex: 1,
+    flexDirection: "column"
+  }
+});
 
 class Sites extends Component {
   constructor(...args) {
@@ -30,14 +40,9 @@ class Sites extends Component {
 
   render() {
     return (
-      <ListView contentContainerStyle={ styles.container }
+      <ListView style={sitesStyles.list}
         dataSource={ this.state.dataSource }
-        renderRow={ site =>
-					<View key={ site.prefix }>
-						<Text onPress={ () => this.handlePress(site) }>{ site.name }</Text>
-						<Text onPress={ () => this.handlePress(site) }>{ site.detail }</Text>
-					</View>
-        }
+        renderRow={ site => <SitesRow onPress={this.handlePress} {...site} /> }
       />
     );
   }
