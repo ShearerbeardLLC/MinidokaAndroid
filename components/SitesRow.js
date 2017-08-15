@@ -21,7 +21,11 @@ const styles = StyleSheet.create({
     padding: 8,
     width
   },
-  text: {
+  titleText: {
+    color: 'white',
+    fontSize: 16
+  },
+  detailText: {
     color: 'white',
   }
 });
@@ -55,8 +59,8 @@ class SitesRow extends Component {
           style={this.state.size}
         >
           <View style={styles.textContainer}>
-            <Text style={styles.text}>{this.props.name}</Text>
-            <Text style={styles.text}>{this.props.detail}</Text>
+            <Text style={styles.titleText}>{this.props.name}</Text>
+            <Text style={styles.detailText}>{this.props.detail}</Text>
           </View>
           <Image
             style={this.state.size}
