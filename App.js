@@ -9,14 +9,20 @@ import Site from "./components/Site";
 import SiteTextDetail from "./components/SiteTextDetail";
 import SitePhotoDetail from "./components/SitePhotoDetail";
 import More from "./components/More";
+import MoreDetail from "./components/MoreDetail";
 
 import TabIcon from "./components/TabIcon";
+
+import { FOM_YELLOW } from './styles/colors'
 
 export default class App extends Component {
   render() {
     return (
-      <Router>
-        <Scene key="root" >
+      <Router
+        barButtonIconStyle={{ tintColor: FOM_YELLOW }}
+        navigationBarStyle={{backgroundColor: '#1e2226',borderBottomColor:"#1e2226"}}
+        titleStyle={{color : "#FFF"}}>
+        <Scene key="root">
           <Scene key="tabbar" tabs={ true } tabBarStyle={{backgroundColor: "black"}}>
             <Scene key="homeTab" title="Home"  icon={ TabIcon }>
               <Scene key="home" title="Home" component={ Home } />
@@ -42,6 +48,7 @@ export default class App extends Component {
             </Scene>
             <Scene key="moreTab" title="More" icon={ TabIcon }>
               <Scene key="more" title="More" component={ More } initial={ true } />
+              <Scene key="moreDetail" component={ MoreDetail } getTitle={({name}) => name} />
             </Scene>
           </Scene>
         </Scene>

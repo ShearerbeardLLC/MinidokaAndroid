@@ -3,9 +3,11 @@ import {
   Text,
   View,
   Image,
+  TouchableHighlight,
   StyleSheet,
-  TouchableHighlight
 } from 'react-native';
+
+import { Actions } from "react-native-router-flux";
 
 import {
   BG_GREY,
@@ -43,35 +45,29 @@ const styles = StyleSheet.create({
   }
 });
 
+const AboutCell = ({name, image, text}) => (
+  <View style={ styles.aboutCell }>
+    <TouchableHighlight onPress={ () => Actions.moreDetail({name}) }>
+      <Image source={image} />
+    </TouchableHighlight>
+    <Text style={styles.aboutCellText}>{text}</Text>
+  </View>
+);
+
 export default class More extends Component {
   render() {
     return (
       <View style={ styles.container }>
         <View style={ styles.verticalContainer }>
-          <View style={ styles.aboutCell }>
-            <Image source={backgroundImage} />
-            <Text style={styles.aboutCellText}>Background</Text>
-          </View>
-          <View style={ styles.aboutCell }>
-            <Image source={parkInformationImage} />
-            <Text style={styles.aboutCellText}>Info</Text>
-          </View>
+          <AboutCell name='background' image={backgroundImage} text='Background' />
+          <AboutCell name='info' image={parkInformationImage} text="Info" />
         </View>
         <View style={ styles.verticalContainer }>
-          <View style={ styles.aboutCell }>
-            <Image source={directionsImage} />
-            <Text style={styles.aboutCellText}>Directions</Text>
-          </View>
-          <View style={ styles.aboutCell }>
-            <Image source={safteyAndInformationImage} />
-            <Text style={styles.aboutCellText}>Saftey</Text>
-          </View>
+          <AboutCell name='directions' image={directionsImage} text='Directions' />
+          <AboutCell name='info' image={safteyAndInformationImage} text="Saftey" />
         </View>
         <View style={ styles.verticalContainer }>
-          <View style={ styles.aboutCell }>
-            <Image source={aboutImage} />
-            <Text style={styles.aboutCellText}>About</Text>
-          </View>
+          <AboutCell name='about' image={aboutImage} text='About' />
           <View style={ styles.aboutCell }>
           </View>
         </View>

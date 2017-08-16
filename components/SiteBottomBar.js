@@ -5,10 +5,12 @@ import {
   View,
 } from "react-native";
 
+import { FOM_YELLOW } from '../styles/colors';
+
 const styles = StyleSheet.create({
   container: {
     height: 40,
-    backgroundColor: 'blue',
+    backgroundColor: FOM_YELLOW,
     alignSelf: 'stretch'
   }
 });
