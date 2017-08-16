@@ -22,7 +22,7 @@ const iconMap = {
   'Home': [navHome, navHomeSelected],
   'Map': [navMaps, navMapsSelected],
   'Sites': [navSites, navSitesSelected],
-  'Tour': [navMaps, navMapsSelected],
+  'Tour': [navTour, navTourSelected],
   'More': [navMore, navMoreSelected]
 };
 

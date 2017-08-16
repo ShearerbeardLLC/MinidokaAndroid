@@ -41,7 +41,7 @@ export default class App extends Component {
               <Scene key="tour" title="Tour" component={ Tour } />
             </Scene>
             <Scene key="moreTab" title="More" icon={ TabIcon }>
-              <Scene key="more" title="More" component={ More } />
+              <Scene key="more" title="More" component={ More } initial={ true } />
             </Scene>
           </Scene>
         </Scene>

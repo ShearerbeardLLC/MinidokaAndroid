@@ -13,6 +13,8 @@ import MapPinMarker from '../components/MapPinMarker';
 import MapLocationMarker from "../components/MapLocationMarker"
 import sitesData from "../const/sites.json";
 
+import { FOM_ORANGE } from '../styles/colors';
+
 import { siteToCoords } from "../util/site";
 
 const REGION_EDGE_PADDING = 100;
@@ -192,11 +194,25 @@ export default class Map extends Component {
 					initialRegion={ DEFAULT_LOCATION }>
 					{ this.renderSites() }
 				</MapView>
-				<ActionButton buttonColor="rgba(231,76,60,1)" offsetX={ 20 } offsetY={ 70 }>
-					<ActionButton.Item buttonColor='#3498db' title="Reset" onPress={ this.onFitToRegion }>
+				<ActionButton
+          buttonColor={ FOM_ORANGE }
+          offsetX={ 20 }
+          offsetY={ 70 }
+        >
+					<ActionButton.Item
+            buttonColor={ FOM_ORANGE }
+            textStyle={{color: 'white', backgroundColor: 'black'}}
+            textContainerStyle={{backgroundColor: 'black'}}
+            title="Reset"
+            onPress={ this.onFitToRegion }>
 						<Icon name="md-refresh" style={styles.actionButtonIcon} />
 					</ActionButton.Item>
-					<ActionButton.Item buttonColor='#1abc9c' title={ this.state.trackingLocation ? "Disable Location" : "Enable Location" } onPress={ this.toggleTrackingLocation }>
+					<ActionButton.Item
+            buttonColor={ FOM_ORANGE }
+            textStyle={{color: 'white', backgroundColor: 'black'}}
+            textContainerStyle={{backgroundColor: 'black'}}
+            title={ this.state.trackingLocation ? "Disable Location" : "Enable Location" }
+            onPress={ this.toggleTrackingLocation }>
 						<Icon name="md-navigate" style={styles.actionButtonIcon} />
 					</ActionButton.Item>
 				</ActionButton>
