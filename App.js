@@ -17,7 +17,7 @@ export default class App extends Component {
     return (
       <Router>
         <Scene key="root" >
-          <Scene key="tabbar" tabs={ true } tabBarStyle={{backgroundColor: "#FFFFFF"}}>
+          <Scene key="tabbar" tabs={ true } tabBarStyle={{backgroundColor: "black"}}>
             <Scene key="homeTab" title="Home"  icon={ TabIcon }>
               <Scene key="home" title="Home" component={ Home } />
             </Scene>

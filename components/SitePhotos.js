@@ -1,5 +1,5 @@
 
-import React, { Component } from "react";
+import React, { Component } from 'react';
 import {
   View,
   Text,
@@ -7,11 +7,11 @@ import {
   Dimensions,
   StyleSheet,
   TouchableHighlight
-} from "react-native";
+} from 'react-native';
 import Carousel from 'react-native-looped-carousel';
-import { Actions } from "react-native-router-flux";
+import { Actions } from 'react-native-router-flux';
 
-import { siteToPhotos } from "../util/site";
+import { siteToPhotos } from '../util/site';
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
