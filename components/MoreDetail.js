@@ -8,7 +8,11 @@ import {
 
 const styles = StyleSheet.create({
   container: {
-    flex: 1
+    flex: 1,
+    marginTop: 50,
+    marginBottom: 50,
+    alignItems: 'center',
+    justifyContent: 'center'
   }
 });
 
@@ -17,7 +21,7 @@ export default class MoreDetail extends Component {
   render() {
     return (
       <View style={ styles.container }>
-        <Text>Test</Text>
+        <Text>{ this.props.name }</Text>
       </View>
     );
   }

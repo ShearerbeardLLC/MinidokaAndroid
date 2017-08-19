@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 
 const AboutCell = ({name, image, text}) => (
   <View style={ styles.aboutCell }>
-    <TouchableHighlight onPress={ () => Actions.moreDetail({name}) }>
+    <TouchableHighlight onPress={ () => Actions.moreDetail({name, text}) }>
       <Image source={image} />
     </TouchableHighlight>
     <Text style={styles.aboutCellText}>{text}</Text>
@@ -68,8 +68,7 @@ export default class More extends Component {
         </View>
         <View style={ styles.verticalContainer }>
           <AboutCell name='about' image={aboutImage} text='About' />
-          <View style={ styles.aboutCell }>
-          </View>
+          <View style={ styles.aboutCell } />
         </View>
       </View>
     );

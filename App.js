@@ -48,7 +48,7 @@ export default class App extends Component {
             </Scene>
             <Scene key="moreTab" title="More" icon={ TabIcon }>
               <Scene key="more" title="More" component={ More } initial={ true } />
-              <Scene key="moreDetail" component={ MoreDetail } getTitle={({name}) => name} />
+              <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
             </Scene>
           </Scene>
         </Scene>
