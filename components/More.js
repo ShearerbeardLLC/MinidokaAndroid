@@ -19,6 +19,7 @@ import parkInformationImage from '../image/more-info.png';
 import directionsImage from '../image/more-directions.png';
 import safteyAndInformationImage from '../image/more-saftey.png';
 import aboutImage from '../image/more-about.png';
+import monumentImage from '../image/more-monument.png';
 
 const styles = StyleSheet.create({
   container: {
@@ -64,11 +65,11 @@ export default class More extends Component {
         </View>
         <View style={ styles.verticalContainer }>
           <AboutCell name='directions' image={directionsImage} text='Directions' />
-          <AboutCell name='info' image={safteyAndInformationImage} text="Saftey" />
+          <AboutCell name='safety' image={safteyAndInformationImage} text="Safety" />
         </View>
         <View style={ styles.verticalContainer }>
-          <AboutCell name='about' image={aboutImage} text='About' />
-          <View style={ styles.aboutCell } />
+          <AboutCell name='friends-of-minidoka' image={aboutImage} text='Friends of Minidoka' />
+          <AboutCell name='bainbridge-island' image={monumentImage} text='Bainbridge Island' />
         </View>
       </View>
     );
