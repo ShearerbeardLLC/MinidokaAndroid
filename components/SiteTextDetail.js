@@ -7,12 +7,15 @@ import {
   View,
 } from "react-native";
 
+import containerStyles from "../styles/Container";
+
 const styles = StyleSheet.create({
   container: {
-    ...StyleSheet.absoluteFillObject,
     flex: 1,
-    flexDirection: 'column',
-    marginTop: 20
+    marginTop: 58,
+    marginBottom: 50,
+    marginLeft: 8,
+    marginRight: 8,
   },
   contentContainer: {
     paddingVertical: 40,
@@ -23,8 +26,8 @@ const styles = StyleSheet.create({
 
 const SiteTextDetail = ({title, text}) =>
   <View style={ styles.container }>
-    <ScrollView contentContainerStyle={styles.contentContainer}>
-      <Text>{text}</Text>
+    <ScrollView>
+      <Text style={containerStyles.readable}>{text}</Text>
     </ScrollView>
   </View>;
 

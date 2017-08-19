@@ -10,24 +10,37 @@ import {
 } from 'react-native';
 import Carousel from 'react-native-looped-carousel';
 import { Actions } from 'react-native-router-flux';
+import { TRANS } from '../styles/colors'
 
 import { siteToPhotos } from '../util/site';
 
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
-  floating: {
+  caption: {
     position: 'absolute',
     bottom: 0,
     left: 0,
     zIndex: 1000,
-    padding: 8,
-    backgroundColor: 'rgba(0, 0, 0, 0.6)',
+    padding: 4,
+    backgroundColor: TRANS,
+    width: width,
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  credit: {
+    position: 'absolute',
+    top: 0,
+    left: 0,
+    zIndex: 1000,
+    padding: 4,
+    backgroundColor: TRANS,
     width: width,
     flexDirection: 'column',
     justifyContent: 'center'
   },
   floatingText: {
-    color: 'white'
+    color: 'white',
+    fontSize: 13
   }
 });
 
@@ -80,24 +93,27 @@ export default class SitePhotos extends Component {
   render() {
     return (
       <View style={this.state.size}>
-        <View style={styles.floating}>
+        <View style={styles.caption}>
           <Text style={styles.floatingText}>
             Caption: {this.state.caption }
-          </Text>
-          <Text style={styles.floatingText}>
-            {this.state.credit }
           </Text>
         </View>
         <Carousel
           delay={2000}
           style={this.state.size}
           autoplay
-          pageInfo
           onLayout={ this._onLayoutDidChange }
           onAnimateNextPage={ this._onPageChange }
         >
           { this.renderImages() }
         </Carousel>
+        { this.state.credit ?
+          <View style={styles.credit}>
+            <Text style={styles.floatingText}>
+              { this.state.credit }
+            </Text>
+          </View> : <View></View>
+        }
       </View>
     );
   }

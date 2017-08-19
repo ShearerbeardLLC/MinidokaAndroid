@@ -1,5 +1,6 @@
 import React, { Component } from "react";
-import text from "../util/text.js";
+import text from "../util/text";
+import containerStyles from "../styles/Container";
 
 import {
   StyleSheet,
@@ -24,7 +25,7 @@ export default class MoreDetail extends Component {
     return (
       <View style={ styles.container }>
         <ScrollView >
-          <Text>{ text[`about-${this.props.name}`] }</Text>
+          <Text style={ containerStyles.readable }>{ text[`about-${this.props.name}`] }</Text>
         </ScrollView>
       </View>
     );

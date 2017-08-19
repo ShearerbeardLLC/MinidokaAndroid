@@ -5,13 +5,14 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: 'center',
     alignItems: 'center',
-    /* backgroundColor: '#bb0000',*/
   },
   subContainer: {
     fontSize: 20,
     textAlign: 'center',
     margin: 10,
-    /* color: '#ffffff'*/
+  },
+  readable: {
+    fontSize: 18
   }
 });
 

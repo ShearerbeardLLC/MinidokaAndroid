@@ -13,7 +13,7 @@ import MoreDetail from "./components/MoreDetail";
 
 import TabIcon from "./components/TabIcon";
 
-import { FOM_YELLOW } from './styles/colors'
+import { FOM_YELLOW } from './styles/colors';
 
 export default class App extends Component {
   render() {
