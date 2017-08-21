@@ -23,4 +23,12 @@ function siteToText({text}) {
   }));
 }
 
-export { siteToPhotos, siteToCoords, siteToText };
+function sitesToDefaultPhotos(sites) {
+  return sites.map(({ prefix, name }) => ({
+    prefix,
+    name,
+    url: photosLoader[`${prefix}-1-preview`]
+  }));
+}
+
+export { siteToPhotos, siteToCoords, siteToText, sitesToDefaultPhotos };
