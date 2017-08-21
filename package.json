@@ -17,7 +17,9 @@
     "react-native-maps": "^0.15.2",
     "react-native-modal": "^2.4.0",
     "react-native-router-flux": "^3.39.2",
-    "react-native-vector-icons": "^4.2.0"
+    "react-native-vector-icons": "^4.3.0",
+    "react-native-video": "^2.0.0",
+    "react-native-video-player": "^0.8.1"
   },
   "devDependencies": {
     "babel-jest": "20.0.3",
