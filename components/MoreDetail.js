@@ -2,6 +2,8 @@ import React, { Component } from "react";
 import text from "../util/text";
 import containerStyles from "../styles/Container";
 
+import Hyperlink from "react-native-hyperlink";
+
 import {
   StyleSheet,
   Text,
@@ -17,6 +19,9 @@ const styles = StyleSheet.create({
     marginLeft: 8,
     marginRight: 8,
   },
+  link: {
+    color: '#2980b9'
+  }
 });
 
 export default class MoreDetail extends Component {
@@ -25,7 +30,9 @@ export default class MoreDetail extends Component {
     return (
       <View style={ styles.container }>
         <ScrollView >
-          <Text style={ containerStyles.readable }>{ text[`about-${this.props.name}`] }</Text>
+          <Hyperlink linkDefault={ true } linkStyle={ styles.link }>
+            <Text style={ containerStyles.readable }>{ text[`about-${this.props.name}`] }</Text>
+          </Hyperlink>
         </ScrollView>
       </View>
     );

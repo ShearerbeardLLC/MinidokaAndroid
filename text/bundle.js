@@ -1,4 +1,5 @@
 
+var mdLinkRegex = /(\[(.*?)\s?]\s?\()(.+?)(\))/g;
 var fs = require('fs');
 var path = require('path');
 
@@ -12,7 +13,10 @@ function mapFiles(txtPath) {
       fs.readFileSync(path.join(txtPath, file), 'utf8')];
   })
   .reduce(function(coll, file) {
-    coll[file[0]] = file[1];
+    coll[file[0]] = file[1].replace(
+      mdLinkRegex,
+      (fst, snd, title, text) => encodeURI(`http://glossary/${ title }/${ text }/`)
+    );
     return coll;
   }, {});
 }

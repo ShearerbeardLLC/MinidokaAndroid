@@ -7,10 +7,12 @@
     "test": "jest"
   },
   "dependencies": {
+    "linkify-it": "^2.0.3",
     "react": "16.0.0-alpha.6",
     "react-native": "0.44.2",
     "react-native-action-button": "^2.7.1",
     "react-native-gps": "git+https://github.com/agrass/react-native-gps.git",
+    "react-native-hyperlink": "0.0.10",
     "react-native-looped-carousel": "^0.1.7",
     "react-native-maps": "^0.15.2",
     "react-native-modal": "^2.4.0",
