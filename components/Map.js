@@ -178,7 +178,7 @@ export default class Map extends Component {
 		const { trackingLocation, hasLocation } = this.state;
 		const sites = sitesData.map(this.renderSitePin);
 
-		if (trackingLocation === true && hasLocation === true) {
+		if (hasLocation === true) {
 			sites.push(this.renderLocationMarker());
 		}
 

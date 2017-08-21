@@ -41,6 +41,16 @@ const styles = StyleSheet.create({
   floatingText: {
     color: 'white',
     fontSize: 13
+  },
+  infoContainer: {
+    position: 'absolute',
+    bottom: 40,
+    left: 0,
+    right: 0,
+    backgroundColor: 'transparent',
+  },
+  pageInfoTextStyle: {
+    color: 'white'
   }
 });
 
@@ -99,6 +109,9 @@ export default class SitePhotos extends Component {
           </Text>
         </View>
         <Carousel
+          pageInfo
+          pageInfoTextStyle={ styles.pageInfoTextStyle }
+          pageInfoBottomContainerStyle={ styles.infoContainer }
           delay={2000}
           style={this.state.size}
           autoplay
