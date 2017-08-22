@@ -73,10 +73,11 @@ export default class TourSites extends Component {
         onLayout={ this._onLayoutDidChange }
       >
         <Carousel
+          autoPlay={ false }
           arrows={ true }
           style={this.state.size}
-          currentPage={3}
-          onAnimateNextPage={(p) => console.info(p)}
+          currentPage={this.props.index}
+          onAnimateNextPage={this.props.onIndex}
         >
           { this.renderImages(sitesData) }
         </Carousel>

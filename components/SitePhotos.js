@@ -96,7 +96,7 @@ export default class SitePhotos extends Component {
   renderImages() {
     return this.state.photos.map(({previewUrl, fullUrl}, i) =>
       <TouchableHighlight key={i} onPress={ () => this._onClickImage(fullUrl) }>
-       <Image  style={this.state.size} source={ previewUrl } />
+       <Image style={this.state.size} source={ previewUrl } />
       </TouchableHighlight>)
   }
 
