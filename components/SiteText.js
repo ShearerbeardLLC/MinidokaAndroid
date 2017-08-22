@@ -10,7 +10,7 @@ import {
 } from "react-native";
 
 import { Actions } from "react-native-router-flux";
-import { siteToText } from "../util/site";
+import { siteTextDetails } from "../util/site";
 
 const styles = StyleSheet.create({
   container: {
@@ -36,7 +36,8 @@ const styles = StyleSheet.create({
   },
 });
 
-function handlePress(name, {title, text}) {
+function handlePress(name, row) {
+  const {title, text} = siteTextDetails(row);
   Actions.siteTextDetail({name, title, text});
 }
 
@@ -57,18 +58,18 @@ export default class SiteText extends Component {
     });
 
     this.setState({
-      dataSource: dataSource.cloneWithRows(siteToText(this.props))
+      dataSource: dataSource.cloneWithRows(this.props.text)
     });
   }
 
-  renderRow(textRow) {
+  renderRow({name, file}) {
     return (
       <TouchableHighlight
-        key={ textRow.name }
-        onPress={ () => handlePress(this.props.name, textRow) }
+        key={ name }
+        onPress={ () => handlePress(this.props.name, {name, file}) }
       >
         <View style={ styles.rowContainer }>
-          <Text style={ styles.rowText }>{ textRow.title }</Text>
+          <Text style={ styles.rowText }>{ name }</Text>
         </View>
       </TouchableHighlight>
     );

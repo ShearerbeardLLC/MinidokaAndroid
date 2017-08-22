@@ -11,7 +11,7 @@ import { DEFAULT_LOCATION } from "../const/map";
 import { getCurrent, watch, unWatch } from "../util/navigation";
 import MapPinMarker from '../components/MapPinMarker';
 import MapLocationMarker from "../components/MapLocationMarker"
-import sitesData from "../const/sites.json";
+import sitesData from "../const/sitesData";
 
 import { FOM_ORANGE } from '../styles/colors';
 
@@ -81,6 +81,10 @@ export default class Map extends Component {
 		this.watchId = watch(this.handleLocation, this.handleLocationError);
 		setTimeout(this.onFitToRegion, 1000);
 	}
+
+  componentWillUnmount() {
+    navigator.geolocation.clearWatch(this.watchId);
+  }
 
 	getSiteCords(location) {
 		let coords = sitesData.map(siteToCoords);

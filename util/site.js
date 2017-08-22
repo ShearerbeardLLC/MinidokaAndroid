@@ -16,11 +16,9 @@ function siteToPhotos({prefix, photos}) {
   });
 }
 
-function siteToText({text}) {
-  return text.map(({name, file}) => Object.assign({}, {
-    title: name,
-    text: textLoader[file]
-  }));
-}
+const siteTextDetails = ({name, file}) => Object.assign({}, {
+  title: name,
+  text: textLoader[file]
+});
 
-export { siteToPhotos, siteToCoords, siteToText };
+export { siteToPhotos, siteToCoords, siteTextDetails };
