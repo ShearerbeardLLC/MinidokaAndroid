@@ -12,8 +12,6 @@ import Carousel from 'react-native-looped-carousel';
 import { Actions } from 'react-native-router-flux';
 import { TRANS } from '../styles/colors'
 
-import { siteToPhotos } from '../util/site';
-
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   caption: {
@@ -59,17 +57,20 @@ export default class SitePhotos extends Component {
   constructor(...args) {
     super(...args);
 
-    const photos = siteToPhotos(this.props);
-    const { caption, credit } = photos[0];
     const size = this.setSize({width});
 
     this.state ={
-      size, photos, caption, credit
+      size
     };
 
     this.renderImages = this.renderImages.bind(this);
     this._onPageChange = this._onPageChange.bind(this);
     this._onClickImage = this._onClickImage.bind(this);
+  }
+
+  componentDidMount() {
+    const { caption, credit } = this.props.photos[0];
+    this.setState({ caption, credit });
   }
 
   setSize({width}) {
@@ -85,8 +86,8 @@ export default class SitePhotos extends Component {
   }
 
   _onPageChange(i) {
-    const { caption, credit } = this.state.photos[i];
-    this.setState({caption, credit});
+    const { caption, credit } = this.props.photos[i];
+    this.setState({ caption, credit });
   }
 
   _onClickImage(fullUrl) {
@@ -94,7 +95,7 @@ export default class SitePhotos extends Component {
   }
 
   renderImages() {
-    return this.state.photos.map(({previewUrl, fullUrl}, i) =>
+    return this.props.photos.map(({previewUrl, fullUrl}, i) =>
       <TouchableHighlight key={i} onPress={ () => this._onClickImage(fullUrl) }>
        <Image style={this.state.size} source={ previewUrl } />
       </TouchableHighlight>)

@@ -6,7 +6,7 @@ import {
   StyleSheet
 } from 'react-native';
 
-import sitesData from "../const/sites.json";
+import sitesData from "../const/sitesData";
 import styles from "../styles/Container";
 
 import { Actions } from "react-native-router-flux";

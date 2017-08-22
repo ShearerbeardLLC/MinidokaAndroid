@@ -10,23 +10,15 @@ import {
 } from 'react-native';
 import Carousel from 'react-native-looped-carousel';
 
-import sitesData from '../const/sites.json';
-import { siteToPhotos } from "../util/site";
+import sitesData from '../const/sitesData';
 
 const { width } = Dimensions.get('window');
 
-const TourSitePhoto = ({ index, size }) => {
-  const site = sitesData[index];
-  const url = siteToPhotos(site)[0].previewUrl
-
-  return(
-    <TouchableHighlight>
-      <Image
-        style={ size }
-        source={ url } />
-    </TouchableHighlight>
-  );
-}
+const TourSitePhoto = ({ url, size }) => (
+  <TouchableHighlight>
+    <Image style={ size } source={ url } />
+  </TouchableHighlight>
+);
 
 export default class TourSites extends Component {
 
@@ -57,13 +49,13 @@ export default class TourSites extends Component {
     this.setState(this.setSize({ width: layout.width }));
   }
 
-  renderImages(data) {
-    const photos = [];
-    for (let i = 0; i < 20; i++) {
-      photos.push(<TourSitePhoto key={i} index={i} size={this.state.size} />)
-    }
-
-    return photos;
+  renderImages() {
+    return sitesData.map(site =>
+      <TourSitePhoto
+        key={site.prefix}
+        url={site.photos[0].previewUrl}
+        size={this.state.size} />
+    );
   }
 
   render() {
@@ -79,7 +71,7 @@ export default class TourSites extends Component {
           currentPage={this.props.index}
           onAnimateNextPage={this.props.onIndex}
         >
-          { this.renderImages(sitesData) }
+          { this.renderImages() }
         </Carousel>
       </View>
     );

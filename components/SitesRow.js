@@ -8,8 +8,6 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import { siteToPhotos } from "../util/site";
-
 const { width } = Dimensions.get('window');
 const styles = StyleSheet.create({
   textContainer: {
@@ -36,10 +34,9 @@ class SitesRow extends Component {
     super(...args);
 
     const size = this.setSize({width});
-    const photos = siteToPhotos(this.props);
 
     this.state ={
-      size, photos
+      size
     };
   }
 
@@ -52,7 +49,6 @@ class SitesRow extends Component {
 
   render() {
     return (
-
       <TouchableHighlight onPress={() => this.props.onPress(this.props)}>
         <View
           key={this.props.prefix}
@@ -64,7 +60,7 @@ class SitesRow extends Component {
           </View>
           <Image
             style={this.state.size}
-            source={this.state.photos[0].previewUrl} />
+            source={this.props.photos[0].previewUrl} />
         </View>
       </TouchableHighlight>
     );
