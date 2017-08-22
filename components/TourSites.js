@@ -11,21 +11,33 @@ import {
 import Carousel from 'react-native-looped-carousel';
 
 import sitesData from '../const/sites.json';
-import { sitesToDefaultPhotos } from '../util/site';
+import { siteToPhotos } from "../util/site";
 
 const { width } = Dimensions.get('window');
+
+const TourSitePhoto = ({ index, size }) => {
+  const site = sitesData[index];
+  const url = siteToPhotos(site)[0].previewUrl
+
+  return(
+    <TouchableHighlight>
+      <Image
+        style={ size }
+        source={ url } />
+    </TouchableHighlight>
+  );
+}
 
 export default class TourSites extends Component {
 
   constructor(...args) {
     super(...args);
 
-    const photos = sitesToDefaultPhotos(sitesData);
     const size = this.setSize({width});
     const index = 0;
 
     this.state ={
-      index, size, photos
+      index, size
     };
 
     this.renderImages = this.renderImages.bind(this);
@@ -45,26 +57,28 @@ export default class TourSites extends Component {
     this.setState(this.setSize({ width: layout.width }));
   }
 
-  renderImages() {
-    return this.state.photos.map(({ prefix, url }, i) =>
-      <TouchableHighlight key={i}>
-        <Image style={ this.state.size } source={ url }></Image>
-      </TouchableHighlight>
-    );
+  renderImages(data) {
+    const photos = [];
+    for (let i = 0; i < 20; i++) {
+      photos.push(<TourSitePhoto key={i} index={i} size={this.state.size} />)
+    }
+
+    return photos;
   }
 
   render() {
     return (
       <View
-        style={[{backgroundColor: 'red'}, this.state.size]}
-        onLayout={this._onLayoutDidChange}
+        style={this.state.size}
+        onLayout={ this._onLayoutDidChange }
       >
         <Carousel
-          autoplay={ true }
           arrows={ true }
           style={this.state.size}
+          currentPage={3}
+          onAnimateNextPage={(p) => console.info(p)}
         >
-          { this.renderImages() }
+          { this.renderImages(sitesData) }
         </Carousel>
       </View>
     );

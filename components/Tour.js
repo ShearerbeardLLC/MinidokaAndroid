@@ -1,19 +1,36 @@
 import React, { Component } from "react";
 import {
   Text,
-  View
+  View,
+  StyleSheet
 } from 'react-native';
 
-import styles from "../styles/Container";
+const styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    marginTop: 50,
+    flexDirection: 'column'
+  },
+  map: {
+    flex: 1
+  }
+});
+
 import TourSites from './TourSites';
 
 export default class Tour extends Component {
 
+  constructor(...args) {
+    super(...args);
+  }
+
   render() {
     return (
       <View style={ styles.container }>
-        <TourSites />
-        <Text style={ styles.subContainer }>Tour</Text>
+        <View>
+          <TourSites />
+        </View>
+        <View style={ styles.map } ></View>
       </View>
     );
   }
