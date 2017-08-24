@@ -84,7 +84,7 @@ export default class TourSites extends Component {
   }
 
   renderSite({item, index}) {
-    return (
+    return item ? (
       <TourSitePhoto
         length={ sitesData.slice(0).length }
         index={index}
@@ -94,7 +94,7 @@ export default class TourSites extends Component {
         url={item.photos[0].previewUrl}
         size={this.state.size}
       />
-    );
+    ) : false;
   }
 
   render() {

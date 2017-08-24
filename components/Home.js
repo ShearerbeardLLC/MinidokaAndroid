@@ -19,6 +19,7 @@ const homeStyles = StyleSheet.create({
     zIndex: 1000,
     position: 'absolute',
     padding: 8,
+    backgroundColor: 'transparent'
   },
   stripe: {
     height: 20,

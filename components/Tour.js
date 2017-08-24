@@ -10,10 +10,12 @@ import { Pagination } from 'react-native-snap-carousel'
 import { getCurrent, watch, unWatch } from "../util/navigation";
 import { Actions } from "react-native-router-flux";
 
+import { DEFAULT_LOCATION } from "../const/map";
 import sitesData from '../const/sitesData';
 import TourSites from './TourSites';
 import { siteToCoords } from "../util/site";
 import MapNumberMarker from "../components/MapNumberMarker";
+import MapLocationMarker from "../components/MapLocationMarker";
 
 const styles = StyleSheet.create({
   container: {
@@ -118,11 +120,15 @@ export default class Tour extends Component {
           onIndex={this.onIndex}
         />
         <MapView ref={ ref => this.map = ref } style={ styles.map }>
-          <MapNumberMarker
-            site={this.state.site}
-            index={ this.state.index }
-            onCalloutPress={ this.onCalloutPress }
-          />
+          { this.state.site ? (
+              <MapNumberMarker
+                initialRegion={ DEFAULT_LOCATION }
+                site={this.state.site}
+                index={ this.state.index }
+                onCalloutPress={ this.onCalloutPress }
+              />
+            ) : false
+          }
           { this.state.location ?
             <MapLocationMarker key="me" coordinate={this.state.location} /> : false
           }

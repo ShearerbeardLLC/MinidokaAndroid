@@ -4,6 +4,7 @@ import {
   Alert,
   StyleSheet,
   ScrollView,
+  Platform,
   Text,
   View,
 } from "react-native";
@@ -14,7 +15,14 @@ import Hyperlink from "react-native-hyperlink";
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    marginTop: 58,
+    ...Platform.select({
+      ios: {
+        top: 72,
+      },
+      android: {
+        top: 54,
+      }
+    }),
     marginBottom: 50,
     marginLeft: 8,
     marginRight: 8,
