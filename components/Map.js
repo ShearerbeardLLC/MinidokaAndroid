@@ -99,7 +99,7 @@ export default class Map extends Component {
 
 
 	onCalloutPress(site) {
-		Actions.mapSite({ ...site });
+		Actions.site({ ...site });
 	}
 
 	handleLocation({latitude, longitude}) {

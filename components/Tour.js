@@ -107,7 +107,7 @@ export default class Tour extends Component {
 	}
 
   onCalloutPress() {
-    Actions.tourSite({ ...this.state.site });
+    Actions.site({ ...this.state.site });
   }
 
   render() {

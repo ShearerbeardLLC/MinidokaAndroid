@@ -29,32 +29,33 @@ export default class App extends Component {
             </Scene>
             <Scene key="mapTab" title="Map" icon={ TabIcon }>
               <Scene key="map" title="Map" component={ Map } initial={ true } />
-							<Scene
-								key="mapSite"
-								getTitle={({name}) => name}
-								component={ Site } />
             </Scene>
             <Scene key="sitesTab" title="Sites" icon={ TabIcon }>
               <Scene key="sites" title="Sites" component={ Sites } initial={ true } />
-              <Scene
-								key="site"
-								getTitle={({name}) => name}
-								component={ Site } />
-              <Scene key="siteTextDetail" component={ SiteTextDetail } />
-              <Scene key="sitePhotoDetail" component={ SitePhotoDetail } />
             </Scene>
             <Scene key="tourTab" title="Tour" icon={ TabIcon }>
               <Scene key="tour" title="Tour" component={ Tour } initial={true} />
-              <Scene
-                key="tourSite"
-                getTitle={({name}) => name}
-                component={ Site } />
             </Scene>
             <Scene key="moreTab" title="More" icon={ TabIcon }>
               <Scene key="more" title="More" component={ More } initial={ true } />
-              <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
             </Scene>
           </Scene>
+          <Scene
+            clone={true}
+            key="site"
+            getTitle={({name}) => name}
+            component={ Site } />
+          <Scene
+            key="siteTextDetail"
+            modal={true}
+            component={ SiteTextDetail }
+          />
+          <Scene
+            key="sitePhotoDetail"
+            modal={true}
+            component={ SitePhotoDetail }
+          />
+          <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
         </Scene>
       </Router>
     );
