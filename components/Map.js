@@ -30,6 +30,7 @@ const { width, height } = Dimensions.get("window");
 const styles = StyleSheet.create({
 	container: {
 		...StyleSheet.absoluteFillObject,
+    backgroundColor: 'transparent',
 		justifyContent: 'flex-end',
 		alignItems: 'center',
 	},

@@ -4,19 +4,22 @@ import {
   View,
   StyleSheet
 } from 'react-native';
+import MapView from "react-native-maps";
+
+import sitesData from '../const/sitesData';
+import TourSites from './TourSites';
 
 const styles = StyleSheet.create({
   container: {
     flex: 1,
     marginTop: 50,
-    flexDirection: 'column'
+    flexDirection: 'column',
+    backgroundColor: 'transparent',
   },
   map: {
     flex: 1
   }
 });
-
-import TourSites from './TourSites';
 
 export default class Tour extends Component {
 
@@ -41,11 +44,12 @@ export default class Tour extends Component {
   render() {
     return (
       <View style={ styles.container }>
-        <View>
-          <TourSites index={ this.state.index } onIndex={this.onIndex} />
-        </View>
-        <Text>{ this.state.index }</Text>
-        <View style={ styles.map } ></View>
+        <TourSites
+          index={ this.state.index }
+          onIndex={this.onIndex}
+        />
+        <MapView style={ styles.map }>
+        </MapView>
       </View>
     );
   }
