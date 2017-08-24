@@ -5,36 +5,51 @@ import {
   Text,
   Image,
   Dimensions,
+  Platform,
   StyleSheet,
   TouchableHighlight
 } from 'react-native';
 
 import Carousel from 'react-native-snap-carousel';
 import sitesData from '../const/sitesData';
+import { TRANS } from '../styles/colors'
 
 const { width } = Dimensions.get('window');
 
 const styles = StyleSheet.create({
   container: {
-    zIndex: 1000,
-    position: 'absolute',
-    backgroundColor: 'transparent',
-    top: 0,
-    left: 0,
-    right: 0,
+    backgroundColor: 'black',
   },
   sliderContainer: {
     flexDirection: 'row',
     alignItems: 'center',
   },
-  sitePhoto: {
-    backgroundColor: 'transparent',
+  textContainer: {
+    zIndex: 1000,
+    flexDirection: 'column',
+    backgroundColor: TRANS,
+    alignItems: 'center',
+    justifyContent: 'center',
+    position: 'absolute',
+    bottom: 0,
+    left: 0,
+    right: 0,
+    margin: 0,
+    padding: 8,
+  },
+  text: {
+    color: 'white'
   }
 });
 
-const TourSitePhoto = ({ url, size }) => (
+const TourSitePhoto = ({ name, url, size, width, index, length }) => (
   <TouchableHighlight>
-    <Image style={ size } source={ url } />
+    <View style={size}>
+      <Image style={ size } source={ url } />
+      <View style={ [{width}, styles.textContainer]}>
+        <Text style={ styles.text }>{ `${name} (${index +1 } of ${ length })` }</Text>
+      </View>
+    </View>
   </TouchableHighlight>
 );
 
@@ -45,12 +60,12 @@ export default class TourSites extends Component {
 
     const size = this.setSize({width});
     const index = 0;
+    const length = sitesData.length;
 
     this.state ={
-      index, size
+      index, size, length
     };
 
-    this.renderImages = this.renderImages.bind(this);
     this.setSize = this.setSize.bind(this);
     this.renderSite = this.renderSite.bind(this);
     this._onLayoutDidChange = this._onLayoutDidChange.bind(this);
@@ -68,18 +83,13 @@ export default class TourSites extends Component {
     this.setState(this.setSize({ width: layout.width }));
   }
 
-  renderImages() {
-    return sitesData.map(site =>
-      <TourSitePhoto
-        key={site.prefix}
-        url={site.photos[0].previewUrl}
-        size={this.state.size} />
-    );
-  }
-
   renderSite({item, index}) {
     return (
       <TourSitePhoto
+        length={ this.state.length }
+        index={index}
+        name={item.name}
+        width={ this.state.size.width }
         key={item.prefix}
         url={item.photos[0].previewUrl}
         size={this.state.size}
@@ -100,6 +110,7 @@ export default class TourSites extends Component {
           sliderWidth={ this.state.size.width }
           itemWidth={ this.state.size.width }
           onSnapToItem={ this.props.onIndex }
+          scrollEndDragDebounceValue={Platform.OS === 'ios' ? 0 : 100}
         />
       </View>
     );

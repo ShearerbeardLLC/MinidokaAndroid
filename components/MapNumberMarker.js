@@ -27,6 +27,7 @@ const MapNumberMarker = ({site, index, onPress, onCalloutPress }) => {
 
 	const {prefix, name, detail} = site;
 	const { latitude, longitude } = siteToCoords(site);
+  const num = index + 1;
 
 	return (
 		<MapView.Marker
@@ -34,7 +35,7 @@ const MapNumberMarker = ({site, index, onPress, onCalloutPress }) => {
 			description={ detail }
 			onPress={ onPress }
 			onCalloutPress={ onCalloutPress }
-			coordinate={coordinate}>
+			coordinate={{ latitude, longitude }}>
 			<View style={ styles.numberMarker }>
 				<Text style={ styles.numberMakerText }>{ num }</Text>
 			</View>

@@ -44,7 +44,11 @@ export default class App extends Component {
               <Scene key="sitePhotoDetail" component={ SitePhotoDetail } />
             </Scene>
             <Scene key="tourTab" title="Tour" icon={ TabIcon }>
-              <Scene key="tour" title="Tour" component={ Tour } />
+              <Scene key="tour" title="Tour" component={ Tour } initial={true} />
+              <Scene
+                key="tourSite"
+                getTitle={({name}) => name}
+                component={ Site } />
             </Scene>
             <Scene key="moreTab" title="More" icon={ TabIcon }>
               <Scene key="more" title="More" component={ More } initial={ true } />
