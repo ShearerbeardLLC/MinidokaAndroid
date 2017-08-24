@@ -43,7 +43,7 @@ export default class Tour extends Component {
     super(...args);
 
     this.state = {
-      index: 0,
+      index: 0
     };
 
     this.onIndex = this.onIndex.bind(this);

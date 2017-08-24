@@ -10,8 +10,9 @@ import {
   TouchableHighlight
 } from 'react-native';
 
-import Carousel from 'react-native-snap-carousel';
 import sitesData from '../const/sitesData';
+
+import Carousel from 'react-native-snap-carousel';
 import { TRANS } from '../styles/colors'
 
 const { width } = Dimensions.get('window');
@@ -60,10 +61,9 @@ export default class TourSites extends Component {
 
     const size = this.setSize({width});
     const index = 0;
-    const length = sitesData.length;
 
     this.state ={
-      index, size, length
+      index, size, sites: sitesData.slice(0)
     };
 
     this.setSize = this.setSize.bind(this);
@@ -86,7 +86,7 @@ export default class TourSites extends Component {
   renderSite({item, index}) {
     return (
       <TourSitePhoto
-        length={ this.state.length }
+        length={ sitesData.slice(0).length }
         index={index}
         name={item.name}
         width={ this.state.size.width }
@@ -104,7 +104,7 @@ export default class TourSites extends Component {
         onLayout={ this._onLayoutDidChange }
       >
         <Carousel
-          data={ sitesData }
+          data={ sitesData.slice(0) }
           renderItem={ this.renderSite }
           ref={ carousel => this._carousel = carousel }
           sliderWidth={ this.state.size.width }

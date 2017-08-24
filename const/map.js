@@ -1,4 +1,3 @@
-import sitesData from "./sites.json";
 
 import { Dimensions } from "react-native";
 
