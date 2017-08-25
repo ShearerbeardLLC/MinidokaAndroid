@@ -11,6 +11,7 @@ import SitePhotoDetail from "./components/SitePhotoDetail";
 import More from "./components/More";
 import MoreDetail from "./components/MoreDetail";
 import Grant from "./components/Grant";
+import Video from './components/Video';
 
 import TabIcon from "./components/TabIcon";
 
@@ -58,6 +59,7 @@ export default class App extends Component {
           />
           <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
           <Scene key="grant" modal={true} component={ Grant } title="Grant Info" />
+          <Scene key="video" component={ Video } title="Vid" />
         </Scene>
       </Router>
     );

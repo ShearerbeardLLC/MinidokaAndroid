@@ -73,8 +73,8 @@ export default class Home extends Component {
         <Image source={home} />
         <TouchableHighlight
           style={ homeStyles.logo }
-          onPress={ openGrant }>
-          <Image  source={logo} />
+          onPress={ () => Actions.video() }>
+          <Image source={logo} />
         </TouchableHighlight>
         <View style={homeStyles.stripe}></View>
       </View>

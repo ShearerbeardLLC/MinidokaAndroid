@@ -1,5 +1,5 @@
 
-const AWS_BASE = "http://minidoka-nps-ios.s3-website-us-west-2.amazonaws.com/";
+const AWS_BASE = "http://s3-us-west-2.amazonaws.com/minidoka-nps-ios";
 
 const fullUrl = name => `${AWS_BASE}/${name}.m4v`;
 
