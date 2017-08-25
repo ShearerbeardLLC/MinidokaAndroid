@@ -12,7 +12,8 @@ const styles = StyleSheet.create({
     margin: 10,
   },
   readable: {
-    fontSize: 18
+    fontSize: 18,
+    marginBottom: 20
   }
 });
 

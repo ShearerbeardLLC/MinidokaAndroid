@@ -21,7 +21,7 @@ export default class App extends Component {
     return (
       <Router
         barButtonIconStyle={{ tintColor: 'white' }}
-        navigationBarStyle={{backgroundColor: FOM_ORANGE, borderBottomColor:"#1e2226"}}
+        navigationBarStyle={{backgroundColor: FOM_ORANGE, borderBottomColor: FOM_ORANGE}}
         titleStyle={{color : "#FFF"}}>
         <Scene key="root">
           <Scene key="tabbar" tabs={ true } tabBarStyle={{backgroundColor: "black"}}>
@@ -57,7 +57,7 @@ export default class App extends Component {
             component={ SitePhotoDetail }
           />
           <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
-          <Scene key="grant" modal={true} component={ Grant } title="Grant" />
+          <Scene key="grant" modal={true} component={ Grant } title="Grant Info" />
         </Scene>
       </Router>
     );
