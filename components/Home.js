@@ -4,22 +4,22 @@ import {
   View,
   Image,
   Dimensions,
+  Platform,
   StyleSheet
 } from 'react-native';
-import {FOM_GREY} from '../styles/colors';
+import { FOM_GREY } from '../styles/colors';
 
 import styles from "../styles/Container";
 import home from "../image/home-landing.jpg"
+import logo from "../image/fom-white-logo.png"
 const { width } = Dimensions.get('window');
 
 const homeStyles = StyleSheet.create({
-  textContainer: {
-    bottom: 70,
-    left: 0,
+  logo: {
+    bottom: 80,
+    left: 10,
     zIndex: 1000,
     position: 'absolute',
-    padding: 8,
-    backgroundColor: 'transparent'
   },
   stripe: {
     height: 20,
@@ -45,10 +45,7 @@ export default class Home extends Component {
     return (
       <View style={ styles.container }>
         <Image source={home} />
-        <View style={homeStyles.textContainer}>
-          <Text style={homeStyles.header}>Minidoka</Text>
-          <Text style={homeStyles.sub}>National Historic Site</Text>
-        </View>
+        <Image style={ homeStyles.logo } source={logo} />
         <View style={homeStyles.stripe}></View>
       </View>
     );
