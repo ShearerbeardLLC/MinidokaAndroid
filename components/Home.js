@@ -5,13 +5,17 @@ import {
   Image,
   Dimensions,
   Platform,
-  StyleSheet
+  StyleSheet,
+  TouchableHighlight,
 } from 'react-native';
-import { FOM_GREY } from '../styles/colors';
+import Storage from 'react-native-storage';
+import { Actions } from "react-native-router-flux";
 
+import { FOM_GREY } from '../styles/colors';
 import styles from "../styles/Container";
 import home from "../image/home-landing.jpg"
 import logo from "../image/fom-white-logo.png"
+
 const { width } = Dimensions.get('window');
 
 const homeStyles = StyleSheet.create({
@@ -39,13 +43,39 @@ const homeStyles = StyleSheet.create({
   }
 });
 
+const storage = new Storage({
+});
+
+function openGrant() {
+  storage.save({
+    key: "grantconfirmed",
+    data: true
+  });
+
+  Actions.grant();
+}
+
 export default class Home extends Component {
+
+  componentDidMount() {
+    storage.load({ key: "grantconfirmed" })
+    .then(confirmed => {
+      if (!confirmed) {
+        openGrant();
+      }
+    })
+    .catch(() => openGrant());
+  }
 
   render() {
     return (
       <View style={ styles.container }>
         <Image source={home} />
-        <Image style={ homeStyles.logo } source={logo} />
+        <TouchableHighlight
+          style={ homeStyles.logo }
+          onPress={ openGrant }>
+          <Image  source={logo} />
+        </TouchableHighlight>
         <View style={homeStyles.stripe}></View>
       </View>
     );

@@ -10,6 +10,7 @@ import SiteTextDetail from "./components/SiteTextDetail";
 import SitePhotoDetail from "./components/SitePhotoDetail";
 import More from "./components/More";
 import MoreDetail from "./components/MoreDetail";
+import Grant from "./components/Grant";
 
 import TabIcon from "./components/TabIcon";
 
@@ -56,6 +57,7 @@ export default class App extends Component {
             component={ SitePhotoDetail }
           />
           <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
+          <Scene key="grant" modal={true} component={ Grant } title="Grant" />
         </Scene>
       </Router>
     );
