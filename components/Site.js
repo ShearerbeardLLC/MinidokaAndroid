@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import {
   StyleSheet,
   Dimensions,
+  Platform,
   View,
 } from "react-native";
 
@@ -15,7 +16,14 @@ const styles = StyleSheet.create({
     flex: 1,
     flexDirection: 'column',
     marginBottom: 50,
-    marginTop: 50
+    ...Platform.select({
+      ios: {
+        top: 72,
+      },
+      android: {
+        top: 54,
+      }
+    }),
   },
 });
 
