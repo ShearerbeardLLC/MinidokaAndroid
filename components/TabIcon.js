@@ -16,7 +16,7 @@ import navTourSelected from '../image/nav-tour-selected.png';
 import navMore from '../image/nav-about.png';
 import navMoreSelected from '../image/nav-about-selected.png';
 
-import { FOM_YELLOW } from '../styles/colors';
+import { FOM_ORANGE } from '../styles/colors';
 
 const iconMap = {
   'Home': [navHome, navHomeSelected],
@@ -52,7 +52,7 @@ const TabIcon = ({ selected, title }) => {
       <View style={ styles.imageContainer }>
         <Image source={ getIcon(selected, title) } />
       </View>
-      <Text style={{color: selected ? FOM_YELLOW : 'white'}}>{title}</Text>
+      <Text style={{color: selected ? FOM_ORANGE : 'white'}}>{title}</Text>
     </View>
   );
 }

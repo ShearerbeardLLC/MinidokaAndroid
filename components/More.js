@@ -18,7 +18,7 @@ import backgroundImage from '../image/more-background.png';
 import parkInformationImage from '../image/more-info.png';
 import directionsImage from '../image/more-directions.png';
 import safteyAndInformationImage from '../image/more-saftey.png';
-import aboutImage from '../image/more-about.png';
+import fomImage from '../image/more-friends-of-minidoka.png';
 import monumentImage from '../image/more-monument.png';
 
 const styles = StyleSheet.create({
@@ -68,7 +68,7 @@ export default class More extends Component {
           <AboutCell name='safety' image={safteyAndInformationImage} text="Safety" />
         </View>
         <View style={ styles.verticalContainer }>
-          <AboutCell name='friends-of-minidoka' image={aboutImage} text='Friends of Minidoka' />
+          <AboutCell name='friends-of-minidoka' image={fomImage} text='Friends of Minidoka' />
           <AboutCell name='bainbridge-island' image={monumentImage} text='Bainbridge Island' />
         </View>
       </View>
