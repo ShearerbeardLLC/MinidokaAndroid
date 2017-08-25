@@ -18,7 +18,7 @@ const styles = StyleSheet.create({
     marginBottom: 50,
     ...Platform.select({
       ios: {
-        top: 72,
+        top: 64,
       },
       android: {
         top: 54,
