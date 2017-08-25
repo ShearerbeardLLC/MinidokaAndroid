@@ -9,6 +9,7 @@ import {
   View,
 } from "react-native";
 
+import { FOM_ORANGE } from '../styles/colors';
 import containerStyles from "../styles/Container";
 import Hyperlink from "react-native-hyperlink";
 
@@ -28,7 +29,7 @@ const styles = StyleSheet.create({
     marginRight: 8,
   },
   link: {
-    color: "#2980b9"
+    color: FOM_ORANGE
   }
 });
 

@@ -13,14 +13,14 @@ import MoreDetail from "./components/MoreDetail";
 
 import TabIcon from "./components/TabIcon";
 
-import { FOM_YELLOW } from './styles/colors';
+import { FOM_YELLOW, FOM_ORANGE } from './styles/colors';
 
 export default class App extends Component {
   render() {
     return (
       <Router
-        barButtonIconStyle={{ tintColor: FOM_YELLOW }}
-        navigationBarStyle={{backgroundColor: '#1e2226',borderBottomColor:"#1e2226"}}
+        barButtonIconStyle={{ tintColor: 'white' }}
+        navigationBarStyle={{backgroundColor: FOM_ORANGE, borderBottomColor:"#1e2226"}}
         titleStyle={{color : "#FFF"}}>
         <Scene key="root">
           <Scene key="tabbar" tabs={ true } tabBarStyle={{backgroundColor: "black"}}>

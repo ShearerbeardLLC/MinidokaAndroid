@@ -6,7 +6,7 @@ import {
   Dimensions,
   StyleSheet
 } from 'react-native';
-import {FOM_YELLOW} from '../styles/colors';
+import {FOM_GREY} from '../styles/colors';
 
 import styles from "../styles/Container";
 import home from "../image/home-landing.jpg"
@@ -26,7 +26,7 @@ const homeStyles = StyleSheet.create({
     position: 'absolute',
     bottom: 50,
     width: width,
-    backgroundColor: FOM_YELLOW
+    backgroundColor: FOM_GREY
   },
   header: {
     color: 'white',
