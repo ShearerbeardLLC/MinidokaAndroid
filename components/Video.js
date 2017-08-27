@@ -105,7 +105,7 @@ export default class VideoPlayer extends Component {
     super(...args);
 
     this.state = {
-      selected: null
+      selected: null,
     };
 
     this.select = this.select.bind(this);
@@ -113,7 +113,7 @@ export default class VideoPlayer extends Component {
 
   select(video) {
     this.setState({
-      selected: video
+      selected: video,
     });
   }
 
@@ -121,12 +121,13 @@ export default class VideoPlayer extends Component {
     return (
       <View style={ styles.container }>
         <View style={styles.video}>
-          <Video
-            autoplay={true}
+          { this.state.selected ? <Video
+            autoplay={ true }
+            resizeMode="cover"
             video={{
-              uri: this.state.selected ? this.state.selected.uri : null
+              uri: this.state.selected.uri
             }}
-          />
+          /> : false }
         </View>
         <View style={ styles.list }>
           <VideoList videos={this.props.videos} onSelect={this.select} />
