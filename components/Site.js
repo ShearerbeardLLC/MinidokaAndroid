@@ -61,7 +61,7 @@ export default class Site extends Component {
             textStyle={styles.text}
             textContainerStyle={styles.textContainer}
             title="Map"
-            onPress={() => Actions.tour({index: index || 1, type: 'transitionToTop'})}
+            onPress={() => Actions.nestedTour({index: index || 1})}
           >
             <Icon name="google-maps" style={styles.actionButtonIcon} />
           </ActionButton.Item>
