@@ -15,7 +15,6 @@ const styles = StyleSheet.create({
   column: {
     flex: 1,
     flexDirection: 'column',
-    marginBottom: 50,
     ...Platform.select({
       ios: {
         marginTop: 64,

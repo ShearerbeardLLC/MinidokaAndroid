@@ -24,9 +24,9 @@ const styles = StyleSheet.create({
         top: 54,
       }
     }),
-    marginBottom: 50,
     marginLeft: 8,
     marginRight: 8,
+    marginBottom: 16,
   },
   link: {
     color: FOM_ORANGE

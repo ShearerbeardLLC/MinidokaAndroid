@@ -43,7 +43,7 @@ export default class App extends Component {
             </Scene>
           </Scene>
           <Scene
-            clone={true}
+            modal={true}
             key="site"
             getTitle={({name}) => name}
             component={ Site } />
@@ -59,7 +59,11 @@ export default class App extends Component {
           />
           <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
           <Scene key="grant" modal={true} component={ Grant } title="Grant Info" />
-          <Scene key="video" component={ Video } title="Vid" />
+          <Scene key="video"
+            modal={true}
+            getTitle={({name}) => name}
+            component={ Video }
+          />
         </Scene>
       </Router>
     );

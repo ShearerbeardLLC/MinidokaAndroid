@@ -21,13 +21,11 @@ const styles = StyleSheet.create({
     }),
     marginLeft: 8,
     marginRight: 8,
-    marginBottom: 50
+    marginBottom: 16
   },
   text: {
     color: 'black',
     fontSize: 18,
-    marginTop: 8,
-    marginBottom: 20
   }
 });
 
