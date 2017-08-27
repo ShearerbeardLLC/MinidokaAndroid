@@ -1,5 +1,6 @@
 import photosLoader from "./photos";
 import textLoader from "./text";
+import fullUrl from "../util/video";
 
 function siteToCoords({coordinates}) {
 	return coordinates[0];
@@ -21,4 +22,19 @@ const siteTextDetails = ({name, file}) => Object.assign({}, {
   text: textLoader[file]
 });
 
-export { siteToPhotos, siteToCoords, siteTextDetails };
+const siteVideos = site => {
+  if (!site.video) {
+    return site;
+  }
+
+  const videos = site.video.map((video, i) => Object.assign({}, video, {
+    key: `${site.prefix}-${ i + 1}`,
+    uri: fullUrl(site.prefix, i)
+  }));
+
+  return Object.assign({}, site, {
+    videos
+  });
+};
+
+export { siteToPhotos, siteToCoords, siteTextDetails, siteVideos };

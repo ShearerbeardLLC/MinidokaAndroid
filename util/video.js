@@ -1,6 +1,6 @@
 
-const AWS_BASE = "http://s3-us-west-2.amazonaws.com/minidoka-nps-ios";
+const AWS_BASE = "https://s3-us-west-2.amazonaws.com/minidoka-nhs-mobile";
 
-const fullUrl = name => `${AWS_BASE}/${name}.m4v`;
+const fullUrl = (name, i) => `${AWS_BASE}/${name}-${i + 1}.m4v`;
 
 export default fullUrl;
