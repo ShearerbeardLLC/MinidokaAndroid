@@ -63,12 +63,21 @@ export default class TourSites extends Component {
     const index = 0;
 
     this.state ={
-      index, size, sites: sitesData.slice(0)
+      index, size, sites: sitesData.slice(0), init: false
     };
 
     this.setSize = this.setSize.bind(this);
     this.renderSite = this.renderSite.bind(this);
     this._onLayoutDidChange = this._onLayoutDidChange.bind(this);
+    this.init = this.init.bind(this);
+  }
+
+  init() {
+    this.setState({init: true});
+  }
+
+  componentDidMount() {
+    setTimeout(this.init, 0);
   }
 
   setSize({width}) {
@@ -103,15 +112,17 @@ export default class TourSites extends Component {
         style={[this.state.size, styles.container]}
         onLayout={ this._onLayoutDidChange }
       >
-        <Carousel
-          data={ sitesData.slice(0) }
-          renderItem={ this.renderSite }
-          ref={ carousel => this._carousel = carousel }
-          sliderWidth={ this.state.size.width }
-          itemWidth={ this.state.size.width }
-          onSnapToItem={ this.props.onIndex }
-          scrollEndDragDebounceValue={Platform.OS === 'ios' ? 0 : 100}
-        />
+        { this.state.init ?
+          <Carousel
+            data={ sitesData.slice(0) }
+            firstItem={ this.props.index }
+            renderItem={ this.renderSite }
+            ref={ carousel => this._carousel = carousel }
+            sliderWidth={ this.state.size.width }
+            itemWidth={ this.state.size.width }
+            onSnapToItem={ this.props.onIndex }
+            scrollEndDragDebounceValue={Platform.OS === 'ios' ? 0 : 100}
+          /> : <View style={[this.state.size, { backgroundColor: 'black' }]}></View>}
       </View>
     );
   }

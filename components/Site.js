@@ -4,7 +4,8 @@ import {
   Dimensions,
   Platform,
   View,
-  Image
+  Image,
+  Text
 } from "react-native";
 
 import SitePhotos from './SitePhotos';
@@ -48,7 +49,8 @@ export default class Site extends Component {
   render() {
 		const { name, subDetail, photos, text, index, videos } = this.props;
     return (
-      <View style={ styles.column } >
+      <View style={ styles.column }>
+        <Text>{ index }</Text>
         <SitePhotos {...this.props} />
         <SiteText {...this.props} />
         <SiteBottomBar {...this.props} />

@@ -11,7 +11,6 @@ import {
   StyleSheet,
   TouchableHighlight
 } from 'react-native';
-
 import Video from 'react-native-video-player';
 
 const { width } = Dimensions.get('window');
@@ -48,6 +47,17 @@ const styles = StyleSheet.create({
     flex: 1,
     height: StyleSheet.hairlineWidth,
     backgroundColor: '#8E8E8E',
+  },
+  credit: {
+    padding: 4,
+    backgroundColor: 'black',
+    width: width,
+    flexDirection: 'column',
+    justifyContent: 'center'
+  },
+  floatingText: {
+    color: 'white',
+    fontSize: 13
   }
 });
 
@@ -120,6 +130,13 @@ export default class VideoPlayer extends Component {
   render() {
     return (
       <View style={ styles.container }>
+        { this.state.selected && this.state.selected.credit ?
+          <View style={styles.credit}>
+            <Text style={styles.floatingText}>
+              { this.state.selected.credit }
+            </Text>
+          </View> : false
+        }
         <View style={styles.video}>
           { this.state.selected ? <Video
             autoplay={ true }
