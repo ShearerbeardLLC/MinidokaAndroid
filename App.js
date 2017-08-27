@@ -1,5 +1,5 @@
 import React, { Component } from "react";
-import { Router, Scene, Actions } from "react-native-router-flux";
+import { Router, Scene } from "react-native-router-flux";
 
 import Home from "./components/Home";
 import Tour from "./components/Tour";
@@ -59,11 +59,7 @@ export default class App extends Component {
           />
           <Scene key="moreDetail" component={ MoreDetail } getTitle={({text}) => text} />
           <Scene key="grant" modal={true} component={ Grant } title="Grant Info" />
-          <Scene key="video"
-            modal={true}
-            getTitle={({name}) => name}
-            component={ Video }
-          />
+          <Scene key="video" modal={true} component={ Video } />
         </Scene>
       </Router>
     );

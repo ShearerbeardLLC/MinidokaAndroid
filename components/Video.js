@@ -51,14 +51,11 @@ const styles = StyleSheet.create({
   }
 });
 
-const VideoListRow = ({ url, onSelect }) => (
-  <TouchableHighlight
-    key={url}
-    onPress={onSelect}
-  >
+const VideoListRow = ({ key, name , onSelect }) => (
+  <TouchableHighlight onPress={onSelect}>
     <View style={styles.rowContainer}>
       <Text style={styles.rowText}>
-        {url}
+        {name}
       </Text>
     </View>
   </TouchableHighlight>
@@ -90,8 +87,8 @@ class VideoList extends Component {
         renderRow={
           video =>
             <VideoListRow
-              key={video.key}
-              onSelect={() => this.props.onSelect(video)} url={video.uri}
+              onSelect={() => this.props.onSelect(video)}
+              name={video.name}
             />
         }
         renderSeparator={
@@ -108,16 +105,6 @@ export default class VideoPlayer extends Component {
     super(...args);
 
     this.state = {
-      videos: [
-        {
-          key: "1",
-          uri: "https://s3-us-west-2.amazonaws.com/minidoka-nhs-mobile/barracks-as-classrooms-1.m4v"
-        },
-        {
-          key: "2",
-          uri: "https://s3-us-west-2.amazonaws.com/minidoka-nps-ios/root-cellar.m4v"
-        }
-      ],
       selected: null
     };
 
@@ -142,7 +129,7 @@ export default class VideoPlayer extends Component {
           />
         </View>
         <View style={ styles.list }>
-          <VideoList videos={this.state.videos} onSelect={this.select} />
+          <VideoList videos={this.props.videos} onSelect={this.select} />
         </View>
       </View>
     );

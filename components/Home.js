@@ -52,7 +52,7 @@ function openGrant() {
     data: true
   });
 
-  Actions.grant();
+  setTimeout(() => Actions.grant(), 500);
 }
 
 export default class Home extends Component {
