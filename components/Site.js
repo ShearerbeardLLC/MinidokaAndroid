@@ -47,7 +47,7 @@ const styles = StyleSheet.create({
 export default class Site extends Component {
 
   render() {
-		const { name, subDetail, photos, text, index, videos } = this.props;
+		const { name, subDetail, photos, text, index, videosList } = this.props;
     return (
       <View style={ styles.column }>
         <SitePhotos {...this.props} />
@@ -66,13 +66,13 @@ export default class Site extends Component {
           >
             <Icon name="google-maps" style={styles.actionButtonIcon} />
           </ActionButton.Item>
-          { videos ?
+          { videosList ?
             <ActionButton.Item
               buttonColor={ FOM_ORANGE }
               textStyle={styles.text}
               textContainerStyle={styles.textContainer}
               title="Interviews"
-              onPress={() => Actions.video({name, videos})}
+              onPress={() => Actions.video({name, videosList})}
             >
               <Icon name="filmstrip" style={styles.actionButtonIcon} />
             </ActionButton.Item> : false

@@ -37,17 +37,17 @@ const siteTextDetails = ({name, file}) => Object.assign({}, {
 });
 
 const siteVideos = site => {
-  if (!site.video) {
+  if (!site.videos) {
     return site;
   }
 
-  const videos = site.video.map((video, i) => Object.assign({}, video, {
+  const videosList = site.videos.map((video, i) => Object.assign({}, video, {
     key: `${site.prefix}-${ i + 1}`,
     uri: fullUrl(site.prefix, i)
   }));
 
   return Object.assign({}, site, {
-    videos
+    videosList
   });
 };
 

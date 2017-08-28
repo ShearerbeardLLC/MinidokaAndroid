@@ -133,7 +133,7 @@ export default class VideoPlayer extends Component {
         { this.state.selected && this.state.selected.credit ?
           <View style={styles.credit}>
             <Text style={styles.floatingText}>
-              { this.state.selected.credit }
+              {this.state.selected.name}: { this.state.selected.credit }
             </Text>
           </View> : false
         }
@@ -147,7 +147,7 @@ export default class VideoPlayer extends Component {
           /> : false }
         </View>
         <View style={ styles.list }>
-          <VideoList videos={this.props.videos} onSelect={this.select} />
+          <VideoList videos={this.props.videosList} onSelect={this.select} />
         </View>
       </View>
     );
