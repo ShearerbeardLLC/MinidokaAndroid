@@ -1,10 +1,24 @@
+import locale from 'react-native-locale-detector';
 import React, { Component } from "react";
-import { Platform  }from 'react-native';
+import { Platform } from 'react-native';
 import text from "../util/text";
 import containerStyles from "../styles/Container";
 
 import Hyperlink from "react-native-hyperlink";
 import { FOM_ORANGE } from '../styles/colors';
+
+let prefix;
+
+switch(locale) {
+  case 'ja_JP':
+    prefix = 'jp_';
+    break;
+  case 'es_MX':
+    prefix = 'sp_';
+    break;
+  default:
+    prefix = '';
+}
 
 import {
   StyleSheet,
@@ -40,7 +54,7 @@ export default class MoreDetail extends Component {
       <View style={ styles.container }>
         <ScrollView >
           <Hyperlink linkDefault={ true } linkStyle={ styles.link }>
-            <Text style={ containerStyles.readable }>{ text[`about-${this.props.name}`] }</Text>
+            <Text style={ containerStyles.readable }>{ text[`${prefix}about-${this.props.name}`] }</Text>
           </Hyperlink>
         </ScrollView>
       </View>

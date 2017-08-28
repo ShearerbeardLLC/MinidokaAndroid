@@ -3,6 +3,7 @@ package com.minidokaandroid;
 import android.app.Application;
 
 import com.facebook.react.ReactApplication;
+import com.i18n.reactnativei18n.ReactNativeI18n;
 import com.brentvatne.react.ReactVideoPackage;
 import com.oblador.vectoricons.VectorIconsPackage;
 import com.airbnb.android.react.maps.MapsPackage;
@@ -26,6 +27,7 @@ public class MainApplication extends Application implements ReactApplication {
     protected List<ReactPackage> getPackages() {
       return Arrays.<ReactPackage>asList(
           new MainReactPackage(),
+            new ReactNativeI18n(),
             new ReactVideoPackage(),
             new VectorIconsPackage(),
             new MapsPackage()

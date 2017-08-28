@@ -1,6 +1,20 @@
+import locale from 'react-native-locale-detector';
 import photosLoader from "./photos";
 import textLoader from "./text";
 import fullUrl from "../util/video";
+
+let filePrefix;
+
+switch(locale) {
+  case 'ja_JP':
+    filePrefix = 'ja_';
+    break;
+  case 'es_MX':
+    filePrefix = 'sp_';
+    break;
+  default:
+    filePrefix = '';
+}
 
 function siteToCoords({coordinates}) {
 	return coordinates[0];
@@ -19,7 +33,7 @@ function siteToPhotos({prefix, photos}) {
 
 const siteTextDetails = ({name, file}) => Object.assign({}, {
   title: name,
-  text: textLoader[file]
+  text: textLoader[`${filePrefix}${file}`]
 });
 
 const siteVideos = site => {

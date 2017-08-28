@@ -13,11 +13,11 @@
     "text": [
       {
         "name": "Área de la Policía Militar",
-        "file": "sp_military-police-area-1"
+        "file": "military-police-area-1"
       },
       {
         "name": "En la puerta",
-        "file": "sp_military-police-area-2"
+        "file": "military-police-area-2"
       }
     ],
     "photos": [
@@ -43,7 +43,7 @@
     "video": [
       {
         "name": "Entrevista a Brooks Andrews",
-        "transcript": "sp_military-police-area-transcript-1",
+        "transcript": "military-police-area-transcript-1",
         "credit": "Archivo Digital de Densho \nColección de la Comunidad Japonesa Norteamericana de Bainbridge Island"
       }
     ]
@@ -62,11 +62,11 @@
     "text": [
       {
         "name": "Centinelas en la salvia",
-        "file": "sp_guard-tower-1"
+        "file": "guard-tower-1"
       },
       {
         "name": "Símbolos de confinamiento",
-        "file": "sp_guard-tower-2"
+        "file": "guard-tower-2"
       }
     ],
     "photos": [
@@ -81,14 +81,14 @@
     "videos": [
       {
         "name": "Entrevista a George Nakata",
-        "transcript": "sp_guard-tower-transcript-1",
+        "transcript": "guard-tower-transcript-1",
         "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei\nEntrevista a George Nakata"
       }
     ]
   },
   {
     "name": "Canal del Lado Norte",
-    "prefix": "north side canal",
+    "prefix": "north-side-canal",
     "detail": "Canal de riego de la Oficina de Reclamación.",
     "subDetail": "Obtenga información sobre el papel del agua en Minidoka y su fuente poco probable.",
     "coordinates": [
@@ -100,7 +100,7 @@
     "text": [
       {
         "name": "Canal del Lado Norte",
-        "file": "sp_north-side-canal-1"
+        "file": "north-side-canal-1"
       }
     ],
     "photos": [
@@ -159,7 +159,7 @@
     "video": [
       {
         "name": "Entrevista a Mabel Shoji Boggs",
-        "transcript": "sp_hospital-transcript-1",
+        "transcript": "hospital-transcript-1",
         "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
       }
     ]
@@ -178,11 +178,11 @@
     "text": [
       {
         "name": "Cuadro de Honor",
-        "file": "sp_honor-roll-1"
+        "file": "honor-roll-1"
       },
       {
         "name": "Cuestionario de lealtad",
-        "file": "sp_honor-roll-2"
+        "file": "honor-roll-2"
       },
       {
         "name": "Servicio militar",
@@ -213,12 +213,12 @@
     "videos": [
       {
         "name": "Entrevista a Tosh Yasutake ",
-        "transcript": "sp_honor-roll-transcript-1",
+        "transcript": "honor-roll-transcript-1",
         "credit": "Archivo Digital de Densho"
       },
       {
         "name": "Entrevista I a Tsuguo \"Ike\" Ikeda ",
-        "transcript": "sp_honor-roll-transcript-2",
+        "transcript": "honor-roll-transcript-2",
         "credit": "Archivo Digital de Densho"
       }
     ]
@@ -237,15 +237,15 @@
     "text": [
       {
         "name": "Área Administrativa",
-        "file": "sp_administrative-area-1"
+        "file": "administrative-area-1"
       },
       {
         "name": "Experiencia del personal",
-        "file": "sp_administrative-area-2"
+        "file": "administrative-area-2"
       },
       {
         "name": "Actitudes hacia los nikkei",
-        "file": "sp_administrative-area-3"
+        "file": "administrative-area-3"
       }
     ],
     "photos": [
@@ -281,19 +281,19 @@
     "text": [
       {
         "name": "La estación de bomberos como un hogar",
-        "file": "sp_fire-station-1"
+        "file": "fire-station-1"
       },
       {
         "name": "En el campo",
-        "file": "sp_fire-station-2"
+        "file": "fire-station-2"
       },
       {
         "name": "Estación de Bomberos #2",
-        "file": "sp_fire-station-3"
+        "file": "fire-station-3"
       },
       {
         "name": "Bomberas",
-        "file": "sp_fire-station-4"
+        "file": "fire-station-4"
       }
     ],
     "photos": [
@@ -319,7 +319,7 @@
     "videos": [
       {
         "name": "Entrevista a Shosuke Sasaki ",
-        "transcript": "sp_fire-station-transcript-1",
+        "transcript": "fire-station-transcript-1",
         "credit": "Archivo Digital de Densho"
       }
     ]
@@ -338,11 +338,11 @@
     "text": [
       {
         "name": "Tierras para cultivar",
-        "file": "sp_herrmann-house-1"
+        "file": "herrmann-house-1"
       },
       {
         "name": "Un día en la granja",
-        "file": "sp_herrmann-house-2"
+        "file": "herrmann-house-2"
       }
     ],
     "photos": [
@@ -372,7 +372,7 @@
     "videos": [
       {
         "name": "Entrevista I a Akiko Kurose",
-        "transcript": "sp_herrmann-house-transcript-1",
+        "transcript": "herrmann-house-transcript-1",
         "credit": "Archivo Digital de Densho"
       }
     ]
@@ -391,7 +391,7 @@
     "text": [
       {
         "name": "Torre de Agua #2",
-        "file": "sp_water-tower-two-1"
+        "file": "water-tower-two-1"
       }
     ],
     "photos": [
@@ -422,7 +422,7 @@
     "text": [
       {
         "name": "Planta de Aguas Residuales",
-        "file": "sp_sewage-plant-1"
+        "file": "sewage-plant-1"
       }
     ],
     "photos": [
@@ -441,7 +441,7 @@
     "videos": [
       {
         "name": "Entrevista a Victor Ikeda",
-        "transcript": "sp_sewage-plant-transcript-1",
+        "transcript": "sewage-plant-transcript-1",
         "credit": "Archivo Digital de Densho \nColección del Sitio Histórico Nacional de Manzanar"
       }
     ]
@@ -460,7 +460,7 @@
     "text": [
       {
         "name": "Gasolinera",
-        "file": "sp_gas-station-1"
+        "file": "gas-station-1"
       }
     ],
     "photos": [
@@ -483,7 +483,7 @@
     "text": [
       {
         "name": "Tienda de reparación de neumáticos y motores y área del almacén",
-        "file": "sp_shop-1"
+        "file": "shop-1"
       }
     ],
     "photos": [
@@ -518,15 +518,15 @@
     "text": [
       {
         "name": "Anfiteatro al aire libre",
-        "file": "sp_outdoor-amphitheater-1"
+        "file": "outdoor-amphitheater-1"
       },
       {
         "name": "Béisbol",
-        "file": "sp_outdoor-amphitheater-2"
+        "file": "outdoor-amphitheater-2"
       },
       {
         "name": "Deportes",
-        "file": "sp_outdoor-amphitheater-3"
+        "file": "outdoor-amphitheater-3"
       }
     ],
     "photos": [
@@ -554,7 +554,7 @@
     "videos": [
       {
         "name": "Entrevista a George Nakata",
-        "transcript": "sp_outdoor-amphitheater-transcript-1",
+        "transcript": "outdoor-amphitheater-transcript-1",
         "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
       }
     ]
@@ -573,15 +573,15 @@
     "text": [
       {
         "name": "Bloque 22",
-        "file": "sp_block-22-1"
+        "file": "block-22-1"
       },
       {
         "name": "La comunidad en Minidoka",
-        "file": "sp_block-22-2"
+        "file": "block-22-2"
       },
       {
         "name": "La religión en Minidoka",
-        "file": "sp_block-22-3"
+        "file": "block-22-3"
       }
     ],
     "photos": [
@@ -608,12 +608,12 @@
     "videos": [
       {
         "name": "Entrevista I a Frank Yamasaki",
-        "transcript": "sp_block-22-overlook-transcript-1",
+        "transcript": "block-22-overlook-transcript-1",
         "credit": "Archivo Digital de Densho"
       },
       {
         "name": "Entrevista a Hisa Matsudaira",
-        "transcript": "sp_block-22-overlook-transcript-2",
+        "transcript": "block-22-overlook-transcript-2",
         "credit": "Archivo Digital de Densho\nColección de la Comunidad Japonesa Norteamericana de Bainbridge Island"
       }
     ]
@@ -632,15 +632,15 @@
     "text": [
       {
         "name": "Cuarteles residenciales",
-        "file": "sp_residential-barracks-1"
+        "file": "residential-barracks-1"
       },
       {
         "name": "La vida en Minidoka",
-        "file": "sp_residential-barracks-2"
+        "file": "residential-barracks-2"
       },
       {
         "name": "Hacer una casa",
-        "file": "sp_residential-barracks-3"
+        "file": "residential-barracks-3"
       }
     ],
     "photos": [
@@ -667,12 +667,12 @@
     "videos": [
       {
         "name": "Entrevista a George Nakata",
-        "transcript": "sp_residential-barracks-transcript-1",
+        "transcript": "residential-barracks-transcript-1",
         "credit": "Archivo Digital de Densho\nColección de la Fundación Oregon Nikkei"
       },
       {
         "name": "Entrevista a Shigeko Sese Uno",
-        "transcript": "sp_residential-barracks-transcript-2",
+        "transcript": "residential-barracks-transcript-2",
         "credit": "Archivo Digital de Densho"
       }
     ]
@@ -691,11 +691,11 @@
     "text": [
       {
         "name": "Comedor",
-        "file": "sp_mess-hall-1"
+        "file": "mess-hall-1"
       },
       {
         "name": "Comidas sociales",
-        "file": "sp_mess-hall-2"
+        "file": "mess-hall-2"
       }
     ],
     "photos": [
@@ -741,7 +741,7 @@
     "text": [
       {
         "name": "Edificio de Lavandería y Lavabo",
-        "file": "sp_laundry-lavatory-1"
+        "file": "laundry-lavatory-1"
       }
     ],
     "photos": [
@@ -761,7 +761,7 @@
     "videos": [
       {
         "name": "Entrevista a Massie Hinatsu",
-        "transcript": "sp_laundry-lavatory-transcript-1",
+        "transcript": "laundry-lavatory-transcript-1",
         "credit": "Archivo Digital de Densho\nColección del Sitio Histórico Nacional de Manzanar"
       }
     ]
@@ -780,11 +780,11 @@
     "text": [
       {
         "name": "Cuarteles como aulas",
-        "file": "sp_barracks-as-classrooms-1"
+        "file": "barracks-as-classrooms-1"
       },
       {
         "name": "Actividades escolares",
-        "file": "sp_barracks-as-classrooms-2"
+        "file": "barracks-as-classrooms-2"
       }
     ],
     "photos": [
@@ -812,7 +812,7 @@
     "videos": [
       {
         "name": "Entrevista a Aya Uenishi Medrud",
-        "transcript": "sp_barracks-as-classrooms-transcript-1",
+        "transcript": "barracks-as-classrooms-transcript-1",
         "credit": "Archivo Daigital de Densho"
       },
       {
@@ -836,11 +836,11 @@
     "text": [
       {
         "name": "Una comunidad sostenible",
-        "file": "sp_root-cellar-1"
+        "file": "root-cellar-1"
       },
       {
         "name": "Un esfuerzo colectivo",
-        "file": "sp_root-cellar-2"
+        "file": "root-cellar-2"
       }
     ],
     "photos": [
@@ -867,7 +867,7 @@
     "videos": [
       {
         "name": "Entrevista a Victor Ikeda",
-        "transcript": "sp_root-cellar-transcript-1",
+        "transcript": "root-cellar-transcript-1",
         "credit": "Archivo Digital de Densho \nColección del Sitio Histórico Nacional de Manzanar "
       }
     ]
@@ -886,11 +886,11 @@
     "text": [
       {
         "name": "Detrás del alambre de púas",
-        "file": "sp_behind-barbed-wire-1"
+        "file": "behind-barbed-wire-1"
       },
       {
         "name": "Preservación de Minidoka",
-        "file": "sp_behind-barbed-wire-2"
+        "file": "behind-barbed-wire-2"
       }
     ],
     "photos": [

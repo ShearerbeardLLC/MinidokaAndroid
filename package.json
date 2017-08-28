@@ -13,6 +13,7 @@
     "react-native-action-button": "^2.7.1",
     "react-native-gps": "git+https://github.com/agrass/react-native-gps.git",
     "react-native-hyperlink": "0.0.10",
+    "react-native-locale-detector": "^1.0.1",
     "react-native-looped-carousel": "^0.1.7",
     "react-native-maps": "^0.15.2",
     "react-native-modal": "^2.4.0",

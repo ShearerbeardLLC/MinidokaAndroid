@@ -81,7 +81,7 @@
   },
   {
     "name": "ノースサイド運河",
-    "prefix": "north side canal",
+    "prefix": "north-side-canal",
     "detail": "開拓局灌漑用運河",
     "subDetail": "ミニドカでの水の役割と、その思いもしないような水源について学びましょう。",
     "coordinates": [
@@ -263,7 +263,7 @@
   },
   {
     "name": "消防署",
-    "prefix": "fire-station-one",
+    "prefix": "fire-station",
     "detail": "歴史的な消防署。",
     "subDetail": "この歴史的な消防署を訪れて、非抑留者消防士としての生活について学びましょう。",
     "coordinates": [
@@ -320,7 +320,7 @@
   },
   {
     "name": "ヘルマンハウス",
-    "prefix": "herrmann-house ",
+    "prefix": "herrmann-house",
     "detail": "戦後の農家。",
     "subDetail": "1950年代の家を訪ねて、戦後の土地の利用と収容所であった土地の開発について学びましょう。",
     "coordinates": [
