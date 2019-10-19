@@ -6,11 +6,11 @@ import {
   Text,
   View,
   Platform,
-  ListView,
   Dimensions,
   StyleSheet,
   TouchableHighlight
 } from 'react-native';
+import ListView from 'deprecated-react-native-listview';
 import Video from 'react-native-video-player';
 
 const { width } = Dimensions.get('window');

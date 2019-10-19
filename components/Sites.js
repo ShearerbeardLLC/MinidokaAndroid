@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import {
   Text,
   View,
-  ListView,
   StyleSheet
 } from 'react-native';
+import ListView from 'deprecated-react-native-listview';
 
 import sitesData from "../const/sitesData";
 import styles from "../styles/Container";

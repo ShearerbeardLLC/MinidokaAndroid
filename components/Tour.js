@@ -7,6 +7,7 @@ import {
 } from 'react-native';
 import MapView from "react-native-maps";
 import { Pagination } from 'react-native-snap-carousel'
+navigator.geolocation = require('@react-native-community/geolocation');
 import { getCurrent, watch, unWatch } from "../util/navigation";
 import { Actions } from "react-native-router-flux";
 
