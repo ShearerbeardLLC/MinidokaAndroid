@@ -4,10 +4,10 @@ import {
   Text,
   Image,
   View,
-  ListView,
   StyleSheet,
   TouchableHighlight
 } from "react-native";
+import ListView from 'deprecated-react-native-listview';
 
 import { Actions } from "react-native-router-flux";
 import { siteTextDetails } from "../util/site";

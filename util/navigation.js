@@ -1,4 +1,5 @@
 const DEFAULT_CONFIG = { enableHighAccuracy: true, timeout: 20000, maximumAge: 1000 };
+navigator.geolocation = require('@react-native-community/geolocation');
 
 function getLatLong(position) {
 	return {
